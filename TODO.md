@@ -2,8 +2,8 @@
 - pure html tags
 
 #misc
-- favicon
-- basic GWFonts
+✔ favicon
+✔ basic GWFonts
 - Mock images
 
 #Autre branche
