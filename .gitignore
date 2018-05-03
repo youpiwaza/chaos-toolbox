@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+/node_modules
+
+## OS generated files
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Thumbs.db
+
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Optional npm cache directory
+.npm
+package-lock.json
+
+
+## IDE's
+.idea
+.projects
+.netbeans
+.metadata
+.project
+.settings
+.svn
+
+# helpers
+*.patch
+.phpstorm.meta.php
+*.phpstorm.meta.php
+/nbproject
+/nbproject/private/
+
+# sublime
+*.sublime-project
+*.sublime-workspace
+
+#editor old files(emacs,jed)
+*~
+
+
+## Archives
+*.tar.gz
+*.tar.bz2
+*.gz
+*.zip
+*.bz2
+*.rar
