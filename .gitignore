@@ -5,7 +5,8 @@ npm-debug.log*
 
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
-/node_modules
+# keep normalize.css è_é
+# /node_modules
 
 ## OS generated files
 .DS_Store?

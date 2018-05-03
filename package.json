@@ -1,0 +1,32 @@
+{
+  "name": "chaos-toolbox",
+  "version": "1.0.0",
+  "description": "Basic html element listing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youpiwaza/chaos-toolbox.git"
+  },
+  "keywords": [
+    "toolbox",
+    "html",
+    "css",
+    "basic",
+    "skin",
+    "boite",
+    "à",
+    "outils"
+  ],
+  "author": "Maxime Chevasson / Masamune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youpiwaza/chaos-toolbox/issues"
+  },
+  "homepage": "https://github.com/youpiwaza/chaos-toolbox#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
