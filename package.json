@@ -1,7 +1,7 @@
 {
   "name": "chaos-toolbox",
   "version": "1.0.0",
-  "description": "Basic html element listing",
+  "description": "Basic html elements tags listing",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
