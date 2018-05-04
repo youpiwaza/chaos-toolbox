@@ -84,9 +84,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+.color {
+  color: #fae596;
+  text-shadow: 2px 2px 1px rgba(23, 62, 67, .4);
+}
+
 /*** Infos ***/
 .info {
-  background-color: rgba(250,229,150,.2);
+  background-color: rgba(250, 229, 150, .2);
   border: 1px solid #fae596;
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 1rem;
