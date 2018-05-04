@@ -1,5 +1,11 @@
 #html
 - pure html tags
+-- titles
+-- texts
+
+#verifications
+- w3c
+- pagespeed
 
 #misc
 ✔ favicon
@@ -14,8 +20,13 @@
 ✔-- 800 x 450
 ✔-- 400 x 225
 ✔ basic container
-- info colors
+✔ info colors
 -- js toggle
+
+##reusability / optimisation
+- gulp & custom functions
+- pugjs
+- sass
 
 #More evolved
 - Custom usual components
