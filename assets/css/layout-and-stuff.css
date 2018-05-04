@@ -1,3 +1,17 @@
+/*
+ * I've placed here all optional styles, helping making this toolbox prettier
+ * I usually add some very basic bug preventing css to my toolbox, I wanted to differentiate it from this
+ */
+
+/*** Layout ***/
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 10px;
+}
+
+
+
 /*** Google web fonts, locally ***/
 /*** https://google-webfonts-helper.herokuapp.com/fonts/ ***/
 
@@ -54,3 +68,13 @@
        url('../assets/fonts/Open_Sansopen-sans-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../assets/fonts/Open_Sansopen-sans-v15-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
+
+/*** Fonts ***/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
