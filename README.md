@@ -17,7 +17,7 @@ Update normalize.css
 
 ## Thanks
 
-- [awwwards](https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html) / Color palette for infos
+- [awwwards](https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html) / [madeo design](https://www.madeo.com/) / Color palette for infos
 - [emmet](https://emmet.io/) / Speeding up html crafting
 - [Feng Zhu Design](http://fengzhudesign.blogspot.fr/2014/06/design-cinema-lets-draw-final-fantasy.html) / Beautifull Illustrations
 - [normalize.css](https://necolas.github.io/normalize.css/) / Cross browser base css compatibility
