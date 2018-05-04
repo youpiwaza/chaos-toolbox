@@ -22,3 +22,6 @@ Update normalize.css
 - [Feng Zhu Design](http://fengzhudesign.blogspot.fr/2014/06/design-cinema-lets-draw-final-fantasy.html) / Beautifull Illustrations
 - [normalize.css](https://necolas.github.io/normalize.css/) / Cross browser base css compatibility
 - [SMACCS](https://smacss.com/) / Create beautifully optimised & reusable css
+
+- mozilla
+- stackoverflow

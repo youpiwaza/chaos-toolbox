@@ -1,5 +1,6 @@
 #html
 - titles
+-- Fix word break
 - texts
 - quotes > blockquote or q ?
 
@@ -17,12 +18,11 @@
 -- http://www.accede-web.com/notices/ // recent
 
 #verifications
+- all html tags / https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 - w3c
 - pagespeed
 
-#recommandations
-- smacss
-
+#html recommandations
 - seo
 -- strong / em use
 --- b i fallbacks
@@ -93,6 +93,10 @@
 -- fieldset & legends
 -- resets > confirm
 -- captchas
+
+#css recommandations
+- smacss
+- don't overcharge if not needed (ex: parent border 1px solid #fff, child border-COLOR: #123123)
 
 
 
