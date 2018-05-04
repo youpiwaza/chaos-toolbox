@@ -6,3 +6,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto', sans-serif;
 }
+
+/*** Layout ***/
+.container {
+	margin: 0 auto;
+	max-width: 1400px;
+	padding: 10px;
+}
