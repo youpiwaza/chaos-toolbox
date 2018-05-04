@@ -1,12 +1,20 @@
 #html
-- pure html tags
--- titles
--- texts
+- titles
+- texts
+- quotes > blockquote or q ?
 
 # css fixs
 - HX one words
 - images mw 100% h auto
 - minor transitions (ex: a hover)
+
+# bonnes pratiques
+- w3c / https://www.w3.org/standards/webdesign/
+
+- yay
+-- http://wiki.accede-web.com/notices/html-css?DokuWiki=odg500eeh06othkknn70cj7s43
+-- http://wiki.accede-web.com/notices/html-css/recommandations-additionnelles
+-- http://www.accede-web.com/notices/ // recent
 
 #verifications
 - w3c
@@ -25,9 +33,11 @@
 --- favicon
 --- social medias
 
--- img
---- title / alt
---- text "habillage"
+-- graphics
+--- img
+---- title / alt
+---- text "habillage"
+--- svg & ?
 
 -- lang
 --- i18n
