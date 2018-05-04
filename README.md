@@ -16,5 +16,16 @@ Update normalize.css
 > npm up
 
 ## Thanks
-- emmet
-- normalize.css
+
+- [emmet](https://emmet.io/) / Speeding up html crafting
+- [Feng Zhu Design](http://fengzhudesign.blogspot.fr/2014/06/design-cinema-lets-draw-final-fantasy.html) / Beautifull Illustrations
+- [normalize.css](https://necolas.github.io/normalize.css/) / Cross browser base css compatibility
+
+
+
+
+
+
+
+
+
