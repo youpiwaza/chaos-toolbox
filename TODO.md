@@ -14,6 +14,8 @@
 ✔-- 800 x 450
 ✔-- 400 x 225
 ✔ basic container
+- info colors
+-- js toggle
 
 #More evolved
 - Custom usual components
