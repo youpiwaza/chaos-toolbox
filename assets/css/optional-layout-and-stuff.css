@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 2px 1px rgba(23, 62, 67, .4);
 }
 
+
 /*** Infos ***/
 .info {
   background-color: rgba(250, 229, 150, .2);
@@ -106,6 +107,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.4rem;
   padding: 1rem 2rem;
+}
+.info.reco {
+  background-color: rgba(63, 176, 172, .2);
+  border-color: #3fb0ac;
+  color: #3fb0ac;
 }
 .info strong {
   color: #2eb8b3;
