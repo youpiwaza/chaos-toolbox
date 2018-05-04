@@ -10,6 +10,10 @@
   padding: 10px;
 }
 
+.half {
+  width: 50%;
+}
+
 
 
 /*** Google web fonts, locally ***/
@@ -82,12 +86,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** Infos ***/
 .info {
-  color: #3fb0ac;
-  padding: 1rem 2rem;
   background-color: rgba(250,229,150,.2);
   border: 1px solid #fae596;
-  border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: #3fb0ac;
+  display: inline-block;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+  padding: .8rem 1.6rem;
+}
+.info.big {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 1rem 2rem;
+}
+.info strong {
+  color: #2eb8b3;
 }
 
 /*** Misc ***/
