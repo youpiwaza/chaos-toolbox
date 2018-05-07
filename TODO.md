@@ -19,7 +19,7 @@
 
 # css fixs
 ✔ HX one words
-- images mw 100% h auto
+✔ images mw 100% h auto
 - minor transitions (ex: a hover)
 
 # good practices
@@ -38,8 +38,8 @@
 
 #html recommandations
 - seo
--- strong / em use
---- b i fallbacks
+✔- strong / em use
+✔-- b i fallbacks
 
 -- head
 --- title
@@ -48,19 +48,19 @@
 --- social medias
 
 -- graphics
---- img
----- title / alt
+✔-- img
+✔--- title / alt
 ---- text "habillage"
---- svg & ?
+✔-- svg & ?
 
 -- lang
---- i18n
+✔-- i18n
 --- nomenclature / price, adresse, zipcode, tel number, state/country (api normalisation)
 
 -- a
---- states hover etc.
---- title
---- target
+✔-- states hover etc.
+✔-- title
+✔-- target
 --- spams
 
 -- robots nav skip
@@ -78,14 +78,14 @@
 - validators
 
 - text
--- word break
--- aligns
--- ² et v
+✔- word break
+✔- aligns
+-- ² et v pow power puissance
 
 - Math symbols
 
 - lists
--- nesting
+✔- nesting
 -- directions
 -- style none /!\ ol
 
