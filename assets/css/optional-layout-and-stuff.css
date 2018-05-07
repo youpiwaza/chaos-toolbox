@@ -113,6 +113,12 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #3fb0ac;
   color: #3fb0ac;
 }
+  .info.reco a, .info.reco a:active, .info.reco a:visited {
+    color: #2b7680;
+  }
+  .info.reco a:hover {
+    color: #348d99;
+  }
 .info strong {
   color: #2eb8b3;
 }
