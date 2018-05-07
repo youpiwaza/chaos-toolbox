@@ -323,6 +323,118 @@
 
 
 
+            <h2 class="color">Images</h2>
+
+            <h3 class="color">Simple</h3>
+
+            <img    alt="Cloud, in front of Cosmos canyon"
+                    height="720"
+                    src="assets/visuals/images/mock/mock-1--16-9--1280x720.jpg"
+                    title="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+                    width="1280"
+            />
+
+            <img    alt="Cloud, in front of Cosmos canyon"
+                    height="1440"
+                    src="assets/visuals/images/mock/mock-1--16-9--1280x720.jpg"
+                    title="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+                    width="2560"
+            />
+            
+            <div class="info">
+                Verify behavior if an image is too big. It shouldn't overflow it's parent container.<br />
+            </div>
+
+
+            <h3 class="color">Responsive image (recommanded)</h3>
+            
+            <img    alt     ="Midgard city"
+                    height  ="720"
+
+                    sizes   ="  (max-width: 440px) 400px,
+                                (max-width: 840px) 800px,
+                                1280px"
+
+                    src     ="  assets/visuals/images/mock/mock-2--16-9--1280x720.jpg"
+                    srcset  ="  assets/visuals/images/mock/mock-2--16-9--400x250.jpg 400w,
+                                assets/visuals/images/mock/mock-2--16-9--800x450.jpg 800w,
+                                assets/visuals/images/mock/mock-2--16-9--1280x720.jpg 1280w"
+
+                    title   ="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+                    width   ="1280"
+            />
+            
+            <div class="info">
+                <p>
+                    Provide different images (low size for mobile, average for tablet, high quality for desktop), allwing for <em>data comsumption savings</em>.<br />
+                    If you want to test with Chrome Dev Tools, make sure to check "Disable cache" in the network tab.
+                </p>
+                <p>
+                    Always consider what are your <strong>responsive goals (supports, breakpoints)</strong> before going in.
+                </p>
+                <p>Note that you can make the image creation process pretty quick n' easy thanks to <a href="https://enviragallery.com/how-to-batch-resize-images-in-photoshop/" target="_blank" title="One of many toshop resize batch tutorials..">Photoshop scripts</a><br />
+                No needs for plugins or 3rd parties, just record a script where you resize/export for web one image to desired sizes, then use File > automation > batch.</p>
+            </div>
+
+
+            <h3 class="color">figure & figcaption</h3>
+
+            <div>
+                <figure>
+                    <img    alt     ="Rocket town"
+                            height  ="720"
+                
+                            sizes   ="  (max-width: 440px) 400px,
+                                        (max-width: 840px) 800px,
+                                        1280px"
+                
+                            src     ="  assets/visuals/images/mock/mock-3--16-9--1280x720.jpg"
+                            srcset  ="  assets/visuals/images/mock/mock-3--16-9--400x250.jpg 400w,
+                                        assets/visuals/images/mock/mock-3--16-9--800x450.jpg 800w,
+                                        assets/visuals/images/mock/mock-3--16-9--1280x720.jpg 1280w"
+                
+                            title   ="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+                            width   ="1280"
+                    />
+                
+                    <figcaption>A beautiful unofficial representation of rocket town, inspired by Final Fantasy VII. Credits to Feng Zhu Design</figcaption>
+                </figure>
+                
+                <div class="info">You can use <em>figure</em> & <em>figcaption</em> tags for tutorial images. It's always a good idea to style those too.</div>
+            </div>
+            
+            <div class="info big reco">
+                Recommandations
+                <ul>
+                    <li>
+                        Take care to limit images max-width to prevent design explosions, here's a simple fix<br />
+                        <pre>img {
+    height: auto;
+    max-width: 100%;
+}</pre>
+                    </li>
+                    <li>Take care for <strong>images copyrights</strong> if you get resources from the web. Prefer going for your own images or images stocks (adobe, shutterstock, gettyimages, etc.)</li>
+                    <li>Same, prefer hosting your images (and not using external links as <em>img src attributes</em> to prevent 404</li>
+                    <li>SEO & compatibility / Prefer using <strong>responsive images</strong></li>
+                    <li>SEO & Compatibility / Take care to optimize your images (svg if possible), I'd recommand jpg, progressive, quality 60 ; they are some automated stuff online/through npm/gulp</li>
+                    <li>SEO / Always specify <em>title</em> & <em>alt</em> attributes. Learn the difference.</li>
+                    <li>SEO / Always specify natural images <em>height</em> & <em>width</em></li>
+                    <li>SEO / Specify proper file names. Images SEO is a real thing.</li>
+                    <ul>
+                        <li>Prioritize content > category > website</li>
+                        <li>Always use "-" as word separator (no camel case)</li>
+                    </ul>
+                    <li>Alternative / Use vectorial assets (SVG) : Perfect quality, weightless</li>
+                    <li>Accessibility / Decorative images, set <em>alt</em> attribute empty, and use <em>role="presentation"</em> instead</li>
+                </ul>
+                Resources
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank" title="Mozilla doc : images in HTML">MDN, images</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank" title="Mozilla doc : responsive images, the proper way">MDN, responsive images</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web" target="_blank" title="Mozilla doc : vectors in HTML">MDN, vectors, svg</a></li>
+                    <li><a href="https://www.w3.org/WAI/tutorials/images/decorative/" target="_blank" title="w3 doc : decorative images">w3, decorative images</a></li>
+                </ul>
+            </div>
 
 
             <h2 class="color">Basic bug prevention CSS</h2>
