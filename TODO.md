@@ -11,14 +11,18 @@
 -- p
 -- span
 
+- semantic / good practices
+-- articles https://developer.mozilla.org/fr/docs/Web/HTML/Element/article
+-- https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html
+
 - quotes > blockquote or q ?
 
 # css fixs
-- HX one words
+✔ HX one words
 - images mw 100% h auto
 - minor transitions (ex: a hover)
 
-# bonnes pratiques
+# good practices
 - w3c / https://www.w3.org/standards/webdesign/
 
 - yay
@@ -107,6 +111,10 @@
 - smacss
 - don't overcharge if not needed (ex: parent border 1px solid #fff, child border-COLOR: #123123)
 
+#folder & file recommandations
+- images names
+--  "-" separated words
+-- SEO / proper names
 
 
 #misc
@@ -133,6 +141,7 @@
 - gulp & custom functions
 - pugjs
 - sass
+-- display grid half third forth
 
 #More evolved
 - Custom usual components
