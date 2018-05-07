@@ -10,10 +10,32 @@
   padding: 10px;
 }
 
-.half {
-  width: 50%;
+.grid {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
 }
-
+  .grid.half {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid.third {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid.forth {
+    grid-template-columns: repeat(4, 1fr);
+  }
+.tal {
+    text-align: left;
+}
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+.taj {
+  text-align: justify;
+}
 
 
 /*** Google web fonts, locally ***/
@@ -121,6 +143,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 .info strong {
   color: #2eb8b3;
+}
+.info img {
+  margin: 1rem 0;
+}
+.info img.half {
+  height: auto;
+  width: 50%;
 }
 
 /*** Misc ***/
