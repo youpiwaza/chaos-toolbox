@@ -268,14 +268,60 @@
 
             <h3 class="color">Specific texts tags</h3>
                 
-            <p>Tests with very big links !</p>
+            <div>
+                <p><strong>Some text in the strong tag, should be bold</strong></p>
+                <p><b>Legacy / Some text in the b tag, should be bold</b></p>
+
+                <p><em>Some text int the em tag, should be in italic</em></p>
+                <p><i>Legacy / Some text in the i tag, should be in italic</i></p>
+
+                <p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">A basic link, a tag, should be a diffrente color, (optionnally) uderlined, have behavior on hover & click</a></p>
+                <p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">A long long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nihil sequi necessitatibus magnam tempore ducimus pariatur culpa nemo, et distinctio veniam facilis laudantium voluptatibus velit?</a></p>
+                <p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</a></p>
+                
+                <div class="info">
+                    Basic tags, isolated    
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, <strong>strong text</strong> consectetur adipisicing elit <b>b text</b>. Deleniti sequi <em>em text</em> distinctio culpa <i>i text</i> ipsa voluptatem magnam incidunt molestiae veniam debitis unde, ut quidem aliquid magni blanditiis. Necessitatibus in magni inventore ex <a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">a link</a> dignissimos tempore est, sunt voluptatem incidunt? Impedit, natus, cum! Sit distinctio aliquid ipsum, eos iure, nobis dicta explicabo dolore et.</p>
+                
+                <div class="info">Basic tags, inline context</div>
+            </div>
 
             <div class="big info reco">
                 Recommandations
                 <ul>
-                    <li>rieng</li>
+                    <li>Style / No matter what, those tags should remain <em>inline</em></li>
+                    <li>Style / When styling your links, you should have 3 colors : </li>
+                    <ul>
+                        <li>
+                            One for the initial state<br />
+                            <pre>a, a:active { ... }</pre>
+                        </li>
+                        <li>
+                            One for the visited state<br />
+                            <pre>a:visited { ... }</pre>
+                        </li>
+                        <li>
+                            One for the user interaction<br />
+                            <pre>a:focus, a:hover { ... }</pre>
+                        </li>
+                        <li>
+                            <strong>Pay attention to declare those in this specific order</strong>, as CSS priority is needed (ex : hover style should display over visited).<br />
+                            Care if you are used to alphabetical sort properties.
+                        </li>
+                    </ul>
+                    <li>Compatibility / Even if both the <em>b</em> & <em>i</em> tags are deprecated, you should have basic style for them</li>
+                    <li>SEO / You should use <em>strong</em> & <em>em</em> tags to emphasize your contents. It makes reading easier, and also helps robots getting keywords</li>
+                    <li>SEO / Links > Always give a title to your links. Preferably diffrent from the title label</li>
+                    <li>
+                        SEO / Links > Don't forget to use the <em>target</em> attribute. If the link is targeting a resource outside your website, you should go for a target <strong>_blank</strong><br /
+                        >If you got a lot of mixed links (internal & external), I'd recommand to add a specific <a href="https://lefkomedia.com/adding-external-link-indicator-with-css/" target="_blank" title="Add an icon to all external links">inline icon</a>.
+                    </li>
                 </ul>
             </div>
+
+
 
 
 
@@ -335,7 +381,6 @@
 
             <h2 class="color">Thanks to...</h2>
             <div class="credits info big">
-
 
                 <table>
 

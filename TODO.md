@@ -2,14 +2,14 @@
 ✔ titles
 ✔- Fix word break
 - texts
--- Different aligns
-- Specific texts
--- strong + b
--- em + i
--- a href
--- div
--- p
--- span
+✔- Different aligns
+✔ Specific texts
+✔- strong + b
+✔- em + i
+✔- a href
+✔- div
+✔- p
+✔- span
 
 - semantic / good practices
 -- articles https://developer.mozilla.org/fr/docs/Web/HTML/Element/article
