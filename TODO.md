@@ -1,9 +1,16 @@
 #html
-- titles
--- Fix word break
 ✔ titles
 ✔- Fix word break
 - texts
+-- Different aligns
+- Specific texts
+-- strong + b
+-- em + i
+-- a href
+-- div
+-- p
+-- span
+
 - quotes > blockquote or q ?
 
 # css fixs
@@ -116,7 +123,11 @@
 ✔-- 400 x 225
 ✔ basic container
 ✔ info colors
--- js toggle
+
+- helpers
+-- 2 pages > full html clean, html + helpers
+-- Fixed menu for navigation ?
+
 
 ##reusability / optimisation
 - gulp & custom functions
