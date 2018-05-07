@@ -81,6 +81,8 @@
 ✔- word break
 ✔- aligns
 -- ² et v pow power puissance
+-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/sup
+-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/sub
 
 - Math symbols
 
