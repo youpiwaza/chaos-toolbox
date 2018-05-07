@@ -16,4 +16,11 @@
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
+
+	box-sizing: border-box;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
 }

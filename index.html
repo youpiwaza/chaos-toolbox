@@ -259,13 +259,65 @@
                 </ul>
             </div>
 
+
+
+            <h2 class="color">Basic bug prevention CSS</h2>
+            <div class="info">
+                <div class="grid half vcenter">
+                    
+                    <pre>
+                        * {
+                            box-sizing: border-box;
+                        }
+                    </pre>
+                    <div>
+                        Don't count margin/paddings when calculating width of elements<br />
+                        <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing" target="_blank" title="Mozilla doc : box sizing">MDN, box-sizing</a>
+                        
+                    </div>
+                    
+                    <pre>
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    </pre>
+                    <div>
+                        Prevent images from overflowing parent containers
+                    </div>
+                    
+                    <pre>
+                        * {
+                            overflow-wrap: break-word;
+                            word-wrap: break-word;
+
+                            -ms-word-break: break-all;
+                            word-break: break-all;
+                            word-break: break-word;
+
+                            -ms-hyphens: auto;
+                            -moz-hyphens: auto;
+                            -webkit-hyphens: auto;
+                            hyphens: auto;
+                        }
+                    </pre>
+                    <div>
+                        Prevent text overflows<br />
+                        <a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Texts & css, how to not fuck up your design (basicly)">Css tricks, long text stuff</a>
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+
             
 
 
 
-            <div class="credits">
+            <h2 class="color">Thanks to...</h2>
+            <div class="credits info big">
 
-                <h2 class="color">Thanks to...</h2>
 
                 <table>
 
