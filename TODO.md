@@ -34,6 +34,7 @@
 - all html tags / https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 - w3c
 - pagespeed
+- all links in english
 
 #html recommandations
 - seo
@@ -135,6 +136,7 @@
 - helpers
 -- 2 pages > full html clean, html + helpers
 -- Fixed menu for navigation ?
+
 
 
 ##reusability / optimisation
