@@ -71,8 +71,11 @@
             <h5>5th-tiary title / h5 tag</h5>
             <h6>6th-tiary title / h6 tag</h6>
 
+            <div class="info">
+                Usual titles you'll find on every website<br />
+                Space wise, I'd recommand setting only <strong>bottom & top margins</strong> (no paddings) as those kind of paddings should be fixed on parent containers.
+            </div>
 
-            <div class="info">Tests with pretty long titles, in order to test <strong>multilining</strong>, and detect potential <strong>overflows</strong>, especially with masssive font sizes (60+) and bold large fonts</div>
 
             <h1>H1 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h1>
             <h2>H2 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h2>
@@ -81,8 +84,8 @@
             <h5>H5 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h5>
             <h6>H6 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h6>
 
+            <div class="info">Tests with pretty long titles, in order to test <strong>multilining</strong>, and detect potential <strong>overflows</strong>, especially with masssive font sizes (60+) and bold large fonts</div>
 
-            <div class="info">Test with pretty A  pretty long word (you'd be surprised...), in order to test <strong>word-break</strong>, and detect potential <strong>overflows</strong></div>
 
             <h1>H1PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h1>
             <h2>H2PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h2>
@@ -91,8 +94,12 @@
             <h5>H5PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h5>
             <h6>H6PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h6>
 
+            <div class="info">
+                Test with pretty A  pretty long word (you'd be surprised...), in order to test <strong>word-break</strong>, and detect potential <strong>overflows</strong><br />
+                Make sure to (at least) break words thanks to css properties <em>overflow-wrap: break-word;</em> & <em>word-wrap: break-word;</em> (legacy).<br />
+                Hyphens definition are a plus.
+            </div>
             
-            <div class="info">Illustration with dummy text. Allow to check for <strong>title/content font compatibility</strong>, and also to set up your <strong>margins</strong></div>
 
             <div class="half">
                 
@@ -119,15 +126,25 @@
             
             </div>
 
+            <div class="info">Illustration with dummy text. Allow to check for <strong>title/content font compatibility</strong>, and also to set up your <strong>margins</strong></div>
+
+
             <div class="big info reco">
                 Recommandations
                 <ul>
-                    <li>SEO / Have a proper structure, it might be used by some robots for stuff</li>
+                    <li>Style / If making a big title for a front page or a jumbotron, Use a specific class instead of styling straight h1.</li>
+                    <li>SEO / Have a proper title structure, it might be used by some robots for stuff</li>
                     <li>SEO / Avoid using more than one H1 per page</li>
                     <li>SEO / Avoid skipping heading levels: start from h1, then use h2, then h3, etc.</li>
                     <li>SEO / Prefer using links tags inside title, and not the opposite : &lt;h1&gt; &lt;a href="#"&gt; Hey &lt;/a&gt; &lt;/h1&gt;</li>
+                    <li>Accessibility / When sectionning, use the <em>aria-labeledby</em> attribute on the parent element to reference the <em>id</em> of the title. Cf. mdn.</li>
                 </ul>
-                Ressource : <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" title="HTML title doc, recommandations, etc." target="_blank">Mozilla title documentation</a>, various stackoverflows.
+                Ressources : 
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" title="HTML title doc, recommandations, etc.">Mozilla title documentation</a></li>
+                    <li><a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Manage word breaking the proper way">CSS tricks, word breaking</a></li>
+                    <li>Various stackoverflows..</li>
+                </ul>
             </div>
 
 
@@ -136,6 +153,22 @@
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quaerat labore cum voluptas debitis recusandae atque doloribus possimus alias perspiciatis! At, consequuntur et quasi nesciunt fugit aliquid distinctio perspiciatis sed nihil commodi, earum illo harum aliquam minima praesentium officia libero eaque quos error voluptates. Odit eos repellat quo animi, deserunt est dignissimos expedita a quibusdam vitae perferendis labore porro! Ea in nostrum numquam repudiandae itaque obcaecati perferendis quisquam explicabo earum. Alias necessitatibus id hic repellat laudantium delectus sint quo error ratione quas temporibus nulla, rem minus est et ab perspiciatis, eos beatae tempore provident fuga illo. Fuga aspernatur consectetur dicta et cumque delectus in, deleniti a vero, non corrupti similique rerum fugiat illum fugit assumenda recusandae minus perferendis eveniet, doloribus. Consectetur, ab totam sed quaerat dicta obcaecati, maiores porro nam ipsum voluptatem atque. Id totam quos ratione laudantium, veniam facilis inventore sit aliquid distinctio qui, iste officiis omnis reiciendis fugiat minima? Vero nobis corrupti reiciendis dolores odit, omnis ex dolore ipsum tenetur. Quas sint enim excepturi provident vero, ea libero eius temporibus, autem aliquid ducimus, omnis sapiente facilis corporis laborum. Quae sequi recusandae cumque enim quasi eos! Officia tempora sit in earum aperiam, est id, quos quia, veritatis explicabo adipisci! Consequuntur, magni animi atque quo autem dolorem nobis laborum asperiores amet necessitatibus quia soluta esse nisi modi repudiandae, ipsa consectetur qui sequi rem in eligendi totam facere natus. Accusantium inventore, minus tempora reiciendis fugit, dicta repudiandae. Reiciendis eum sint veniam earum quisquam perferendis quia accusantium eos, et dolorem, esse odit, doloremque obcaecati porro, debitis! Dolorem reprehenderit, laborum alias! In illum perspiciatis nemo, sunt vel illo voluptatibus ab at optio asperiores sit totam error fuga porro nisi consequuntur commodi, accusamus quia? Esse voluptas molestias error nesciunt veniam temporibus neque ea mollitia quia ullam eaque quam pariatur non, quisquam qui dignissimos nulla.</p>
             
+            <div class="big info reco">
+                Recommandations
+                <ul>
+                    <li>lang</li>
+                    <li>dir</li>
+                    <li>https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/</li>
+                    <ul>
+                        <li>https://developer.mozilla.org/fr/docs/Web/CSS/overflow-wrap</li>
+                        <li>https://developer.mozilla.org/fr/docs/Web/CSS/hyphens</li>
+                    </ul>
+                    <li>Ellipsis</li>
+                    <li>https://developer.mozilla.org/fr/docs/Web/CSS/line-break // asian texts</li>
+                </ul>
+            </div>
+
+            Tests with very big links !
 
 
 

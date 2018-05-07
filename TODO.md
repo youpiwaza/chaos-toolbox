@@ -1,6 +1,8 @@
 #html
 - titles
 -- Fix word break
+✔ titles
+✔- Fix word break
 - texts
 - quotes > blockquote or q ?
 
