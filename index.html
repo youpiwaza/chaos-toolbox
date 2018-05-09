@@ -1,769 +1,773 @@
 <!doctype html>
 <html class="no-js" dir="ltr" lang="en">
 
-    <head>
-        <!-- metas -->
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible"  content="ie=edge" />
-        <meta name="description"            content="yay fun" />
-        <meta name="viewport"               content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-
-        <title>Chaos toolbox / Nude html</title>
-        
-        <!-- favicons -->
-        <link rel="apple-touch-icon"        sizes="57x57"       href="assets/visuals/misc/favicon/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon"        sizes="114x114"     href="assets/visuals/misc/favicon/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon"        sizes="72x72"       href="assets/visuals/misc/favicon/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon"        sizes="144x144"     href="assets/visuals/misc/favicon/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon"        sizes="60x60"       href="assets/visuals/misc/favicon/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon"        sizes="120x120"     href="assets/visuals/misc/favicon/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon"        sizes="76x76"       href="assets/visuals/misc/favicon/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon"        sizes="152x152"     href="assets/visuals/misc/favicon/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png"   sizes="196x196"     href="assets/visuals/misc/favicon/favicon-196x196.png" />
-        <link rel="icon" type="image/png"   sizes="96x96"       href="assets/visuals/misc/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png"   sizes="32x32"       href="assets/visuals/misc/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png"   sizes="16x16"       href="assets/visuals/misc/favicon/favicon-16x16.png" />
-        <link rel="icon" type="image/png"   sizes="128x128"     href="assets/visuals/misc/favicon/favicon-128.png" />
-        <meta name="msapplication-TileColor"            content="#FFFFFF" />
-        <meta name="msapplication-TileImage"            content="mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo"      content="mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo"    content="mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo"      content="mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo"    content="mstile-310x310.png" />
-
-        <!-- styles -->
-        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
-        <link rel="stylesheet" href="assets/css/optional-layout-and-stuff.css" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-
-    <body>
-        <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-
-
-        <div class="container">
-
-            <h1 class="color">Chaos toolbox / Nude html</h1>
-            
-            <div class="big info">
-                A big but simple bulk of <strong>all html tags</strong> you usually use in website.<br />
-                The goal here is to allow you to verify your styles, and also the overall <strong>rendering</strong> & <strong>harmony</strong>.<br />
-                It can also helps to <strong>prevent bug and styles conflicts</strong> (espceially on updates, it'll help prevent regressions).<br />
-                And finally this will provide a solid base to create html, providing <strong>best practice</strong>, <strong>optimisations</strong>, <strong>compatibility</strong> and <strong>accessibility</strong>.
-            </div>
-
-
-
-            <h2 class="color">Global recommandations</h2>
-            <h3 class="color">Texts</h3>
-            <div class="info">
-                Set both <em>lang</em> & <em>dir</em> attributes on your html tag.<br />
-                This will help define text behavior for <em>word-break</em>, <em>hyphens</em>, and <em>translation</em> related stuff.
-                <ul>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/lang" target="_blank" title="Mozilla doc : languagae specification stuff">MDN, lang attribute</a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/dir" target="_blank" title="Mozilla doc : text direction related stuff">MDN, dir attribute</a></li>
-                </ul>
-            </div>
-
-
-            <h2 class="color">Titles / hX tags</h2>
-            
-            <h1>Primary title / h1 tag</h1>
-            <h2>Secondary title / h2 tag</h2>
-            <h3>Tertiary title / h3 tag</h3>
-            <h4>4th-tiary title / h4 tag</h4>
-            <h5>5th-tiary title / h5 tag</h5>
-            <h6>6th-tiary title / h6 tag</h6>
-
-            <div class="info">
-                Usual titles you'll find on every website<br />
-                Space wise, I'd recommand setting only <strong>bottom & top margins</strong> (no paddings) as those kind of paddings should be fixed on parent containers.
-            </div>
-
-
-            <h1>H1 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h1>
-            <h2>H2 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h2>
-            <h3>H3 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h3>
-            <h4>H4 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h4>
-            <h5>H5 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h5>
-            <h6>H6 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h6>
-
-            <div class="info">Tests with pretty long titles, in order to test <strong>multilining</strong>, and detect potential <strong>overflows</strong>, especially with masssive font sizes (60+) and bold large fonts</div>
-
-
-            <h1>H1PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h1>
-            <h2>H2PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h2>
-            <h3>H3PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h3>
-            <h4>H4PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h4>
-            <h5>H5PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h5>
-            <h6>H6PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h6>
-
-            <div class="info">
-                Test with pretty A  pretty long word (you'd be surprised...), in order to test <strong>word-break</strong>, and detect potential <strong>overflows</strong><br />
-                Make sure to (at least) break words thanks to css properties <em>overflow-wrap: break-word;</em> & <em>word-wrap: break-word;</em> (legacy).<br />
-                Hyphens definition are a plus.
-            </div>
-            
-
-            <div class="grid half">
-                <div>
-                    
-                    <h1>Primary title / h1 tag</h1>
-                    <p>Veritatis dolore nisi mollitia, dolorum aliquid hic dicta. Corporis iste rem quidem quo autem, excepturi error perspiciatis non, cumque, amet voluptate accusantium fugiat eum natus. Laboriosam nostrum praesentium itaque aliquid.</p>
-
-                    <h2>Secondary title / h2 tag</h2>
-                    <p>Doloribus, facere ad assumenda quae, iusto optio officia maxime totam expedita amet, et. Ipsa deleniti quia, velit voluptatibus? Nihil dicta quod quos autem quis doloribus, maxime vitae eligendi non? Aliquid.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quaerat ratione, itaque necessitatibus aspernatur aperiam quasi nam sit dolores odit, illo ut esse eligendi optio consectetur! Ratione explicabo, minima esse.</p>
-
-                    <h3>Tertiary title / h3 tag</h3>
-                    <p>Quo molestiae sequi iste minima sapiente animi mollitia dolor, repellat nisi sit placeat sunt minus voluptate eaque rem dolore nostrum dicta eligendi illum, cum consequatur harum vero ?</p>
-                    <p>Commodi deleniti velit modi voluptas error, adipisci officiis similique officia enim. Harum delectus, suscipit ad?</p>
-                    
-                    <h4>4th-tiary title / h4 tag</h4>
-                    <p>Quam corrupti dolore possimus cupiditate fugit quaerat iste aspernatur rem nisi distinctio recusandae harum perspiciatis aut maxime atque tenetur rerum, doloremque, ipsa doloribus, accusantium at perferendis ducimus. Ipsum, vitae, eligendi. Amet aspernatur in ducimus, odio nemo expedita sunt soluta rem voluptas, saepe, delectus dolore iusto accusamus obcaecati nostrum aliquam repellendus consectetur vel cumque porro ea. Magni illum nobis fugit ullam!</p>
-                    
-                    <h5>5th-tiary title / h5 tag</h5>
-                    <p>Tempore laborum porro quaerat, omnis quas dolorum hic reprehenderit quae a. Itaque necessitatibus ducimus temporibus cum inventore numquam sit eius nobis, et aperiam ullam, aliquam expedita quidem totam modi laudantium delectus, et optio, corporis voluptate, dolorum magnam nemo! Placeat.</p>
-                    <p>Sint ratione expedita minus temporibus, eveniet  illo praesentium facilis minima. Aperiam voluptas corrupti veritatis, molestias pariatur cupiditate! Modi possimus optio unde.</p>
-                    
-                    <h6>6th-tiary title / h6 tag</h6>
-                    <p>Neque ducimus maiores at doloribus nihil illo voluptates dolores, placeat ipsum soluta ipsa accusamus eaque! Odio id, suscipit quae sed amet facilis deleniti consequuntur, fugit voluptates nostrum, est alias sit.</p>
-                
-                </div>
-            </div>
-
-            <div class="info">Illustration with dummy text. Allow to check for <strong>title/content font compatibility</strong>, and also to set up your <strong>margins</strong></div>
-
-
-            <div class="big info reco">
-                Recommandations
-                <ul>
-                    <li>Style / If making a big title for a front page or a jumbotron, Use a specific class instead of styling straight h1.</li>
-                    <li>SEO / Have a proper title structure, it might be used by some robots for stuff</li>
-                    <li>SEO / Avoid using more than one H1 per page</li>
-                    <li>SEO / Avoid skipping heading levels: start from h1, then use h2, then h3, etc.</li>
-                    <li>SEO / Prefer using links tags inside title, and not the opposite : &lt;h1&gt; &lt;a href="#"&gt; Hey &lt;/a&gt; &lt;/h1&gt;</li>
-                    <li>Accessibility / When sectionning, use the <em>aria-labeledby</em> attribute on the parent element to reference the <em>id</em> of the title. Cf. mdn.</li>
-                </ul>
-                Resources
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" title="HTML title doc, recommandations, etc.">Mozilla title documentation</a></li>
-                    <li><a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Manage word breaking the proper way">CSS tricks, word breaking</a></li>
-                    <li>Various stackoverflows..</li>
-                </ul>
-            </div>
-
-
-
-            <h2 class="color">Texts</h2>
-
-            <h3 class="color">Font selection</h3>
-            
-            <div class="info big">
-                <p>Always keep in mind <em>compatibility</em>, <em>readability</em> and <em>accessibility</em> when choosing a font.<br />
-                    I recommand using <a href="https://fonts.google.com" target="_blank" title="Easy to use, compatible fonts">Google web fonts</a>, as it's pretty much a standard now (no more dafont / font squirrel shenanigans ^^).</p>
-
-                <p>
-                    If you plan to internationalize your website, just pay attention to font characters availability.<br />
-                    <img    alt="Google web font, Selected font Panel, Customize tab, Verify Languages characters availability"
-                            class="half"
-                            height="660"
-                            src="assets/visuals/images/recommandations/google-web-fonts-i18n.png"
-                            title="Make sure to check for foreign characters availability"
-                            width="682"
-                    />
-                </p>
-                
-                <p>If you want to add GWF locally, I'd recommand using <a href="https://google-webfonts-helper.herokuapp.com/fonts/" target="_blank" title="Add google web font locally, the easy way">this helper</a>.</p>
-                
-                Resources
-                <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Internationalization_and_localization" target="_blank" title="Wiki page for internationalisation">Wiki Translations / internationalisation ( i18n )</a></li>
-                </ul>
-            </div>
-
-
-            <h3 class="color">Plain text</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quaerat labore cum voluptas debitis recusandae atque doloribus possimus alias perspiciatis! At, consequuntur et quasi nesciunt fugit aliquid distinctio perspiciatis sed nihil commodi, earum illo harum aliquam minima praesentium officia libero eaque quos error voluptates. Odit eos repellat quo animi, deserunt est dignissimos expedita a quibusdam vitae perferendis labore porro! Ea in nostrum numquam repudiandae itaque obcaecati perferendis quisquam explicabo earum. Alias necessitatibus id hic repellat laudantium delectus sint quo error ratione quas temporibus nulla, rem minus est et ab perspiciatis, eos beatae tempore provident fuga illo. Fuga aspernatur consectetur dicta et cumque delectus in, deleniti a vero, non corrupti similique rerum fugiat illum fugit assumenda recusandae minus perferendis eveniet, doloribus. Consectetur, ab totam sed quaerat dicta obcaecati, maiores porro nam ipsum voluptatem atque.<br />
-            <br />
-            Don't forget to test for your line breaks !<br />
-            AlsoTestForAPrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</p>
-
-            <div class="info">
-                Some text in a &lt;p&gt; tag.<br />
-                You can visually check your all-around text font here, and also have a look for <em>letter-spacing</em> and <em>word-spacing</em> (be careful when you play with those, always take lisibility into consideration).<br />
-                You can also check for margins / paddings on specific texts tags (p, div, span, etc.)<br />
-                Also check for <em>line breaks</em> &lt;br /&gt;, and long long words.
-            </div>
-            
-
-            <div>Id totam quos ratione laudantium, veniam facilis inventore sit aliquid distinctio qui, iste officiis omnis reiciendis fugiat minima? Vero nobis corrupti reiciendis dolores odit, omnis ex dolore ipsum tenetur. Quas sint enim excepturi provident vero, ea libero eius temporibus, autem aliquid ducimus, omnis sapiente facilis corporis laborum. Quae sequi recusandae cumque enim quasi eos! Officia tempora sit in earum aperiam, est id, quos quia, veritatis explicabo adipisci! Consequuntur, magni animi atque quo autem dolorem nobis laborum asperiores amet necessitatibus quia soluta esse nisi modi repudiandae, ipsa consectetur qui sequi rem in eligendi totam facere natus. Accusantium inventore, minus tempora reiciendis fugit, dicta repudiandae. Reiciendis eum sint veniam earum quisquam perferendis quia accusantium eos, et dolorem, esse odit, doloremque obcaecati porro, debitis! Dolorem reprehenderit, laborum alias! In illum perspiciatis nemo, sunt vel illo voluptatibus ab at optio asperiores sit totam error fuga porro nisi consequuntur commodi, accusamus quia? Esse voluptas molestias error nesciunt veniam temporibus neque ea mollitia quia ullam eaque quam pariatur non, quisquam qui dignissimos nulla.<br />
-            Don't forget to test for your line breaks !<br />
-            <br />
-            AlsoTestForAPrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</div>
-
-            <div class="info">Some text in a &lt;div&gt; tag</div>
-            
-
-            <p>
-                <span>Some text in a span tag</span>
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>SPAN START another span tag, inline context. SPAN END</span> Vitae incidunt eum quos ullam facere porro dolores, officia est sint assumenda.</p>
-            
-            <div class="info">Some text in a &lt;span&gt; tag, in isolated context, and in inline context</div>
-
-
-
-            <div class="grid half">
-                <p style="text-align: left;">Quam fugiat veritatis sint, odio consectetur voluptatibus sed culpa reiciendis suscipit asperiores cumque ratione ex quidem ipsa magnam accusamus. Ex molestiae cum sint, voluptates eius tenetur mollitia recusandae aperiam assumenda beatae hic, illum iusto repellendus. Nam dolorem magni laboriosam similique repellendus quo reiciendis sed aliquam aut praesentium sunt libero temporibus tempora quibusdam, obcaecati voluptates aperiam ullam nulla magnam nobis quasi, reprehenderit amet ipsam blanditiis excepturi? Laborum magni eius cupiditate earum quam fuga sequi animi autem.</p>
-                <p style="text-align: center;">Amet consequuntur commodi reprehenderit voluptatem, possimus quisquam. Quibusdam quia numquam sed saepe asperiores eius iusto velit, reprehenderit perspiciatis explicabo accusantium vero enim at illo quasi veritatis sapiente dignissimos iste. Provident cum quo impedit possimus labore quam, dignissimos illum corporis tempore eveniet et, eaque, nesciunt! Quam explicabo numquam eligendi atque commodi itaque quasi nostrum voluptates doloremque. Culpa eum et, odio esse expedita dignissimos ut veniam deserunt provident autem dolor, eius veritatis, debitis maxime! Voluptate, omnis, perferendis!</p>
-                
-                <div class="info">text-align: left</div>
-                <div class="info">text-align: center</div>
-
-                <p style="text-align: right;">Totam reiciendis a quasi, sint, ea, animi harum dolore, rem consequatur amet beatae culpa? Eos optio facilis officia blanditiis quisquam ipsam culpa enim, esse, necessitatibus numquam, fuga, perspiciatis cumque explicabo atque repellat. Excepturi non distinctio labore itaque blanditiis maiores expedita placeat neque alias vel inventore, possimus ex reiciendis rerum error doloremque fugit ducimus porro quas, recusandae architecto est at voluptates tenetur consectetur! Laudantium ducimus neque fugiat alias aspernatur, quis error, voluptas eius placeat quod voluptatum!</p>
-                <p style="text-align: justify;">Nemo id fugiat hic quaerat. Molestiae temporibus ipsum magni magnam maxime quibusdam, animi nobis non iure illum! Hic, quam nulla numquam ipsa aut obcaecati illum ipsum delectus non deleniti, perspiciatis recusandae voluptatem accusantium. Vitae explicabo excepturi, incidunt, modi in totam cupiditate nam rerum culpa corporis pariatur sint. Culpa impedit, deleniti consectetur minus incidunt cupiditate velit quisquam dolorem optio natus at est dolore aspernatur rerum hic perspiciatis reiciendis aliquam fugit rem molestias asperiores. Quo, dicta, ullam.</p>
-
-                <div class="info">text-align: right</div>
-                <div class="info">text-align: justify</div>
-            </div>
-            
-            <div class="big info reco">
-                Recommandations
-                <ul>
-                    <li>lang / dir</li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/letter-spacing" target="_blank" title="Mozilla doc : letter spacing">MDN, letter spacing</a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/word-spacing" target="_blank" title="Mozilla doc : word spacing">MDN, word spacing</a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/overflow-wrap" target="_blank" title="Mozilla doc : overflow-wrap">MDN, overflow wrap</a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/hyphens" target="_blank" title="Mozilla doc : hyphens">MDN, hyphens</a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/line-break" target="_blank" title="Mozilla doc : line break">MDN, line break</a> // asian texts, let defaults if unsure</li>
-                    <li>Ellipsis</li>
-                </ul>
-            </div>
-
-
-            <h3 class="color">Ellipsis</h3>
-
-            <h4 class="color">Single line</h4>
-
-            <div class="ellipsis single-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatibus beatae voluptate laborum iusto iure quod molestias. Iusto dolores pariatur velit, deserunt, modi voluptates eaque quibusdam itaque nisi rerum dolorem.</div>
-
-            <div class="info reco">
-                <a href="https://developer.mozilla.org/fr/docs/Web/CSS/text-overflow" target="_blank" title="Mozilla doc : text overflow">MDN, text overflow : ellipsis</a>
-            </div>
-
-
-            <h4 class="color">Multi-line</h4>
-
-            <div class="info">
-                Not enough native css compatibility, prefer a <a href="https://css-tricks.com/line-clampin/" target="_blank" title="CSS tricks on multi-line ellipsis">JS fallback</a> for now.
-            </div>
-
-
-
-
-            <h3 class="color">Specific texts tags</h3>
-                
-            <div>
-                <p><strong>Some text in the strong tag, should be bold</strong></p>
-                <p><b>Legacy / Some text in the b tag, should be bold</b></p>
-
-                <p><em>Some text int the em tag, should be in italic</em></p>
-                <p><i>Legacy / Some text in the i tag, should be in italic</i></p>
-
-                <p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">A basic link, a tag, should be a diffrente color, (optionnally) uderlined, have behavior on hover & click</a></p>
-                <p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">A long long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nihil sequi necessitatibus magnam tempore ducimus pariatur culpa nemo, et distinctio veniam facilis laudantium voluptatibus velit?</a></p>
-                <p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</a></p>
-                
-                <div class="info">
-                    Basic tags, isolated    
-                </div>
-
-                <p>Lorem ipsum dolor sit amet, <strong>strong text</strong> consectetur adipisicing elit <b>b text</b>. Deleniti sequi <em>em text</em> distinctio culpa <i>i text</i> ipsa voluptatem magnam incidunt molestiae veniam debitis unde, ut quidem aliquid magni blanditiis. Necessitatibus in magni inventore ex <a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">a link</a> dignissimos tempore est, sunt voluptatem incidunt? Impedit, natus, cum! Sit distinctio aliquid ipsum, eos iure, nobis dicta explicabo dolore et.</p>
-                
-                <div class="info">Basic tags, inline context</div>
-            </div>
-
-            <div class="big info reco">
-                Recommandations
-                <ul>
-                    <li>Style / No matter what, those tags should remain <em>inline</em></li>
-                    <li>Style / When styling your links, you should have 3 colors : </li>
-                    <ul>
-                        <li>
-                            One for the initial state<br />
-                            <pre>a, a:active { ... }</pre>
-                        </li>
-                        <li>
-                            One for the visited state<br />
-                            <pre>a:visited { ... }</pre>
-                        </li>
-                        <li>
-                            One for the user interaction<br />
-                            <pre>a:focus, a:hover { ... }</pre>
-                        </li>
-                        <li>
-                            <strong>Pay attention to declare those in this specific order</strong>, as CSS priority is needed (ex : hover style should display over visited).<br />
-                            Care if you are used to alphabetical sorting.
-                        </li>
-                    </ul>
-                    <li>Compatibility / Even if both the <em>b</em> & <em>i</em> tags are deprecated, you should have basic style for them</li>
-                    <li>SEO / You should use <em>strong</em> & <em>em</em> tags to emphasize your contents. It makes reading easier, and also helps robots getting keywords</li>
-                    <li>SEO / Links > Always give a title to your links. Preferably diffrent from the title label</li>
-                    <li>
-                        SEO / Links > Don't forget to use the <em>target</em> attribute. If the link is targeting a resource outside your website, you should go for a target <strong>_blank</strong><br /
-                        >If you got a lot of mixed links (internal & external), I'd recommand to add a specific <a href="https://lefkomedia.com/adding-external-link-indicator-with-css/" target="_blank" title="Add an icon to all external links">inline icon</a>.
-                    </li>
-                </ul>
-            </div>
-
-
-
-            <h2 class="color">Images</h2>
-
-            <h3 class="color">Simple</h3>
-
-            <img    alt="Cloud, in front of Cosmos canyon"
-                    height="720"
-                    src="assets/visuals/images/mock/mock-1--16-9--1280x720.jpg"
-                    title="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
-                    width="1280"
-            />
-
-            <img    alt="Cloud, in front of Cosmos canyon"
-                    height="1440"
-                    src="assets/visuals/images/mock/mock-1--16-9--1280x720.jpg"
-                    title="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
-                    width="2560"
-            />
-            
-            <div class="info">
-                Verify behavior if an image is too big. It shouldn't overflow it's parent container.<br />
-            </div>
-
-
-            <h3 class="color">Responsive image (recommanded)</h3>
-            
-            <img    alt     ="Midgard city"
-                    height  ="720"
-
-                    sizes   ="  (max-width: 440px) 400px,
-                                (max-width: 840px) 800px,
-                                1280px"
-
-                    src     ="  assets/visuals/images/mock/mock-2--16-9--1280x720.jpg"
-                    srcset  ="  assets/visuals/images/mock/mock-2--16-9--400x250.jpg 400w,
-                                assets/visuals/images/mock/mock-2--16-9--800x450.jpg 800w,
-                                assets/visuals/images/mock/mock-2--16-9--1280x720.jpg 1280w"
-
-                    title   ="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
-                    width   ="1280"
-            />
-            
-            <div class="info">
-                <p>
-                    Provide different images (low size for mobile, average for tablet, high quality for desktop), allwing for <em>data comsumption savings</em>.<br />
-                    If you want to test with Chrome Dev Tools, make sure to check "Disable cache" in the network tab.
-                </p>
-                <p>
-                    Always consider what are your <strong>responsive goals (supports, breakpoints)</strong> before going in.
-                </p>
-                <p>Note that you can make the image creation process pretty quick n' easy thanks to <a href="https://enviragallery.com/how-to-batch-resize-images-in-photoshop/" target="_blank" title="One of many toshop resize batch tutorials..">Photoshop scripts</a><br />
-                No needs for plugins or 3rd parties, just record a script where you resize/export for web one image to desired sizes, then use File > automation > batch.</p>
-            </div>
-
-
-            <h3 class="color">figure & figcaption</h3>
-
-            <div>
-                <figure>
-                    <img    alt     ="Rocket town"
-                            height  ="720"
-                
-                            sizes   ="  (max-width: 440px) 400px,
-                                        (max-width: 840px) 800px,
-                                        1280px"
-                
-                            src     ="  assets/visuals/images/mock/mock-3--16-9--1280x720.jpg"
-                            srcset  ="  assets/visuals/images/mock/mock-3--16-9--400x250.jpg 400w,
-                                        assets/visuals/images/mock/mock-3--16-9--800x450.jpg 800w,
-                                        assets/visuals/images/mock/mock-3--16-9--1280x720.jpg 1280w"
-                
-                            title   ="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
-                            width   ="1280"
-                    />
-                
-                    <figcaption>A beautiful unofficial representation of rocket town, inspired by Final Fantasy VII. Credits to Feng Zhu Design</figcaption>
-                </figure>
-                
-                <div class="info">You can use <em>figure</em> & <em>figcaption</em> tags for tutorial images. It's always a good idea to style those too.</div>
-            </div>
-            
-            <div class="info big reco">
-                Recommandations
-                <ul>
-                    <li>
-                        Take care to limit images max-width to prevent design explosions, here's a simple fix<br />
-                        <pre>img {
-    height: auto;
-    max-width: 100%;
+	<head>
+		<!-- metas -->
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible"  content="ie=edge" />
+		<meta name="description"            content="yay fun" />
+		<meta name="viewport"               content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+		<title>Chaos toolbox / Nude html</title>
+		
+		<!-- favicons -->
+		<link rel="apple-touch-icon"        sizes="57x57"       href="assets/visuals/misc/favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon"        sizes="114x114"     href="assets/visuals/misc/favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon"        sizes="72x72"       href="assets/visuals/misc/favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon"        sizes="144x144"     href="assets/visuals/misc/favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon"        sizes="60x60"       href="assets/visuals/misc/favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon"        sizes="120x120"     href="assets/visuals/misc/favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon"        sizes="76x76"       href="assets/visuals/misc/favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon"        sizes="152x152"     href="assets/visuals/misc/favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png"   sizes="196x196"     href="assets/visuals/misc/favicon/favicon-196x196.png" />
+		<link rel="icon" type="image/png"   sizes="96x96"       href="assets/visuals/misc/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png"   sizes="32x32"       href="assets/visuals/misc/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png"   sizes="16x16"       href="assets/visuals/misc/favicon/favicon-16x16.png" />
+		<link rel="icon" type="image/png"   sizes="128x128"     href="assets/visuals/misc/favicon/favicon-128.png" />
+		<meta name="msapplication-TileColor"            content="#FFFFFF" />
+		<meta name="msapplication-TileImage"            content="mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo"      content="mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo"    content="mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo"      content="mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo"    content="mstile-310x310.png" />
+
+		<!-- styles -->
+		<link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/optional-layout-and-stuff.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+
+
+		<div class="container">
+
+			<h1 class="color">Chaos toolbox / Nude html</h1>
+			
+			<div class="big info">
+				A big but simple bulk of <strong>all html tags</strong> you usually use in website.<br />
+				The goal here is to allow you to verify your styles, and also the overall <strong>rendering</strong> & <strong>harmony</strong>.<br />
+				It can also helps to <strong>prevent bug and styles conflicts</strong> (espceially on updates, it'll help prevent regressions).<br />
+				And finally this will provide a solid base to create html, providing <strong>best practice</strong>, <strong>optimisations</strong>, <strong>compatibility</strong> and <strong>accessibility</strong>.
+			</div>
+
+
+
+			<h2 class="color">Global recommandations</h2>
+			<h3 class="color">Texts</h3>
+			<div class="info">
+				Set both <em>lang</em> & <em>dir</em> attributes on your html tag.<br />
+				This will help define text behavior for <em>word-break</em>, <em>hyphens</em>, and <em>translation</em> related stuff.
+				<ul>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/lang" target="_blank" title="Mozilla doc : languagae specification stuff">MDN, lang attribute</a></li>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/dir" target="_blank" title="Mozilla doc : text direction related stuff">MDN, dir attribute</a></li>
+				</ul>
+			</div>
+
+
+			<h2 class="color">Titles / hX tags</h2>
+			
+			<h1>Primary title / h1 tag</h1>
+			<h2>Secondary title / h2 tag</h2>
+			<h3>Tertiary title / h3 tag</h3>
+			<h4>4th-tiary title / h4 tag</h4>
+			<h5>5th-tiary title / h5 tag</h5>
+			<h6>6th-tiary title / h6 tag</h6>
+
+			<div class="info">
+				Usual titles you'll find on every website<br />
+				Space wise, I'd recommand setting only <strong>bottom & top margins</strong> (no paddings) as those kind of paddings should be fixed on parent containers.
+			</div>
+
+
+			<h1>H1 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h1>
+			<h2>H2 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h2>
+			<h3>H3 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h3>
+			<h4>H4 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h4>
+			<h5>H5 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h5>
+			<h6>H6 / What if a client makes a ridiculously long head title ? We all wonder and can now check for word-break, multiline and stuff. And in order to test that we need enough content to push over multiple lines. So how the weather ? Fine. Cool. Nice. Great. Awesome.</h6>
+
+			<div class="info">Tests with pretty long titles, in order to test <strong>multilining</strong>, and detect potential <strong>overflows</strong>, especially with masssive font sizes (60+) and bold large fonts</div>
+
+
+			<h1>H1PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h1>
+			<h2>H2PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h2>
+			<h3>H3PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h3>
+			<h4>H4PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h4>
+			<h5>H5PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h5>
+			<h6>H6PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</h6>
+
+			<div class="info">
+				Test with pretty A  pretty long word (you'd be surprised...), in order to test <strong>word-break</strong>, and detect potential <strong>overflows</strong><br />
+				Make sure to (at least) break words thanks to css properties <em>overflow-wrap: break-word;</em> & <em>word-wrap: break-word;</em> (legacy).<br />
+				Hyphens definition are a plus.
+			</div>
+			
+
+			<div class="grid half">
+				<div>
+					
+					<h1>Primary title / h1 tag</h1>
+					<p>Veritatis dolore nisi mollitia, dolorum aliquid hic dicta. Corporis iste rem quidem quo autem, excepturi error perspiciatis non, cumque, amet voluptate accusantium fugiat eum natus. Laboriosam nostrum praesentium itaque aliquid.</p>
+
+					<h2>Secondary title / h2 tag</h2>
+					<p>Doloribus, facere ad assumenda quae, iusto optio officia maxime totam expedita amet, et. Ipsa deleniti quia, velit voluptatibus? Nihil dicta quod quos autem quis doloribus, maxime vitae eligendi non? Aliquid.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quaerat ratione, itaque necessitatibus aspernatur aperiam quasi nam sit dolores odit, illo ut esse eligendi optio consectetur! Ratione explicabo, minima esse.</p>
+
+					<h3>Tertiary title / h3 tag</h3>
+					<p>Quo molestiae sequi iste minima sapiente animi mollitia dolor, repellat nisi sit placeat sunt minus voluptate eaque rem dolore nostrum dicta eligendi illum, cum consequatur harum vero ?</p>
+					<p>Commodi deleniti velit modi voluptas error, adipisci officiis similique officia enim. Harum delectus, suscipit ad?</p>
+					
+					<h4>4th-tiary title / h4 tag</h4>
+					<p>Quam corrupti dolore possimus cupiditate fugit quaerat iste aspernatur rem nisi distinctio recusandae harum perspiciatis aut maxime atque tenetur rerum, doloremque, ipsa doloribus, accusantium at perferendis ducimus. Ipsum, vitae, eligendi. Amet aspernatur in ducimus, odio nemo expedita sunt soluta rem voluptas, saepe, delectus dolore iusto accusamus obcaecati nostrum aliquam repellendus consectetur vel cumque porro ea. Magni illum nobis fugit ullam!</p>
+					
+					<h5>5th-tiary title / h5 tag</h5>
+					<p>Tempore laborum porro quaerat, omnis quas dolorum hic reprehenderit quae a. Itaque necessitatibus ducimus temporibus cum inventore numquam sit eius nobis, et aperiam ullam, aliquam expedita quidem totam modi laudantium delectus, et optio, corporis voluptate, dolorum magnam nemo! Placeat.</p>
+					<p>Sint ratione expedita minus temporibus, eveniet  illo praesentium facilis minima. Aperiam voluptas corrupti veritatis, molestias pariatur cupiditate! Modi possimus optio unde.</p>
+					
+					<h6>6th-tiary title / h6 tag</h6>
+					<p>Neque ducimus maiores at doloribus nihil illo voluptates dolores, placeat ipsum soluta ipsa accusamus eaque! Odio id, suscipit quae sed amet facilis deleniti consequuntur, fugit voluptates nostrum, est alias sit.</p>
+				
+				</div>
+			</div>
+
+			<div class="info">Illustration with dummy text. Allow to check for <strong>title/content font compatibility</strong>, and also to set up your <strong>margins</strong></div>
+
+
+			<div class="big info reco">
+				Recommandations
+				<ul>
+					<li>Style / If making a big title for a front page or a jumbotron, Use a specific class instead of styling straight h1.</li>
+					<li>SEO / Have a proper title structure, it might be used by some robots for stuff</li>
+					<li>SEO / Avoid using more than one H1 per page</li>
+					<li>SEO / Avoid skipping heading levels: start from h1, then use h2, then h3, etc.</li>
+					<li>SEO / Prefer using links tags inside title, and not the opposite : &lt;h1&gt; &lt;a href="#"&gt; Hey &lt;/a&gt; &lt;/h1&gt;</li>
+					<li>Accessibility / When sectionning, use the <em>aria-labeledby</em> attribute on the parent element to reference the <em>id</em> of the title. Cf. mdn.</li>
+				</ul>
+				Resources
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" title="HTML title doc, recommandations, etc.">Mozilla title documentation</a></li>
+					<li><a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Manage word breaking the proper way">CSS tricks, word breaking</a></li>
+					<li>Various stackoverflows..</li>
+				</ul>
+			</div>
+
+
+
+			<h2 class="color">Texts</h2>
+
+			<h3 class="color">Font selection</h3>
+			
+			<div class="info big">
+				<p>Always keep in mind <em>compatibility</em>, <em>readability</em> and <em>accessibility</em> when choosing a font.<br />
+					I recommand using <a href="https://fonts.google.com" target="_blank" title="Easy to use, compatible fonts">Google web fonts</a>, as it's pretty much a standard now (no more dafont / font squirrel shenanigans ^^).</p>
+
+				<p>
+					If you plan to internationalize your website, just pay attention to font characters availability.<br />
+					<img    alt="Google web font, Selected font Panel, Customize tab, Verify Languages characters availability"
+							class="half"
+							height="660"
+							src="assets/visuals/images/recommandations/google-web-fonts-i18n.png"
+							title="Make sure to check for foreign characters availability"
+							width="682"
+					/>
+				</p>
+				
+				<p>If you want to add GWF locally, I'd recommand using <a href="https://google-webfonts-helper.herokuapp.com/fonts/" target="_blank" title="Add google web font locally, the easy way">this helper</a>.</p>
+				
+				Resources
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Internationalization_and_localization" target="_blank" title="Wiki page for internationalisation">Wiki Translations / internationalisation ( i18n )</a></li>
+				</ul>
+			</div>
+
+
+			<h3 class="color">Plain text</h3>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quaerat labore cum voluptas debitis recusandae atque doloribus possimus alias perspiciatis! At, consequuntur et quasi nesciunt fugit aliquid distinctio perspiciatis sed nihil commodi, earum illo harum aliquam minima praesentium officia libero eaque quos error voluptates. Odit eos repellat quo animi, deserunt est dignissimos expedita a quibusdam vitae perferendis labore porro! Ea in nostrum numquam repudiandae itaque obcaecati perferendis quisquam explicabo earum. Alias necessitatibus id hic repellat laudantium delectus sint quo error ratione quas temporibus nulla, rem minus est et ab perspiciatis, eos beatae tempore provident fuga illo. Fuga aspernatur consectetur dicta et cumque delectus in, deleniti a vero, non corrupti similique rerum fugiat illum fugit assumenda recusandae minus perferendis eveniet, doloribus. Consectetur, ab totam sed quaerat dicta obcaecati, maiores porro nam ipsum voluptatem atque.<br />
+			<br />
+			Don't forget to test for your line breaks !<br />
+			AlsoTestForAPrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</p>
+
+			<div class="info">
+				Some text in a &lt;p&gt; tag.<br />
+				You can visually check your all-around text font here, and also have a look for <em>letter-spacing</em> and <em>word-spacing</em> (be careful when you play with those, always take lisibility into consideration).<br />
+				You can also check for margins / paddings on specific texts tags (p, div, span, etc.)<br />
+				Also check for <em>line breaks</em> &lt;br /&gt;, and long long words.
+			</div>
+			
+
+			<div>Id totam quos ratione laudantium, veniam facilis inventore sit aliquid distinctio qui, iste officiis omnis reiciendis fugiat minima? Vero nobis corrupti reiciendis dolores odit, omnis ex dolore ipsum tenetur. Quas sint enim excepturi provident vero, ea libero eius temporibus, autem aliquid ducimus, omnis sapiente facilis corporis laborum. Quae sequi recusandae cumque enim quasi eos! Officia tempora sit in earum aperiam, est id, quos quia, veritatis explicabo adipisci! Consequuntur, magni animi atque quo autem dolorem nobis laborum asperiores amet necessitatibus quia soluta esse nisi modi repudiandae, ipsa consectetur qui sequi rem in eligendi totam facere natus. Accusantium inventore, minus tempora reiciendis fugit, dicta repudiandae. Reiciendis eum sint veniam earum quisquam perferendis quia accusantium eos, et dolorem, esse odit, doloremque obcaecati porro, debitis! Dolorem reprehenderit, laborum alias! In illum perspiciatis nemo, sunt vel illo voluptatibus ab at optio asperiores sit totam error fuga porro nisi consequuntur commodi, accusamus quia? Esse voluptas molestias error nesciunt veniam temporibus neque ea mollitia quia ullam eaque quam pariatur non, quisquam qui dignissimos nulla.<br />
+			Don't forget to test for your line breaks !<br />
+			<br />
+			AlsoTestForAPrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</div>
+
+			<div class="info">Some text in a &lt;div&gt; tag</div>
+			
+
+			<p>
+				<span>Some text in a span tag</span>
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>SPAN START another span tag, inline context. SPAN END</span> Vitae incidunt eum quos ullam facere porro dolores, officia est sint assumenda.</p>
+			
+			<div class="info">Some text in a &lt;span&gt; tag, in isolated context, and in inline context</div>
+
+
+
+			<div class="grid half">
+				<p style="text-align: left;">Quam fugiat veritatis sint, odio consectetur voluptatibus sed culpa reiciendis suscipit asperiores cumque ratione ex quidem ipsa magnam accusamus. Ex molestiae cum sint, voluptates eius tenetur mollitia recusandae aperiam assumenda beatae hic, illum iusto repellendus. Nam dolorem magni laboriosam similique repellendus quo reiciendis sed aliquam aut praesentium sunt libero temporibus tempora quibusdam, obcaecati voluptates aperiam ullam nulla magnam nobis quasi, reprehenderit amet ipsam blanditiis excepturi? Laborum magni eius cupiditate earum quam fuga sequi animi autem.</p>
+				<p style="text-align: center;">Amet consequuntur commodi reprehenderit voluptatem, possimus quisquam. Quibusdam quia numquam sed saepe asperiores eius iusto velit, reprehenderit perspiciatis explicabo accusantium vero enim at illo quasi veritatis sapiente dignissimos iste. Provident cum quo impedit possimus labore quam, dignissimos illum corporis tempore eveniet et, eaque, nesciunt! Quam explicabo numquam eligendi atque commodi itaque quasi nostrum voluptates doloremque. Culpa eum et, odio esse expedita dignissimos ut veniam deserunt provident autem dolor, eius veritatis, debitis maxime! Voluptate, omnis, perferendis!</p>
+				
+				<div class="info">text-align: left</div>
+				<div class="info">text-align: center</div>
+
+				<p style="text-align: right;">Totam reiciendis a quasi, sint, ea, animi harum dolore, rem consequatur amet beatae culpa? Eos optio facilis officia blanditiis quisquam ipsam culpa enim, esse, necessitatibus numquam, fuga, perspiciatis cumque explicabo atque repellat. Excepturi non distinctio labore itaque blanditiis maiores expedita placeat neque alias vel inventore, possimus ex reiciendis rerum error doloremque fugit ducimus porro quas, recusandae architecto est at voluptates tenetur consectetur! Laudantium ducimus neque fugiat alias aspernatur, quis error, voluptas eius placeat quod voluptatum!</p>
+				<p style="text-align: justify;">Nemo id fugiat hic quaerat. Molestiae temporibus ipsum magni magnam maxime quibusdam, animi nobis non iure illum! Hic, quam nulla numquam ipsa aut obcaecati illum ipsum delectus non deleniti, perspiciatis recusandae voluptatem accusantium. Vitae explicabo excepturi, incidunt, modi in totam cupiditate nam rerum culpa corporis pariatur sint. Culpa impedit, deleniti consectetur minus incidunt cupiditate velit quisquam dolorem optio natus at est dolore aspernatur rerum hic perspiciatis reiciendis aliquam fugit rem molestias asperiores. Quo, dicta, ullam.</p>
+
+				<div class="info">text-align: right</div>
+				<div class="info">text-align: justify</div>
+			</div>
+			
+			<div class="big info reco">
+				Recommandations
+				<ul>
+					<li>lang / dir</li>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/letter-spacing" target="_blank" title="Mozilla doc : letter spacing">MDN, letter spacing</a></li>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/word-spacing" target="_blank" title="Mozilla doc : word spacing">MDN, word spacing</a></li>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/overflow-wrap" target="_blank" title="Mozilla doc : overflow-wrap">MDN, overflow wrap</a></li>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/hyphens" target="_blank" title="Mozilla doc : hyphens">MDN, hyphens</a></li>
+					<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/line-break" target="_blank" title="Mozilla doc : line break">MDN, line break</a> // asian texts, let defaults if unsure</li>
+					<li>Ellipsis</li>
+				</ul>
+			</div>
+
+
+			<h3 class="color">Ellipsis</h3>
+
+			<h4 class="color">Single line</h4>
+
+			<div class="ellipsis single-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatibus beatae voluptate laborum iusto iure quod molestias. Iusto dolores pariatur velit, deserunt, modi voluptates eaque quibusdam itaque nisi rerum dolorem.</div>
+
+			<div class="info reco">
+				<a href="https://developer.mozilla.org/fr/docs/Web/CSS/text-overflow" target="_blank" title="Mozilla doc : text overflow">MDN, text overflow : ellipsis</a>
+			</div>
+
+
+			<h4 class="color">Multi-line</h4>
+
+			<div class="info">
+				Not enough native css compatibility, prefer a <a href="https://css-tricks.com/line-clampin/" target="_blank" title="CSS tricks on multi-line ellipsis">JS fallback</a> for now.
+			</div>
+
+
+
+
+			<h3 class="color">Specific texts tags</h3>
+				
+			<div>
+				<p><strong>Some text in the strong tag, should be bold</strong></p>
+				<p><b>Legacy / Some text in the b tag, should be bold</b></p>
+
+				<p><em>Some text int the em tag, should be in italic</em></p>
+				<p><i>Legacy / Some text in the i tag, should be in italic</i></p>
+
+				<p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">A basic link, a tag, should be a diffrente color, (optionnally) uderlined, have behavior on hover & click</a></p>
+				<p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">A long long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nihil sequi necessitatibus magnam tempore ducimus pariatur culpa nemo, et distinctio veniam facilis laudantium voluptatibus velit?</a></p>
+				<p><a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">PrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly</a></p>
+				
+				<div class="info">
+					Basic tags, isolated    
+				</div>
+
+				<p>Lorem ipsum dolor sit amet, <strong>strong text</strong> consectetur adipisicing elit <b>b text</b>. Deleniti sequi <em>em text</em> distinctio culpa <i>i text</i> ipsa voluptatem magnam incidunt molestiae veniam debitis unde, ut quidem aliquid magni blanditiis. Necessitatibus in magni inventore ex <a href="http://blog.masamune.fr" target="_blank" title="Maybe you'll find some things interesting">a link</a> dignissimos tempore est, sunt voluptatem incidunt? Impedit, natus, cum! Sit distinctio aliquid ipsum, eos iure, nobis dicta explicabo dolore et.</p>
+				
+				<div class="info">Basic tags, inline context</div>
+			</div>
+
+			<div class="big info reco">
+				Recommandations
+				<ul>
+					<li>Style / No matter what, those tags should remain <em>inline</em></li>
+					<li>Style / When styling your links, you should have 3 colors : </li>
+					<ul>
+						<li>
+							One for the initial state<br />
+							<pre>a, a:active { ... }</pre>
+						</li>
+						<li>
+							One for the visited state<br />
+							<pre>a:visited { ... }</pre>
+						</li>
+						<li>
+							One for the user interaction<br />
+							<pre>a:focus, a:hover { ... }</pre>
+						</li>
+						<li>
+							<strong>Pay attention to declare those in this specific order</strong>, as CSS priority is needed (ex : hover style should display over visited).<br />
+							Care if you are used to alphabetical sorting.
+						</li>
+					</ul>
+					<li>Compatibility / Even if both the <em>b</em> & <em>i</em> tags are deprecated, you should have basic style for them</li>
+					<li>SEO / You should use <em>strong</em> & <em>em</em> tags to emphasize your contents. It makes reading easier, and also helps robots getting keywords</li>
+					<li>SEO / Links > Always give a title to your links. Preferably diffrent from the title label</li>
+					<li>
+						SEO / Links > Don't forget to use the <em>target</em> attribute. If the link is targeting a resource outside your website, you should go for a target <strong>_blank</strong><br /
+						>If you got a lot of mixed links (internal & external), I'd recommand to add a specific <a href="https://lefkomedia.com/adding-external-link-indicator-with-css/" target="_blank" title="Add an icon to all external links">inline icon</a>.
+					</li>
+				</ul>
+			</div>
+
+
+
+			<h2 class="color">Images</h2>
+
+			<h3 class="color">Simple</h3>
+
+			<img    alt="Cloud, in front of Cosmos canyon"
+					height="720"
+					src="assets/visuals/images/mock/mock-1--16-9--1280x720.jpg"
+					title="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+					width="1280"
+			/>
+
+			<img    alt="Cloud, in front of Cosmos canyon"
+					height="1440"
+					src="assets/visuals/images/mock/mock-1--16-9--1280x720.jpg"
+					title="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+					width="2560"
+			/>
+			
+			<div class="info">
+				Verify behavior if an image is too big. It shouldn't overflow it's parent container.<br />
+			</div>
+
+
+			<h3 class="color">Responsive image (recommanded)</h3>
+			
+			<img    alt     ="Midgard city"
+					height  ="720"
+
+					sizes   ="  (max-width: 440px) 400px,
+								(max-width: 840px) 800px,
+								1280px"
+
+					src     ="  assets/visuals/images/mock/mock-2--16-9--1280x720.jpg"
+					srcset  ="  assets/visuals/images/mock/mock-2--16-9--400x250.jpg 400w,
+								assets/visuals/images/mock/mock-2--16-9--800x450.jpg 800w,
+								assets/visuals/images/mock/mock-2--16-9--1280x720.jpg 1280w"
+
+					title   ="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+					width   ="1280"
+			/>
+			
+			<div class="info">
+				<p>
+					Provide different images (low size for mobile, average for tablet, high quality for desktop), allwing for <em>data comsumption savings</em>.<br />
+					If you want to test with Chrome Dev Tools, make sure to check "Disable cache" in the network tab.
+				</p>
+				<p>
+					Always consider what are your <strong>responsive goals (supports, breakpoints)</strong> before going in.
+				</p>
+				<p>Note that you can make the image creation process pretty quick n' easy thanks to <a href="https://enviragallery.com/how-to-batch-resize-images-in-photoshop/" target="_blank" title="One of many toshop resize batch tutorials..">Photoshop scripts</a><br />
+				No needs for plugins or 3rd parties, just record a script where you resize/export for web one image to desired sizes, then use File > automation > batch.</p>
+			</div>
+
+
+			<h3 class="color">figure & figcaption</h3>
+
+			<div>
+				<figure>
+					<img    alt     ="Rocket town"
+							height  ="720"
+				
+							sizes   ="  (max-width: 440px) 400px,
+										(max-width: 840px) 800px,
+										1280px"
+				
+							src     ="  assets/visuals/images/mock/mock-3--16-9--1280x720.jpg"
+							srcset  ="  assets/visuals/images/mock/mock-3--16-9--400x250.jpg 400w,
+										assets/visuals/images/mock/mock-3--16-9--800x450.jpg 800w,
+										assets/visuals/images/mock/mock-3--16-9--1280x720.jpg 1280w"
+				
+							title   ="A beautiful unofficial Final fantasy 7 artwork, by Feng Zhu Design"
+							width   ="1280"
+					/>
+				
+					<figcaption>A beautiful unofficial representation of rocket town, inspired by Final Fantasy VII. Credits to Feng Zhu Design</figcaption>
+				</figure>
+				
+				<div class="info">You can use <em>figure</em> & <em>figcaption</em> tags for tutorial images. It's always a good idea to style those too.</div>
+			</div>
+			
+			<div class="info big reco">
+				Recommandations
+				<ul>
+					<li>
+						Take care to limit images max-width to prevent design explosions, here's a simple fix<br />
+						<pre>img {
+	height: auto;
+	max-width: 100%;
 }</pre>
-                    </li>
-                    <li>Take care for <strong>images copyrights</strong> if you get resources from the web. Prefer going for your own images or images stocks (adobe, shutterstock, gettyimages, etc.)</li>
-                    <li>Same, prefer hosting your images (and not using external links as <em>img src attributes</em> to prevent 404</li>
-                    <li>SEO & compatibility / Prefer using <strong>responsive images</strong></li>
-                    <li>SEO & Compatibility / Take care to optimize your images (svg if possible), I'd recommand jpg, progressive, quality 60 ; they are some automated stuff online/through npm/gulp</li>
-                    <li>SEO / Always specify <em>title</em> & <em>alt</em> attributes. Learn the difference.</li>
-                    <li>SEO / Always specify natural images <em>height</em> & <em>width</em></li>
-                    <li>SEO / Specify proper file names. Images SEO is a real thing.</li>
-                    <ul>
-                        <li>Prioritize content > category > website</li>
-                        <li>Always use "-" as word separator (no camel case)</li>
-                    </ul>
-                    <li>Alternative / Use vectorial assets (SVG) : Perfect quality, weightless</li>
-                    <li>Accessibility / Decorative images, set <em>alt</em> attribute empty, and use <em>role="presentation"</em> instead</li>
-                </ul>
-                Resources
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank" title="Mozilla doc : images in HTML">MDN, images</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank" title="Mozilla doc : responsive images, the proper way">MDN, responsive images</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web" target="_blank" title="Mozilla doc : vectors in HTML">MDN, vectors, svg</a></li>
-                    <li><a href="https://www.w3.org/WAI/tutorials/images/decorative/" target="_blank" title="w3 doc : decorative images">w3, decorative images</a></li>
-                </ul>
-            </div>
+					</li>
+					<li>Take care for <strong>images copyrights</strong> if you get resources from the web. Prefer going for your own images or images stocks (adobe, shutterstock, gettyimages, etc.)</li>
+					<li>Same, prefer hosting your images (and not using external links as <em>img src attributes</em> to prevent 404</li>
+					<li>SEO & compatibility / Prefer using <strong>responsive images</strong></li>
+					<li>SEO & Compatibility / Take care to optimize your images (svg if possible), I'd recommand jpg, progressive, quality 60 ; they are some automated stuff online/through npm/gulp</li>
+					<li>SEO / Always specify <em>title</em> & <em>alt</em> attributes. Learn the difference.</li>
+					<li>SEO / Always specify natural images <em>height</em> & <em>width</em></li>
+					<li>SEO / Specify proper file names. Images SEO is a real thing.</li>
+					<ul>
+						<li>Prioritize content > category > website</li>
+						<li>Always use "-" as word separator (no camel case)</li>
+					</ul>
+					<li>Alternative / Use vectorial assets (SVG) : Perfect quality, weightless</li>
+					<li>Accessibility / Decorative images, set <em>alt</em> attribute empty, and use <em>role="presentation"</em> instead</li>
+				</ul>
+				Resources
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank" title="Mozilla doc : images in HTML">MDN, images</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank" title="Mozilla doc : responsive images, the proper way">MDN, responsive images</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web" target="_blank" title="Mozilla doc : vectors in HTML">MDN, vectors, svg</a></li>
+					<li><a href="https://www.w3.org/WAI/tutorials/images/decorative/" target="_blank" title="w3 doc : decorative images">w3, decorative images</a></li>
+				</ul>
+			</div>
 
 
 
-            <h2 class="color">Lists</h2>
-            
-            <div class="info">
-                Always make sure to test multiple levels (nested) lists.<br />
-                In order to allow proper nesting, you should never remove a list left padding.
-            </div>
-            
+			<h2 class="color">Lists</h2>
+			
+			<div class="info">
+				Always make sure to test multiple levels (nested) lists.<br />
+				In order to allow proper nesting, you should never remove a list left padding.
+			</div>
+			
 
-            <h3 class="color">Unorderer</h3>
-            
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Always test for multilining. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rerum. Vel autem et pariatur eveniet totam aspernatur dignissimos a vero deserunt, quisquam voluptatum, maiores doloremque, eos veritatis voluptas, reprehenderit. Sed ducimus omnis molestias blanditiis iusto velit minus voluptatum vel, harum soluta modi quasi qui unde dolorem reprehenderit officiis rem, libero expedita magnam at non cumque veniam maiores. Nesciunt sed adipisci at ut et aspernatur quisquam magnam voluptates pariatur aliquid, eaque.</li>
-                <li>Nihil ab dolorem, quia amet.</li>
-                <li>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Reprehenderit itaque iure accusantium repellendus?</li>
-                        <li>Quae omnis veritatis voluptates dolorem.</li>
-                        <li>
-                            <ul>
-                                <li>3 levels should be enough</li>
-                                <li>Provident obcaecati dolor sint fugit.</li>
-                                <li>Impedit expedita, dolor modi fuga!</li>
-                                <li>Veritatis, quasi! Iure, porro, earum.</li>
-                                <li>Voluptate fuga earum maxime eius.</li>
-                            </ul>
-                        </li>
-                        <li>Quaerat voluptate temporibus nihil commodi.</li>
-                    </ul>
-                </li>
-                <li>Atque porro officiis consequuntur aspernatur?</li>
-                <li>Ex, laboriosam praesentium cum iure.</li>
-            </ul>
+			<h3 class="color">Unorderer</h3>
+			
+			<ul>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Always test for multilining. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rerum. Vel autem et pariatur eveniet totam aspernatur dignissimos a vero deserunt, quisquam voluptatum, maiores doloremque, eos veritatis voluptas, reprehenderit. Sed ducimus omnis molestias blanditiis iusto velit minus voluptatum vel, harum soluta modi quasi qui unde dolorem reprehenderit officiis rem, libero expedita magnam at non cumque veniam maiores. Nesciunt sed adipisci at ut et aspernatur quisquam magnam voluptates pariatur aliquid, eaque.</li>
+				<li>Nihil ab dolorem, quia amet.</li>
+				<li>
+					<ul>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Reprehenderit itaque iure accusantium repellendus?</li>
+						<li>Quae omnis veritatis voluptates dolorem.</li>
+						<li>
+							<ul>
+								<li>3 levels should be enough</li>
+								<li>Provident obcaecati dolor sint fugit.</li>
+								<li>Impedit expedita, dolor modi fuga!</li>
+								<li>Veritatis, quasi! Iure, porro, earum.</li>
+								<li>Voluptate fuga earum maxime eius.</li>
+							</ul>
+						</li>
+						<li>Quaerat voluptate temporibus nihil commodi.</li>
+					</ul>
+				</li>
+				<li>Atque porro officiis consequuntur aspernatur?</li>
+				<li>Ex, laboriosam praesentium cum iure.</li>
+			</ul>
 
-            <div class="info">This is also a good oportunity if you want to change decorators</div>
+			<div class="info">This is also a good oportunity if you want to change decorators</div>
 
-            <ul>
-                <li><a href="#">Lorem ipsum dolor.</a></li>
-                <li><a href="#">Ab, laudantium, enim?</a></li>
-                <li><a href="#">Delectus facere, amet!</a></li>
-                <li><a href="#">Expedita, suscipit, incidunt.</a></li>
-                <li><a href="#">Nemo, amet, voluptas.</a></li>
-            </ul>
+			<ul>
+				<li><a href="#">Lorem ipsum dolor.</a></li>
+				<li><a href="#">Ab, laudantium, enim?</a></li>
+				<li><a href="#">Delectus facere, amet!</a></li>
+				<li><a href="#">Expedita, suscipit, incidunt.</a></li>
+				<li><a href="#">Nemo, amet, voluptas.</a></li>
+			</ul>
 
-            <div class="info">I'd recommand checking how behave a list of links, always usefull at some point (footer, aside, etc.)</div>
-
-
-            <h3 class="color">Ordered</h3>
-
-            <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Always test for multilining. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rerum. Vel autem et pariatur eveniet totam aspernatur dignissimos a vero deserunt, quisquam voluptatum, maiores doloremque, eos veritatis voluptas, reprehenderit. Sed ducimus omnis molestias blanditiis iusto velit minus voluptatum vel, harum soluta modi quasi qui unde dolorem reprehenderit officiis rem, libero expedita magnam at non cumque veniam maiores. Nesciunt sed adipisci at ut et aspernatur quisquam magnam voluptates pariatur aliquid, eaque.</li>
-                <li>Nihil ab dolorem, quia amet.</li>
-                <li>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>
-                            <ul>
-                                <li><strong>Lists can mix too, here's an example of ol>ol>ul</strong></li>
-                                <li><strong>Take this into consideration when styling nested stuff</strong></li>
-                                <li>Impedit expedita, dolor modi fuga!</li>
-                                <li>Veritatis, quasi! Iure, porro, earum.</li>
-                                <li>Voluptate fuga earum maxime eius.</li>
-                            </ul>
-                        </li>
-                        <li>Quae omnis veritatis voluptates dolorem.</li>
-                        <li>
-                            <ol>
-                                <li>3 levels should be enough</li>
-                                <li>Provident obcaecati dolor sint fugit.</li>
-                                <li>Impedit expedita, dolor modi fuga!</li>
-                                <li>Veritatis, quasi! Iure, porro, earum.</li>
-                                <li>Voluptate fuga earum maxime eius.</li>
-                            </ol>
-                        </li>
-                        <li>Quaerat voluptate temporibus nihil commodi.</li>
-                    </ol>
-                </li>
-                <li>Atque porro officiis consequuntur aspernatur?</li>
-                <li>Ex, laboriosam praesentium cum iure.</li>
-                <li value="777"><strong>Possibility to force value !</strong></li>
-                <li>Ea perspiciatis ex, possimus excepturi?</li>
-                <li>Alias eos temporibus inventore doloremque.</li>
-                <li>Laboriosam alias debitis quasi enim.</li>
-                <li>Non velit tempore cumque, nisi.</li>
-            </ol>
-            
-            <div class="info">
-                Don't forget ordered lists<br />
-                Most of the time, it's a good idea to use different decorator, ex: I. a. 1.
-            </div>
-            
-            <div class="grid half">
-                <ol reversed>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Magni pariatur, mollitia cupiditate nihil.</li>
-                    <li>Similique voluptatibus modi earum ut?</li>
-                    <li>Possimus et in id ratione.</li>
-                    <li>Dicta ad rem dolorum cum.</li>
-                </ol>
-
-                <ol start="777">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Assumenda deleniti a sequi modi.</li>
-                    <li>Doloremque illum dolorum enim sunt.</li>
-                    <li>Possimus magni fuga iste laudantium.</li>
-                    <li>Quis explicabo rerum nulla placeat.</li>
-                </ol>
-
-                <div class="info">Possibility to display the ordered list <em>reversed</em></div>
-                <div class="info">Possibility to force a list to start the ordered list at a defined value</div>
-            </div>
+			<div class="info">I'd recommand checking how behave a list of links, always usefull at some point (footer, aside, etc.)</div>
 
 
+			<h3 class="color">Ordered</h3>
 
-            <h2 class="color">Table</h2>
+			<ol>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Always test for multilining. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rerum. Vel autem et pariatur eveniet totam aspernatur dignissimos a vero deserunt, quisquam voluptatum, maiores doloremque, eos veritatis voluptas, reprehenderit. Sed ducimus omnis molestias blanditiis iusto velit minus voluptatum vel, harum soluta modi quasi qui unde dolorem reprehenderit officiis rem, libero expedita magnam at non cumque veniam maiores. Nesciunt sed adipisci at ut et aspernatur quisquam magnam voluptates pariatur aliquid, eaque.</li>
+				<li>Nihil ab dolorem, quia amet.</li>
+				<li>
+					<ol>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>
+							<ul>
+								<li><strong>Lists can mix too, here's an example of ol>ol>ul</strong></li>
+								<li><strong>Take this into consideration when styling nested stuff</strong></li>
+								<li>Impedit expedita, dolor modi fuga!</li>
+								<li>Veritatis, quasi! Iure, porro, earum.</li>
+								<li>Voluptate fuga earum maxime eius.</li>
+							</ul>
+						</li>
+						<li>Quae omnis veritatis voluptates dolorem.</li>
+						<li>
+							<ol>
+								<li>3 levels should be enough</li>
+								<li>Provident obcaecati dolor sint fugit.</li>
+								<li>Impedit expedita, dolor modi fuga!</li>
+								<li>Veritatis, quasi! Iure, porro, earum.</li>
+								<li>Voluptate fuga earum maxime eius.</li>
+							</ol>
+						</li>
+						<li>Quaerat voluptate temporibus nihil commodi.</li>
+					</ol>
+				</li>
+				<li>Atque porro officiis consequuntur aspernatur?</li>
+				<li>Ex, laboriosam praesentium cum iure.</li>
+				<li value="777"><strong>Possibility to force value !</strong></li>
+				<li>Ea perspiciatis ex, possimus excepturi?</li>
+				<li>Alias eos temporibus inventore doloremque.</li>
+				<li>Laboriosam alias debitis quasi enim.</li>
+				<li>Non velit tempore cumque, nisi.</li>
+			</ol>
+			
+			<div class="info">
+				Don't forget ordered lists<br />
+				Most of the time, it's a good idea to use different decorator, ex: I. a. 1.
+			</div>
+			
+			<div class="grid half">
+				<ol reversed>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Magni pariatur, mollitia cupiditate nihil.</li>
+					<li>Similique voluptatibus modi earum ut?</li>
+					<li>Possimus et in id ratione.</li>
+					<li>Dicta ad rem dolorum cum.</li>
+				</ol>
 
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Vitae excepturi provident possimus dolorem?</td>
-                        <td>Aperiam, laudantium reprehenderit quos provident.</td>
-                        <td>Perspiciatis adipisci reiciendis, hic illo!</td>
-                        <td>Eum laborum, earum aliquid. Itaque.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Repellat, itaque iure quam minima.</td>
-                        <td>Quo reiciendis asperiores repudiandae, sit!</td>
-                        <td>Distinctio culpa, ullam iure sint.</td>
-                        <td>Tempora id eius voluptatibus dolorum.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Ipsum alias quidem pariatur laborum.</td>
-                        <td>Quae adipisci quod itaque dicta.</td>
-                        <td>Maiores quidem saepe, hic fuga.</td>
-                        <td>Suscipit aut eligendi hic explicabo!</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Eius commodi recusandae culpa iusto!</td>
-                        <td>Quas inventore, eos officiis molestias.</td>
-                        <td>Quisquam officiis provident consequatur velit.</td>
-                        <td>Dignissimos magni, excepturi! Repellendus, esse.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Adipisci modi ipsam assumenda eveniet.</td>
-                        <td>Cumque necessitatibus facilis atque sunt?</td>
-                        <td>Asperiores, commodi similique dolores. Quisquam.</td>
-                        <td>Iusto labore necessitatibus repellendus similique?</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="info">
-                Classic table. I'd recommand at least some paddings, and if you intend to use > 5 lines, consider using the following css
-                <pre>tr:nth-child(even) {
-    background-color: #wtv;
+				<ol start="777">
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Assumenda deleniti a sequi modi.</li>
+					<li>Doloremque illum dolorum enim sunt.</li>
+					<li>Possimus magni fuga iste laudantium.</li>
+					<li>Quis explicabo rerum nulla placeat.</li>
+				</ol>
+
+				<div class="info">Possibility to display the ordered list <em>reversed</em></div>
+				<div class="info">Possibility to force a list to start the ordered list at a defined value</div>
+			</div>
+
+
+
+			<h2 class="color">Table</h2>
+
+			<table>
+				<tbody>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Vitae excepturi provident possimus dolorem?</td>
+						<td>Aperiam, laudantium reprehenderit quos provident.</td>
+						<td>Perspiciatis adipisci reiciendis, hic illo!</td>
+						<td>Eum laborum, earum aliquid. Itaque.</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Repellat, itaque iure quam minima.</td>
+						<td>Quo reiciendis asperiores repudiandae, sit!</td>
+						<td>Distinctio culpa, ullam iure sint.</td>
+						<td>Tempora id eius voluptatibus dolorum.</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Ipsum alias quidem pariatur laborum.</td>
+						<td>Quae adipisci quod itaque dicta.</td>
+						<td>Maiores quidem saepe, hic fuga.</td>
+						<td>Suscipit aut eligendi hic explicabo!</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Eius commodi recusandae culpa iusto!</td>
+						<td>Quas inventore, eos officiis molestias.</td>
+						<td>Quisquam officiis provident consequatur velit.</td>
+						<td>Dignissimos magni, excepturi! Repellendus, esse.</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Adipisci modi ipsam assumenda eveniet.</td>
+						<td>Cumque necessitatibus facilis atque sunt?</td>
+						<td>Asperiores, commodi similique dolores. Quisquam.</td>
+						<td>Iusto labore necessitatibus repellendus similique?</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="info">
+				Classic table. I'd recommand at least some paddings, and if you intend to use > 5 lines, consider using the following css
+				<pre>tr:nth-child(even) {
+	background-color: #wtv;
 }</pre>
-                in order to differentiate the background one in two lines, it really <strong>helps lisibility</strong>.<br />
-                A different color for tr:hover is always a good idea too.
-            </div>
+				in order to differentiate the background one in two lines, it really <strong>helps lisibility</strong>.<br />
+				A different color for tr:hover is always a good idea too.
+			</div>
 
-            <table>
-                <caption>My beautiful table caption</caption>
-                <thead>
-                    <tr>
-                        <th>thead > tr > th content</th>
-                        <th>Culpa quos, aliquam harum et.</th>
-                        <th>Sed nisi, magnam alias consequuntur.</th>
-                        <th>Nisi ducimus nihil, aliquid ipsum.</th>
-                        <th>Distinctio expedita culpa, voluptatem nesciunt!</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>classic tbdoy > tr > td content</td>
-                        <td>Vitae excepturi provident possimus dolorem?</td>
-                        <td>Aperiam, laudantium reprehenderit quos provident.</td>
-                        <td>Perspiciatis adipisci reiciendis, hic illo!</td>
-                        <td>Eum laborum, earum aliquid. Itaque.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Repellat, itaque iure quam minima.</td>
-                        <td>Quo reiciendis asperiores repudiandae, sit!</td>
-                        <td>Distinctio culpa, ullam iure sint.</td>
-                        <td>Tempora id eius voluptatibus dolorum.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Ipsum alias quidem pariatur laborum.</td>
-                        <td>Quae adipisci quod itaque dicta.</td>
-                        <td>Maiores quidem saepe, hic fuga.</td>
-                        <td>Suscipit aut eligendi hic explicabo!</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Eius commodi recusandae culpa iusto!</td>
-                        <td>Quas inventore, eos officiis molestias.</td>
-                        <td>Quisquam officiis provident consequatur velit.</td>
-                        <td>Dignissimos magni, excepturi! Repellendus, esse.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>Adipisci modi ipsam assumenda eveniet.</td>
-                        <td>Cumque necessitatibus facilis atque sunt?</td>
-                        <td>Asperiores, commodi similique dolores. Quisquam.</td>
-                        <td>Iusto labore necessitatibus repellendus similique?</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>tfoot > tr > td content</td>
-                        <td>Quibusdam cum modi eum harum!</td>
-                        <td>Accusantium animi modi, eos quo!</td>
-                        <td>Eligendi officiis, ipsa accusantium vitae.</td>
-                        <td>At, totam, dolor? Ut, cumque.</td>
-                    </tr>
-                </tfoot>
-            </table>
+			<table>
+				<caption>My beautiful table caption</caption>
+				<thead>
+					<tr>
+						<th>thead > tr > th content</th>
+						<th>Culpa quos, aliquam harum et.</th>
+						<th>Sed nisi, magnam alias consequuntur.</th>
+						<th>Nisi ducimus nihil, aliquid ipsum.</th>
+						<th>Distinctio expedita culpa, voluptatem nesciunt!</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>classic tbdoy > tr > td content</td>
+						<td>Vitae excepturi provident possimus dolorem?</td>
+						<td>Aperiam, laudantium reprehenderit quos provident.</td>
+						<td>Perspiciatis adipisci reiciendis, hic illo!</td>
+						<td>Eum laborum, earum aliquid. Itaque.</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Repellat, itaque iure quam minima.</td>
+						<td>Quo reiciendis asperiores repudiandae, sit!</td>
+						<td>Distinctio culpa, ullam iure sint.</td>
+						<td>Tempora id eius voluptatibus dolorum.</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Ipsum alias quidem pariatur laborum.</td>
+						<td>Quae adipisci quod itaque dicta.</td>
+						<td>Maiores quidem saepe, hic fuga.</td>
+						<td>Suscipit aut eligendi hic explicabo!</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Eius commodi recusandae culpa iusto!</td>
+						<td>Quas inventore, eos officiis molestias.</td>
+						<td>Quisquam officiis provident consequatur velit.</td>
+						<td>Dignissimos magni, excepturi! Repellendus, esse.</td>
+					</tr>
+					<tr>
+						<td>Lorem ipsum dolor sit amet.</td>
+						<td>Adipisci modi ipsam assumenda eveniet.</td>
+						<td>Cumque necessitatibus facilis atque sunt?</td>
+						<td>Asperiores, commodi similique dolores. Quisquam.</td>
+						<td>Iusto labore necessitatibus repellendus similique?</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>tfoot > tr > td content</td>
+						<td>Quibusdam cum modi eum harum!</td>
+						<td>Accusantium animi modi, eos quo!</td>
+						<td>Eligendi officiis, ipsa accusantium vitae.</td>
+						<td>At, totam, dolor? Ut, cumque.</td>
+					</tr>
+				</tfoot>
+			</table>
 
-            <div class="info">
-                Fully loaded table (<em>caption</em>, <em>thead</em>, <em>tbody</em>, <em>tfoot</em>) ; no <em>colgroup</em> included, as it seems to be deprecated.<br />
-                And here's the <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table" target="_blank" title="Mozilla doc : table">MDN table link</a>.
-            </div>
-            
-
+			<div class="info">
+				Fully loaded table (<em>caption</em>, <em>thead</em>, <em>tbody</em>, <em>tfoot</em>) ; no <em>colgroup</em> included, as it seems to be deprecated.<br />
+				And here's the <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table" target="_blank" title="Mozilla doc : table">MDN table link</a>.
+			</div>
 
 
 
+			
+			
 
-            <h2 class="color">Basic bug prevention CSS</h2>
-            <div class="info">
-                <div class="grid half vcenter">
-                    
-                    <pre>* {
-    box-sizing: border-box;
+
+
+
+
+			<h2 class="color">Basic bug prevention CSS</h2>
+			<div class="info">
+				<div class="grid half vcenter">
+					
+					<pre>* {
+	box-sizing: border-box;
 }
-                    </pre>
-                    <div>
-                        Don't count margin/paddings when calculating width of elements<br />
-                        <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing" target="_blank" title="Mozilla doc : box sizing">MDN, box-sizing</a>
-                        
-                    </div>
-                    
-                    <pre>img {
-    height: auto;
-    max-width: 100%;
+					</pre>
+					<div>
+						Don't count margin/paddings when calculating width of elements<br />
+						<a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing" target="_blank" title="Mozilla doc : box sizing">MDN, box-sizing</a>
+						
+					</div>
+					
+					<pre>img {
+	height: auto;
+	max-width: 100%;
 }
-                    </pre>
-                    <div>
-                        Prevent images from overflowing parent containers
-                    </div>
-                    
-                    <pre>* {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+					</pre>
+					<div>
+						Prevent images from overflowing parent containers
+					</div>
+					
+					<pre>* {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
 
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
-                    </pre>
-                    <div>
-                        Prevent text overflows. If cross browser testing is unsuccessfull, you might consider a JS alternative<br />
-                        <a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Texts & css, how to not fuck up your design (basicly)">Css tricks, long text stuff</a>                       
-                    </div>
+					</pre>
+					<div>
+						Prevent text overflows. If cross browser testing is unsuccessfull, you might consider a JS alternative<br />
+						<a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Texts & css, how to not fuck up your design (basicly)">Css tricks, long text stuff</a>                       
+					</div>
 
-                </div>
-            </div>
+				</div>
+			</div>
 
-            
-
-
-
-            <h2 class="color">Thanks to...</h2>
-            <div class="credits info big">
-
-                <table>
-
-                    <tr>
-                        <td><a href="https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html" title="3w awards, always a source of inspiration">3w awards color trends</a></td>
-                        <td>/ Color palette for infos</td>
-                    </tr>
-                    <tr>
-                        <td>.. especially <a href="https://www.madeo.com/" title="Pretty good web / design agency, from what i saw">madeo design</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://emmet.io/" title="Emmet, HTML crafting accelerator">Emmet</a></td>
-                        <td>/ Speeding up html crafting</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://fengzhudesign.blogspot.fr/2014/06/design-cinema-lets-draw-final-fantasy.html" title="Beautifull illustrations and designs">Feng Zhu Design</a></td>
-                        <td>/ Beautifull Illustrations <span class="heart">♥</span></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://necolas.github.io/normalize.css/" title="CSS normalize, cross borwser compatibility">normalize.css</a></td>
-                        <td>/ Cross browser base css compatibility</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://smacss.com/" title="Css best practices & optimisations">SMACSS</a></td>
-                        <td>/ Create beautifully optimised & reusable css</td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-        </div>
+			
 
 
 
-        
+			<h2 class="color">Thanks to...</h2>
+			<div class="credits info big">
+
+				<table>
+
+					<tr>
+						<td><a href="https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html" title="3w awards, always a source of inspiration">3w awards color trends</a></td>
+						<td>/ Color palette for infos</td>
+					</tr>
+					<tr>
+						<td>.. especially <a href="https://www.madeo.com/" title="Pretty good web / design agency, from what i saw">madeo design</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://emmet.io/" title="Emmet, HTML crafting accelerator">Emmet</a></td>
+						<td>/ Speeding up html crafting</td>
+					</tr>
+					<tr>
+						<td><a href="http://fengzhudesign.blogspot.fr/2014/06/design-cinema-lets-draw-final-fantasy.html" title="Beautifull illustrations and designs">Feng Zhu Design</a></td>
+						<td>/ Beautifull Illustrations <span class="heart">♥</span></td>
+					</tr>
+					<tr>
+						<td><a href="https://necolas.github.io/normalize.css/" title="CSS normalize, cross borwser compatibility">normalize.css</a></td>
+						<td>/ Cross browser base css compatibility</td>
+					</tr>
+					<tr>
+						<td><a href="https://smacss.com/" title="Css best practices & optimisations">SMACSS</a></td>
+						<td>/ Create beautifully optimised & reusable css</td>
+					</tr>
+
+				</table>
+
+			</div>
+
+		</div>
 
 
 
-    </body>
+		
+
+
+
+	</body>
 
 </html>
