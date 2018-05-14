@@ -197,6 +197,51 @@
 	// auto complete off
 	https://www.w3schools.com/tags/att_input_autocomplete.asp
 
+	MDN List
+		Possible values are:
+		off: The user must explicitly enter a value into this field for every use, or the document provides its own auto-completion method. The browser does not automatically complete the entry.
+		on: The browser is allowed to automatically complete the value based on values that the user has entered during previous uses, however on does not provide any further information about what kind of data the user might be expected to enter.
+		name: Full name.
+		honorific-prefix: Prefix or title (e.g. "Mr.", "Ms.", "Dr.", "Mlle").
+		given-name: First name.
+		additional-name: Middle name.
+		family-name: Last name.
+		honorific-suffix: Suffix (e.g. "Jr.", "B.Sc.", "MBASW", "II").
+		nickname
+		email
+		username
+		new-password: A new password (e.g. when creating an account or changing a password).
+		current-password
+		organization-title: Job title (e.g. "Software Engineer", "Senior Vice President", "Deputy Managing Director").
+		organization
+		street-address
+		address-line1, address-line2, address-line3, address-level4, address-level3, address-level2, address-level1
+		country
+		country-name
+		postal-code
+		cc-name: Full name as given on the payment instrument.
+		cc-given-name
+		cc-additional-name
+		cc-family-name
+		cc-number: Code identifying the payment instrument (e.g. the credit card number).
+		cc-exp: Expiration date of the payment instrument.
+		cc-exp-month
+		cc-exp-year
+		cc-csc: Security code for the payment instrument.
+		cc-type: Type of payment instrument (e.g. Visa).
+		transaction-currency
+		transaction-amount
+		language: Preferred language; a valid BCP 47 language tag.
+		bday: birthday
+		bday-day
+		bday-month
+		bday-year
+		sex: Gender identity (e.g. Female, Fa'afafine), free-form text, no newlines.
+		tel: full telephone number, including country code
+		additional tel variants: tel-country-code, tel-national, tel-area-code, tel-local, tel-local-prefix, tel-local-suffix, tel-extension
+		url: Home page or other Web page corresponding to the company, person, address, or contact information in the other fields associated with this field.
+		photo: Photograph, icon, or other image corresponding to the company, person, address, or contact information in the other fields associated with this field.
+
 
 // required
 	<!--
@@ -232,6 +277,10 @@
 	Fieldset & legend
 		contour & title
 
+	autofocus attribute
+		HTML5
+		This Boolean attribute lets you specify that a form control should have input focus when the page loads, unless the user overrides it (e.g. by typing in a different control). Only one form element in a document can have the autofocus attribute, which is a Boolean. It cannot be applied if the type attribute is set to hidden (that is, you cannot automatically set focus to a hidden control). Note that the focusing of the control may occur before the firing of the DOMContentLoaded event.
+
 ////Elements
 	// list of all form elements at the bottom
 	https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form
@@ -245,6 +294,7 @@
 
 	// Attributs
 	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-list
+
 	// Compatibilité des attributs !
 	https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 	
@@ -254,9 +304,13 @@
 		disabled
 		type
 			submit
+				accessibility
+					Permitted ARIA roles	
+					None
+
 			reset
 			button // prevent submit, à préférer pour comportement JS
-		value // envoie de la donnée, ptet utile pour savoir quel bouton à été cliqué ?
+				value // envoie de la donnée, ptet utile pour savoir quel bouton à été cliqué ?
 
 		contenu > html (em strong img i)
 		
@@ -277,6 +331,10 @@
 
 		Avec button, possibilité de passer une value != (quel interêt x'))
 
+		accessibility
+			Permitted ARIA roles	
+			type=button: link, menuitem, menuitemcheckbox, menuitemradio, radio, switch, tab
+
 	
 	// checkbox / radio
 		https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets > Ctrl F > "Checkable items"
@@ -292,10 +350,18 @@
 			Possibilité de regrouper des radios, attribut name similaire
 			/!\ Possibilité aucune valeur sélectionnée
 
+			accessibility
+				Permitted ARIA roles	
+				type=radio: menuitemradio
+
 	
 	// color
 
 		! Ko safari IE
+
+		accessibility
+			Permitted ARIA roles	
+			None
 
 
 	// datalist // ~select, but better
@@ -318,17 +384,39 @@
 		FF & Safari ~, IE ko
 
 		// date
+			accessibility
+				Permitted ARIA roles	
+				None
+		
+		// datetime
+			! OBSOLETE
+			accessibility
+				Permitted ARIA roles	
+				None
 
 		// datetime-local
 			This creates a widget to display and pick a date with time, but without any specific time zone information.
 
+			accessibility
+				Permitted ARIA roles	
+				None
+
 		// month
+			accessibility
+				Permitted ARIA roles	
+				None
 
 		// time
+			accessibility
+				Permitted ARIA roles	
+				None
 
 		// week
-	
+			accessibility
+				Permitted ARIA roles	
+				None
 
+	
 
 	// fieldset & legend
 		// fieldset
@@ -345,18 +433,41 @@
 
 	// file
 
-		Possibilité de spécifier le type de fichier envoyé via attribute accept
+		accept 
+			Possibilité de spécifier le type de fichier envoyé via attribute accept
+			
+			A file extension starting with the STOP character (U+002E). (e.g. .jpg, .png, .doc).
+			A valid MIME type with no extensions.
+			audio/* representing sound files. HTML5
+			video/* representing video files. HTML5
+			image/* representing image files. HTML5
+		
+		capture
+			When the value of the type attribute is file, the presence of this Boolean attribute indicates that capture of media directly from the device's environment using a media capture mechanism is preferred.
+
 		multiple
+
+		accessibility
+			Permitted ARIA roles	
+			None
 
 
 	// hidden
 		required > name & value
+
+		accessibility
+			Permitted ARIA roles	
+			None
 
 	
 	// image !
 		
 		Image button. Behave like a submit button
 		Data send : position on clicked image (from top left)
+
+		accessibility
+			Permitted ARIA roles	
+			type=image: link, menuitem, menuitemcheckbox, menuitemradio, radio, switch
 
 
 	// input
@@ -367,6 +478,10 @@
 
 		// email
 			attribute multiple ?
+
+			accessibility
+				Permitted ARIA roles	
+				None
 		
 		// number !
 			https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
@@ -376,19 +491,40 @@
 			placeholder != valeur finale, ex: "Multiples of 10"
 			possibilité de suggestions datalist
 
+			accessibility
+				Permitted ARIA roles	
+				None
+
 		// password
+			accessibility
+				Permitted ARIA roles	
+				None
 
 		// search !
+			accessibility
+				Permitted ARIA roles	
+				None
 
 		// tel // telephone
+			accessibility
+				Permitted ARIA roles	
+				None
 
 		// text
 			// Peut avoir une liste de suggestions pré enregistrées !!!!!!!
 			https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets > ctrl F "Autocomplete box"
 
+			accessibility
+				Permitted ARIA roles	
+				None
+
 		// url !
 			/!\ check pas les 404
 			/!\ Empêche envoi du formulaire si syntaxe ko ?
+
+			accessibility
+				Permitted ARIA roles	
+				None
 
 
 	// meter
@@ -439,6 +575,10 @@
 		utilisé pour : Nombre de questions remplies dans un form, % de fichier envoyé
 
 	
+	// radio
+		cf. checkboxes
+
+
 	// range
 		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range
 		
@@ -455,6 +595,10 @@
 		Possibilité de spécifier des valeurs pour chaque pas (tickmarks) avec le tag datalist, + labels pour certains
 			// ~0 compatibilité pour le moment
 			// > mdn recommande d'ajouter un span et de le maj avec JS (pour le moment)
+
+		accessibility
+			Permitted ARIA roles	
+			None
 
 
 	// select
@@ -554,6 +698,9 @@
 			Validation // http://bassistance.de/jquery-plugins/jquery-plugin-validation/
 
 
+//// Accessibility
+	arias & roles
+		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-list
 
 
 // Design / ergo
