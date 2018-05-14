@@ -224,6 +224,7 @@
 
 
 //// Layout
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
 
 	// regroup thematic fields
 	Regrouper les champs similaires dans des tag < section >
@@ -242,9 +243,10 @@
 	https://www.wufoo.com/html5/
 	https://quirksmode.org/html5/inputs/mobile.html
 
+	// Attributs
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-list
 	// Compatibilité des attributs !
-	https://developer.mozilla.org/fr/docs/Web/API/HTMLInputElement
-
+	https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 	
 	// button
 		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
@@ -367,8 +369,12 @@
 			attribute multiple ?
 		
 		// number !
-		<input type="number" name="age" id="age" min="1" max="10" step="2">
-		! Compatibilité IE10+
+			https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
+			<input type="number" name="age" id="age" min="1" max="10" step="2">
+			! Compatibilité IE10+
+
+			placeholder != valeur finale, ex: "Multiples of 10"
+			possibilité de suggestions datalist
 
 		// password
 
@@ -521,6 +527,57 @@
 	<ul>
 	<li>JS / If form is handled by javascript, use the <em>submit</em> event on the form instead of a <em>click</em> event on the button. This way you'll proc even if the user submitted another way (any field > enter ; tabulation to navigate to the button > space) </li>
 	</ul>
+	
+	// Form validation
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
+	! Prévoir validation en back, en cas d'édition de HTML
+		Faire concorder les tests
+	
+	min max // number
+	minlength maxlength // text
+	regexp si données ~
+
+	// Ctrl F "Customized error messages"
+	! Messages d'erreurs built navigateur, pas possible de changer le style
+		Possibilité de changer le contenu
+
+		// Propriétés js // Ctrl F > "Constraint validation API properties"
+		Sinon utiliser du JS
+		! polyfill > https://hyperform.js.org/
+
+		! accéssibilité > attribut aria-live="polite"
+			// Lib de validation
+			Standalone library
+			Validate.js // http://rickharrison.github.com/validate.js/
+
+			jQuery plug-in:
+			Validation // http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+
+
+
+
+// Design / ergo
+	https://www.slideshare.net/jwegesin/forms-suck/27-First_Name_right_Last_Name
+	Label en haut des champs
+	Une seule colonne
+	Boutons
+		Ajouter des couleurs (vert validation, rouge nope)
+		Utiliser des liens à la place si comportement peu utilisé
+		Ordonner (gauche vers droite)
+		Btn validation, inline avec le formulaire
+	Ne pas utiliser d'acronymes/prog oriented > labels, exemples
+
+	Seulement les champs indispensables
+	Flexibilité sur les champs alakon // tel
+		exemples de format avec vraies données
+
+	Validation à la volée, pas en fin de formulaire
+	Auto complétion (cf. autocomplétion avec suggestion persos, cf. autocomplétion sugg. navigateur)
+
+	Gestion des erreurs par champs + récapitulatif a la validation
+
+
+
 
 
 // CSS form related
@@ -530,3 +587,15 @@
 	// custom elements
 		// Pas lire le comportement Js, c'est ridicule, garder le comportement natif
 	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_build_custom_form_widgets
+	
+	// Validation
+	css > :valid, :invalid
+		// Est-ce que ça marche avec les :before / :after ?
+
+	// Styling
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Advanced_styling_for_HTML_forms
+
+
+ ! Lint all this sh*t x)
+ ! Auto prefix
