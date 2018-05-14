@@ -671,8 +671,304 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<h2 class="color">Form & form elements</h2>
+			
+
+
+			<h3 class="color">Global attributes</h3>
+			<div class="info big reco">
+				All fields shares global attributes. Here's the list & illustrations.<br />
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes" target="_blank" title="Mozilla doc : form elements global attributes">MDN : form elements global attributes</a>
+			</div>
+			
+
+			<h4 class="color">autofocus</h4>
+			<div>
+				<label for="id-example-autofocus">Example autofocus</label>
+				<input 	autofocus="false"
+						id="id-example-autofocus"
+						name="example-autofocus"
+						type="text"
+				/>
+			</div>
+			<div class="info">
+				Booelean. Use on one field only, allow to specify which field has the focus after page loads.<br />
+				Be careful as it can make the page scroll jump, and also can confuse some accessibility readers.
+			</div>
+			<br />
+			<div class="info reco">
+				Desactivated here in order to avoid page scroll jump<br />
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus" target="_blank" title="MDN doc : autofocus">MDN doc : autofocus</a>
+			</div>
+
+
+			<h4 class="color">Placeholder</h4>
+			<div>
+				<label for="id-example-placeholder">Example autofocus</label>
+				<input 	id="id-example-placeholder"
+						name="example-placeholder"
+						placeholder="You should type this"
+						type="text"
+				/>
+			</div>
+			<div class="info">
+				Text illustration of what an input should be filled with.<br />
+				<br />
+				Note: Do not use the placeholder attribute instead of a &lt;label&gt; element, their purposes are different. The &lt;label&gt; attribute describes the role of the form element (i.e. it indicates what kind of information is expected), and the placeholder attribute is a hint about the format that the content should take. There are cases in which the placeholder attribute is never displayed to the user, so the form must be understandable without it.<br />
+				<br />
+				<a href="http://webdesignerwall.com/tutorials/cross-browser-html5-placeholder-text" target="_blank" title="placeholder compatibility">Make it cross browser</a>, as it's HTML5 only, even if mostly supported.<br />
+				Basically use modernizr & jquery to accomodate for older browsers
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+			<h3 class="color">Vanilla elements</h3>
 			
 			
+			<div>
+				<label for="name-id">Name: </label>
+				<input id="name-id" name="username" placeholder="Name" type="text">
+			</div>
+			<div class="info">Input type text</div>
+			
+			<div>
+				<label for="password-id">Password: </label>
+				<input id="password-id" type="password">
+			</div>
+			<div class="info">Input type password</div>
+
+
+	
+
+
+			<h3 class="color">Tabled elements</h3>
+
+			<form action="">
+				<fieldset>
+					<legend>Exemple de formulaire</legend>
+
+					<table>
+
+						<tr>
+							<td><label for="">Exemple text input</label></td>
+							<td><input type="text"></td>
+						</tr>
+						
+						<tr>
+							<td><label for="">Exemple password input</label></td>
+							<td><input type="password"></td>
+						</tr>
+						
+						<tr>
+							<td><label for="">Exemple email input</label></td>
+							<td><input type="email"></td>
+						</tr>
+
+						<tr>
+							<td><label for="">Exemple multiple email input</label></td>
+							<td><input type="email" multiple></td>
+						</tr>
+						
+
+
+						<tr>
+							<td><label for="">Exemple file input</label></td>
+							<td><input type="file"></td>
+						</tr>
+
+						<tr>
+							<td><label for="">Exemple multiple file input</label></td>
+							<td><input type="file" multiple></td>
+						</tr>
+
+
+
+						<tr>
+							<td><label for="">Exemple date input</label></td>
+							<td><input type="date"></td>
+						</tr>
+
+
+						<tr>
+							<td><label for="">Exemple text area</label></td>
+							<td><textarea></textarea></td>
+						</tr>
+						
+						<tr>
+							<td><div class="info">fill value attributes for option, radio&  checkboxes</div></td>
+						</tr>
+						<tr>
+
+							<td><label for="">Exemple select</label></td>
+							<td>
+								<select name="" id="">
+									<option value="">option 1</option>
+									<option value="">option 2</option>
+									<option value="">option 3</option>
+									<option value="">option 4</option>
+									<option value="">option 5</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+
+							<td><label for="">Exemple select w. size attribute</label></td>
+							<td>
+								<select name="" id="" size="3">
+									<option value="">option 1</option>
+									<option value="">option 2</option>
+									<option value="">option 3</option>
+									<option value="">option 4</option>
+									<option value="">option 5</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="">meter</label> </td>
+							<td>Chauffez le four à <meter min="100" max="250" value="180">180 degrés</meter> (min 100, max 250, value 180)</td>
+						</tr>
+
+						<tr>
+							<td><label for="">meter</label> </td>
+							<td>Il a eu  <meter low="69" high="80" max="100" value="40">B</meter> à son examen. (low 69, high 80, max 100, <strong>value 40</strong>)</td>
+						</tr>
+
+						<tr>
+							<td><label for="">meter</label> </td>
+							<td>Il a eu  <meter low="69" high="80" max="100" value="75">B</meter> à son examen. (low 69, high 80, max 100, <strong>value 75</strong>)</td>
+						</tr>
+
+						<tr>
+							<td><label for="">meter</label> </td>
+							<td>Il a eu  <meter low="69" high="80" max="100" value="84">B</meter> à son examen. (low 69, high 80, max 100, <strong>value 84</strong>)</td>
+						</tr>
+						
+						<tr>
+							<td><label for="">progress</label> </td>
+							<td><progress value="70" max="100">70 %</progress> 70%</td>
+						</tr>
+						
+						<tr>
+							<td><label for="">progress, no value attribute (indeterminate)</label> </td>
+							<td><progress max="100">70 %</progress></td>
+						</tr>
+						
+
+						<tr>
+							<td><label for="">Exemple radios</label></td>
+							<td>
+								<fieldset class="radiogroup"> 
+									<legend>Couleur ?</legend> 
+									<ul class="radio"> 
+										<li><label for="couleur1"><input type="radio" name="couleur" id="couleur1" />Rouge</label></li> 
+										<li><label for="couleur2"><input type="radio" name="couleur" id="couleur2" />Bleu</label></li> 
+										<li><label for="couleur3"><input type="radio" name="couleur" id="couleur3" />Vert</label></li> 
+									</ul> 
+								</fieldset>
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="">Exemple checkboxs</label></td>
+							<td>
+								<fieldset class="checkboxesgroup"> 
+									<legend>Nombre ?</legend> 
+									<ul class="radio"> 
+										<li><label for="nombre1"><input type="checkbox" name="nombre[]" id="nombre1" />Un</label></li> 
+										<li><label for="nombre2"><input type="checkbox" name="nombre[]" id="nombre2" />Deux</label></li> 
+										<li><label for="nombre3"><input type="checkbox" name="nombre[]" id="nombre3" />Trois</label></li> 
+									</ul> 
+								</fieldset>
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="">Exemple color picker</label></td>
+							<td><input type="color" /></td>
+						</tr>
+
+						<tr>
+							<td><button type="submit">Exemple bouton</button></td>
+						</tr>
+
+					</table>
+				</fieldset>
+			</form>
+
+
+			
+-->
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

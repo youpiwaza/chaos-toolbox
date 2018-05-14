@@ -251,19 +251,7 @@
 		contour & title
 	
 	global attributes
-		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes
-
-		autofocus attribute
-			HTML5
-			This Boolean attribute lets you specify that a form control should have input focus when the page loads, unless the user overrides it (e.g. by typing in a different control). Only one form element in a document can have the autofocus attribute, which is a Boolean. It cannot be applied if the type attribute is set to hidden (that is, you cannot automatically set focus to a hidden control). Note that the focusing of the control may occur before the firing of the DOMContentLoaded event.
 		
-		placeholder
-			Note: Do not use the placeholder attribute instead of a <label> element, their purposes are different. The <label> attribute describes the role of the form element (i.e. it indicates what kind of information is expected), and the placeholder attribute is a hint about the format that the content should take. There are cases in which the placeholder attribute is never displayed to the user, so the form must be understandable without it.
-
-			cross-browser
-				http://webdesignerwall.com/tutorials/cross-browser-html5-placeholder-text
-				// Fallback anciens browser,modernizr and/or jquery
-
 		readonly HTML5
 			This attribute indicates that the user cannot modify the value of the control. The value of the attribute is irrelevant. If you need read-write access to the input value, do not add the "readonly" attribute. It is ignored if the value of the type attribute is hidden, range, color, checkbox, radio, file, or a button type (such as button or submit).
 		
