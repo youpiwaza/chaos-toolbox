@@ -276,10 +276,30 @@
 
 	Fieldset & legend
 		contour & title
+	
+	global attributes
+		autofocus attribute
+			HTML5
+			This Boolean attribute lets you specify that a form control should have input focus when the page loads, unless the user overrides it (e.g. by typing in a different control). Only one form element in a document can have the autofocus attribute, which is a Boolean. It cannot be applied if the type attribute is set to hidden (that is, you cannot automatically set focus to a hidden control). Note that the focusing of the control may occur before the firing of the DOMContentLoaded event.
+		
+		placeholder
+			Note: Do not use the placeholder attribute instead of a <label> element, their purposes are different. The <label> attribute describes the role of the form element (i.e. it indicates what kind of information is expected), and the placeholder attribute is a hint about the format that the content should take. There are cases in which the placeholder attribute is never displayed to the user, so the form must be understandable without it.
 
-	autofocus attribute
-		HTML5
-		This Boolean attribute lets you specify that a form control should have input focus when the page loads, unless the user overrides it (e.g. by typing in a different control). Only one form element in a document can have the autofocus attribute, which is a Boolean. It cannot be applied if the type attribute is set to hidden (that is, you cannot automatically set focus to a hidden control). Note that the focusing of the control may occur before the firing of the DOMContentLoaded event.
+			cross-browser
+				http://webdesignerwall.com/tutorials/cross-browser-html5-placeholder-text
+
+		readonly HTML5
+			This attribute indicates that the user cannot modify the value of the control. The value of the attribute is irrelevant. If you need read-write access to the input value, do not add the "readonly" attribute. It is ignored if the value of the type attribute is hidden, range, color, checkbox, radio, file, or a button type (such as button or submit).
+		
+		required HTML5
+			This attribute specifies that the user must fill in a value before submitting a form. It cannot be used when the type attribute is hidden, image, or a button type (submit, reset, or button). The :optional and :required CSS pseudo-classes will be applied to the field as appropriate.
+		
+		tabindex element-specific in HTML 4, global in HTML5
+			The position of the element in the tabbing navigation order for the current document.
+		
+		value
+			The initial value of the control. This attribute is optional except when the value of the type attribute is radio or checkbox.
+			Note that when reloading the page, Gecko and IE will ignore the value specified in the HTML source, if the value was changed before the reload
 
 ////Elements
 	// list of all form elements at the bottom
@@ -330,6 +350,18 @@
 			type=button
 
 		Avec button, possibilité de passer une value != (quel interêt x'))
+		
+		formaction 
+			HTML5
+			The URI of a program that processes the information submitted by the input element, if it is a submit button or image. If specified, it overrides the action attribute of the element's form owner.
+			
+			Possibility to have one form sending to != pages !
+
+		formmethod
+			+1 GET/POST
+
+		formtarget
+			+1 where to go
 
 		accessibility
 			Permitted ARIA roles	
@@ -465,6 +497,18 @@
 		Image button. Behave like a submit button
 		Data send : position on clicked image (from top left)
 
+		formaction
+			HTML5
+			The URI of a program that processes the information submitted by the input element, if it is a submit button or image. If specified, it overrides the action attribute of the element's form owner.
+			
+			Possibility to have one form sending to != pages !
+		
+		formmethod
+			+1 GET/POST
+
+		formtarget
+			+1 where to go
+
 		accessibility
 			Permitted ARIA roles	
 			type=image: link, menuitem, menuitemcheckbox, menuitemradio, radio, switch
@@ -501,9 +545,20 @@
 				None
 
 		// search !
+			Remove Webkit Search Input Styles
+				Webkit browsers add extra styling to the search input field. To remove them, add the following CSS code:
+
+				input[type=search] {	-webkit-appearance: none;}
+
+				input[type="search"]::-webkit-search-decoration, 
+				input[type="search"]::-webkit-search-cancel-button {
+					display: none;
+				}
+
 			accessibility
 				Permitted ARIA roles	
 				None
+
 
 		// tel // telephone
 			accessibility
@@ -743,6 +798,9 @@
 	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms
 	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Advanced_styling_for_HTML_forms
 
+	// Possibility to style the curson !
+	https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color
+	caret-color: red;
 
  ! Lint all this sh*t x)
  ! Auto prefix
