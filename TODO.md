@@ -101,14 +101,6 @@
 
 - html5 semantics tags
 
-- forms
--- select & multiple selects
--- custom radio / checkbox
---- groups
--- labels
--- fieldset & legends
--- resets > confirm
--- captchas
 
 #css recommandations
 - smacss
@@ -243,25 +235,6 @@
 		photo: Photograph, icon, or other image corresponding to the company, person, address, or contact information in the other fields associated with this field.
 
 
-// required
-	<!--
-	required field * > use < abbr >  <abbr title="required">*</abbr>
-	-->
-	ex : 
-	<!-- 
-	<p>
-		<label for="name">
-			<span>Nom : </span>
-			<strong><abbr title="required">*</abbr></strong>
-		</label>
-		<input type="text" id="name" name="username">
-	</p>
-	-->
-	https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr
-
-
-
-
 
 
 
@@ -278,6 +251,8 @@
 		contour & title
 	
 	global attributes
+		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes
+
 		autofocus attribute
 			HTML5
 			This Boolean attribute lets you specify that a form control should have input focus when the page loads, unless the user overrides it (e.g. by typing in a different control). Only one form element in a document can have the autofocus attribute, which is a Boolean. It cannot be applied if the type attribute is set to hidden (that is, you cannot automatically set focus to a hidden control). Note that the focusing of the control may occur before the firing of the DOMContentLoaded event.
@@ -287,13 +262,29 @@
 
 			cross-browser
 				http://webdesignerwall.com/tutorials/cross-browser-html5-placeholder-text
+				// Fallback anciens browser,modernizr and/or jquery
 
 		readonly HTML5
 			This attribute indicates that the user cannot modify the value of the control. The value of the attribute is irrelevant. If you need read-write access to the input value, do not add the "readonly" attribute. It is ignored if the value of the type attribute is hidden, range, color, checkbox, radio, file, or a button type (such as button or submit).
 		
 		required HTML5
 			This attribute specifies that the user must fill in a value before submitting a form. It cannot be used when the type attribute is hidden, image, or a button type (submit, reset, or button). The :optional and :required CSS pseudo-classes will be applied to the field as appropriate.
-		
+			
+			<!--
+			required field * > use < abbr >  <abbr title="required">*</abbr>
+			-->
+			ex : 
+			<!-- 
+			<p>
+				<label for="name">
+					<span>Nom : </span>
+					<strong><abbr title="required">*</abbr></strong>
+				</label>
+				<input type="text" id="name" name="username">
+			</p>
+			-->
+			https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr
+
 		tabindex element-specific in HTML 4, global in HTML5
 			The position of the element in the tabbing navigation order for the current document.
 		
@@ -313,7 +304,7 @@
 	https://quirksmode.org/html5/inputs/mobile.html
 
 	// Attributs
-	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-list
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes
 
 	// Compatibilité des attributs !
 	https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
