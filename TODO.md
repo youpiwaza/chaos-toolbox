@@ -159,16 +159,6 @@
 
 ////// Forms Brainstorm
 
-	
-//// global attributes
-		
-
-
-		value
-			The initial value of the control. This attribute is optional except when the value of the type attribute is radio or checkbox.
-			Note that when reloading the page, Gecko and IE will ignore the value specified in the HTML source, if the value was changed before the reload
-
-
 
 ////Elements
 	// list of all form elements at the bottom
@@ -242,6 +232,7 @@
 
 		Recommandé fieldset / legend / label
 		Recommandé : chaque input + label dans son conteneur (liste, div, etc.)
+		Recommandé : Mettre label dans input, pour rendre ce dernier cliquable
 		Obligatoie : value
 		
 		// checkbox
