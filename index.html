@@ -701,6 +701,46 @@
 			
 
 
+			<h3 class="color">&lt;form&gt; tag</h3>
+			<div class="info">
+				If classic form (not js handled), consider the following attributes : 
+				<ul>
+					<li>method : get/post</li>
+					<li>action : target page</li>
+					<li>target : (self / new tab), usually not used</li>
+				</ul>
+
+				Be careful, those attributes can be overided with <em>button</em> or <em>input</em> (usually type <em>button</em> or <em>image</em>) following attribute
+				<ul>
+					<li>formaction</li>
+					<li>formmethod</li>
+					<li>formtarget</li>
+				</ul>
+
+				If using javascript (or other) method to handle form submission, pay attention to
+				<ul>
+					<li>Still use the <a href="https://developer.mozilla.org/en-US/docs/Web/Events/submit" target="_blank" title="MDN doc : form submit event">submit event</a>, in addition with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank" title="MDN doc : Js preventDefault function">preventDefault</a> js function</li>
+					<li>
+						<ul>
+							<li>The reason for that is that <strong>users can send their form in other ways than just pushing the submit button</strong>, like</li>
+							<li>
+								<ul>
+									<li>Pressing the "Enter" key while a field is focused</li>
+									<li>Using tabulations to switch focus to the submit button, then pressing space</li>
+									<li>Other mobile/tablet/accessibility readers shenanigans</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>Pay attention to attach the <em>submit event</em> the form, and not to the submit button</li>
+					<li>Consider using an input type <strong>button</strong> instead of <em>submit</em>, if you wanna skip preventDefault()</li>
+				</ul>
+
+
+				Doc : <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" title="Mozilla doc : form tag">MDN : form tag</a>
+			</div>
+
 			<h3 class="color">Global attributes</h3>
 			<div class="info big reco">
 				All fields shares global attributes. Here's the list & illustrations.<br />

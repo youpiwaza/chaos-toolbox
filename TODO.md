@@ -157,22 +157,8 @@
 
 ////// Forms Brainstorm
 
-//// form tag
-	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 
-	// spécifier method get/post
-	// specifier attribut action
-
-//// form elements
-
-// all
-<div class="info">
-	All fields are displayed with their own label.<br />
-	Fill the <em>name</em> attributes with usual names, to help browser auto-fill.
-	// autocomplete
-</div>
-
-
+//// AUTOCOMPLETE SHENANIGANS
 // name, (autofill) & autocomplete off
 	// add name attribute & precise autocomplete attributes // has all
 	https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/
@@ -249,8 +235,11 @@
 
 	Fieldset & legend
 		contour & title
+
+	All fields are displayed with their own label.
+
 	
-	global attributes
+//// global attributes
 		
 		readonly HTML5
 			This attribute indicates that the user cannot modify the value of the control. The value of the attribute is irrelevant. If you need read-write access to the input value, do not add the "readonly" attribute. It is ignored if the value of the type attribute is hidden, range, color, checkbox, radio, file, or a button type (such as button or submit).
@@ -279,6 +268,8 @@
 		value
 			The initial value of the control. This attribute is optional except when the value of the type attribute is radio or checkbox.
 			Note that when reloading the page, Gecko and IE will ignore the value specified in the HTML source, if the value was changed before the reload
+
+
 
 ////Elements
 	// list of all form elements at the bottom
