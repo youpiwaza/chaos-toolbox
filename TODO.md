@@ -159,18 +159,6 @@
 
 
 
-
-//// Layout
-	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
-
-	// regroup thematic fields
-	Regrouper les champs similaires dans des tag < section >
-
-	Fieldset & legend
-		contour & title
-
-	All fields are displayed with their own label.
-
 	
 //// global attributes
 		
@@ -661,25 +649,6 @@
 		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-list
 
 
-// Design / ergo
-	https://www.slideshare.net/jwegesin/forms-suck/27-First_Name_right_Last_Name
-	Label en haut des champs
-	Une seule colonne
-	Boutons
-		Ajouter des couleurs (vert validation, rouge nope)
-		Utiliser des liens à la place si comportement peu utilisé
-		Ordonner (gauche vers droite)
-		Btn validation, inline avec le formulaire
-	Ne pas utiliser d'acronymes/prog oriented > labels, exemples
-
-	Seulement les champs indispensables
-	Flexibilité sur les champs alakon // tel
-		exemples de format avec vraies données
-
-	Validation à la volée, pas en fin de formulaire
-	Auto complétion (cf. autocomplétion avec suggestion persos, cf. autocomplétion sugg. navigateur)
-
-	Gestion des erreurs par champs + récapitulatif a la validation
 
 
 
