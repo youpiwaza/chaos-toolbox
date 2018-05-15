@@ -160,27 +160,11 @@
 	
 //// global attributes
 		
-		
-		required HTML5
-			This attribute specifies that the user must fill in a value before submitting a form. It cannot be used when the type attribute is hidden, image, or a button type (submit, reset, or button). The :optional and :required CSS pseudo-classes will be applied to the field as appropriate.
-			
-			<!--
-			required field * > use < abbr >  <abbr title="required">*</abbr>
-			-->
-			ex : 
-			<!-- 
-			<p>
-				<label for="name">
-					<span>Nom : </span>
-					<strong><abbr title="required">*</abbr></strong>
-				</label>
-				<input type="text" id="name" name="username">
-			</p>
-			-->
-			https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr
+
 
 		tabindex element-specific in HTML 4, global in HTML5
 			The position of the element in the tabbing navigation order for the current document.
+
 		
 		value
 			The initial value of the control. This attribute is optional except when the value of the type attribute is radio or checkbox.

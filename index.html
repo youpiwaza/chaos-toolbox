@@ -867,6 +867,10 @@
 				<a href="http://webdesignerwall.com/tutorials/cross-browser-html5-placeholder-text" target="_blank" title="placeholder compatibility">Make it cross browser</a>, as it's HTML5 only, even if mostly supported.<br />
 				Basically use modernizr & jquery to accomodate for older browsers
 			</div>
+			<br />
+			<div class="info reco">
+				<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#attr-placeholder" target="_blank" title="MDN doc : placeholder">MDN doc : placeholder</a>
+			</div>
 			
 
 			<h4 class="color">readonly</h4>
@@ -895,9 +899,55 @@
 				The value can still be edited by a script though.<br />
 				Be careful, it can also be edited by editing html code in the browser through inspector !<br />
 				Doesn't not work on several input types : hidden, image, or a button type (submit, reset, or button).<br />
+			</div>
+			<br />
+			<div class="info reco">
 				<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Attribute/readonly" target="_blank" title="Mozilla doc : readonly attribute">MDN readonly attribute</a>
 			</div>
 
+
+			<h4 class="color">required</h4>
+			<div>
+				<label for="id-example-required">
+					<span>Nom : </span>
+					<strong><abbr title="required">*</abbr></strong>
+				</label>
+				<input type="text" id="example-required" name="example-required">
+			</div>
+
+			<div class="info">
+				<ul>
+					<li>This attribute specifies that the user must fill in a value before submitting a form.<br /></li>
+					<li>Be careful, the form won't submit until the field id populated</li>
+					<li>Doesn't not work on several input types : hidden, image, or a button type (submit, reset, or button).<br /></li>
+					<li>CSS : The :optional and :required CSS pseudo-classes will be applied to the field as appropriate.</li>
+				</ul>
+				
+				
+				
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li>
+						Make use of the <em>&lt;abbr&gt;</em> tag (abreviation) for better accessibility.
+					</li>
+					<ul>
+						<li>Doc : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr" target="_blank" title="Mozilla doc : abbreviation">MDN abbr attribute</a></li>
+					</ul>
+					<li>
+						The example fields upon specify how the <em>&lt;abbr&gt;</em> tag should be idealy used.
+					</li>
+					<li>For smoother data, consider using HTML5 attributes <em>min</em> & <em>max</em> (numeric value), and <em>minlength</em> & <em>maxlength</em> (number of characters)
+					</li>
+					<ul>
+						<li>Pay attention to <em>minlength</em> & <em>maxlength</em> compatibility though (not pretty sure as MDN & CanIUse differs..)</li>
+					</ul>
+				</ul>
+				<li>
+					<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#attr-required" target="_blank" title="Mozilla doc : required attribute">MDN required attribute</a>
+				</li>
+			</div>
 
 
 
