@@ -29,6 +29,18 @@
     align-items: center;
   }
 
+.table {
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+}
+  .table th {
+    color: #3fb0ac;
+    padding: .75em;
+  }
+  .table td {
+    border: 1px solid #3fb0ac;
+    padding: .5em;
+  }
 
 
 /*** Google web fonts, locally ***/
@@ -183,5 +195,9 @@ h6.color {
   white-space: nowrap;
 }
 
+/* stack labels/input in the form > tabindex attribute example */
+.tabindex-example label {
+  display: block;
+}
 
 /*** Shame ***/
