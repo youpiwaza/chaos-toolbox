@@ -922,9 +922,6 @@
 					<li>Doesn't not work on several input types : hidden, image, or a button type (submit, reset, or button).<br /></li>
 					<li>CSS : The :optional and :required CSS pseudo-classes will be applied to the field as appropriate.</li>
 				</ul>
-				
-				
-				
 			</div>
 			<br />
 			<div class="info reco">
@@ -948,8 +945,96 @@
 					<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#attr-required" target="_blank" title="Mozilla doc : required attribute">MDN required attribute</a>
 				</li>
 			</div>
+			
 
+			<h4 class="color">tabindex</h4>
 
+			<div class="info reco">Click on the first input of each tab and use the tab key multiple times.</div>
+
+			<table class="table tabindex-example">
+				<thead>
+					<tr>
+						<th colspan="3">No tabindex used, it'll use the DOM order to switch focus when user tabs</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label for="id-exemple-no-tabindex-1">DOM order : 1</label><input type="text" id="id-exemple-no-tabindex-1"></td>
+						<td><label for="id-exemple-no-tabindex-2">DOM order : 2</label><input type="text" id="id-exemple-no-tabindex-2"></td>
+						<td><label for="id-exemple-no-tabindex-3">DOM order : 3</label><input type="text" id="id-exemple-no-tabindex-3"></td>
+					</tr>
+					<tr>
+						<td><label for="id-exemple-no-tabindex-4">DOM order : 4</label><input type="text" id="id-exemple-no-tabindex-4"></td>
+						<td><label for="id-exemple-no-tabindex-5">DOM order : 5</label><input type="text" id="id-exemple-no-tabindex-5"></td>
+						<td><label for="id-exemple-no-tabindex-6">DOM order : 6</label><input type="text" id="id-exemple-no-tabindex-6"></td>
+					</tr>
+					<tr>
+						<td><label for="id-exemple-no-tabindex-7">DOM order : 7</label><input type="text" id="id-exemple-no-tabindex-7"></td>
+						<td><label for="id-exemple-no-tabindex-8">DOM order : 8</label><input type="text" id="id-exemple-no-tabindex-8"></td>
+						<td><label for="id-exemple-no-tabindex-9">DOM order : 9</label><input type="text" id="id-exemple-no-tabindex-9"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table tabindex-example">
+				<thead>
+					<tr>
+						<th colspan="3">SWAG tabindexes used</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label for="id-exemple-tabindex-1">DOM 1 / Tabindex 1</label><input type="text" id="id-exemple-tabindex-1" tabindex="1"></td>
+						<td><label for="id-exemple-tabindex-2">DOM 2 / Tabindex 2</label><input type="text" id="id-exemple-tabindex-2" tabindex="2"></td>
+						<td><label for="id-exemple-tabindex-3">DOM 3 / Tabindex 3</label><input type="text" id="id-exemple-tabindex-3" tabindex="3"></td>
+						<td><label for="id-exemple-tabindex-4">DOM 4 / Tabindex 10</label><input type="text" id="id-exemple-tabindex-4" tabindex="10"></td>
+					</tr>
+					<tr>
+						<td><label for="id-exemple-tabindex-5">DOM 5 / Tabindex 8</label><input type="text" id="id-exemple-tabindex-5" tabindex="8"></td>
+						<td><label for="id-exemple-tabindex-6">DOM 6 / Tabindex 9</label><input type="text" id="id-exemple-tabindex-6" tabindex="9"></td>
+						<td><label for="id-exemple-tabindex-7">DOM 7 / Tabindex 4</label><input type="text" id="id-exemple-tabindex-7" tabindex="4"></td>
+						<td><label for="id-exemple-tabindex-8">DOM 8 / Tabindex 10</label><input type="text" id="id-exemple-tabindex-8" tabindex="10"></td>
+					</tr>
+					<tr>
+						<td><label for="id-exemple-tabindex-9">DOM 9 / Tabindex 7</label><input type="text" id="id-exemple-tabindex-9" tabindex="7"></td>
+						<td><label for="id-exemple-tabindex-10">DOM 10 / Tabindex 6</label><input type="text" id="id-exemple-tabindex-10" tabindex="6"></td>
+						<td><label for="id-exemple-tabindex-11">DOM 11 / Tabindex 5</label><input type="text" id="id-exemple-tabindex-11" tabindex="5"></td>
+						<td><label for="id-exemple-tabindex-12">DOM 12 / Tabindex 10</label><input type="text" id="id-exemple-tabindex-12" tabindex="10"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="info">
+				<ul>
+					<li>
+						Allow you to specify the order in wich the fields will focus when the user uses sequential keyboard navigation (usually tabulation).<br />
+						Especially usefull with table, grid or custom (css) displays.
+					</li>
+					<li>Takes integer as values.</li>
+					<ul>
+						<li>If the value specified is 0, the order will be specified by the document's source order.</li>
+						<li>
+							Note, if the value specified is negative, the user won't be able to focus to it through this way, but will still be able to focus it another way.<br />
+							Recommanded for JS widgets for examples.
+						</li>
+						<li>If several elements shares the same integer, their order <strong>relative to each</strong> other will be determined by the document's source order.</li>
+					</ul>
+				</ul>
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li><strong>I'd recommand not using it and create properly organized HTML</strong>, it can f*ck up accessibility readers</li>
+					<li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank" title="Mozilla doc : tabindex attribute">MDN tabindex attribute</a> / lots of subtilities I won't list here as I don't recommand using it
+					</li>
+					<ul>
+						<li>Especially priority & children block stuff : In those example, when you tab from the first tab last input, you should go to the first of the second tab, <strong>but instead it skips all inputs in the second tab</strong>.. until the end of the page is reached (no tabindex somewhat equals tabindex 0)</li>
+						<li>Consider using it with autofocus..</li>
+					</ul>
+					<li>Note that you can also use <em>Shift + Tab</em> to navigate backward in forms / other ;)</li>
+				</ul>
+			</div>
 
 
 

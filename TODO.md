@@ -17,6 +17,8 @@
 
 - quotes > blockquote or q ?
 
+- details ? > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
 # css fixs
 ✔ HX one words
 ✔ images mw 100% h auto
@@ -162,10 +164,6 @@
 		
 
 
-		tabindex element-specific in HTML 4, global in HTML5
-			The position of the element in the tabbing navigation order for the current document.
-
-		
 		value
 			The initial value of the control. This attribute is optional except when the value of the type attribute is radio or checkbox.
 			Note that when reloading the page, Gecko and IE will ignore the value specified in the HTML source, if the value was changed before the reload
