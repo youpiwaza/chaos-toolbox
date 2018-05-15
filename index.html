@@ -821,6 +821,7 @@
 
 
 			<h3 class="color">Global attributes</h3>
+
 			<div class="info big reco">
 				All fields shares global attributes. Here's the list & illustrations.<br />
 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes" target="_blank" title="Mozilla doc : form elements global attributes">MDN : form elements global attributes</a>
@@ -836,6 +837,7 @@
 						type="text"
 				/>
 			</div>
+
 			<div class="info">
 				Booelean. Use on one field only, allow to specify which field has the focus after page loads.<br />
 				Be careful as it can make the page scroll jump, and also can confuse some accessibility readers.
@@ -856,6 +858,7 @@
 						type="text"
 				/>
 			</div>
+
 			<div class="info">
 				Text illustration of what an input should be filled with.<br />
 				<br />
@@ -864,7 +867,36 @@
 				<a href="http://webdesignerwall.com/tutorials/cross-browser-html5-placeholder-text" target="_blank" title="placeholder compatibility">Make it cross browser</a>, as it's HTML5 only, even if mostly supported.<br />
 				Basically use modernizr & jquery to accomodate for older browsers
 			</div>
+			
 
+			<h4 class="color">readonly</h4>
+			<div>
+				<label for="id-example-readonly">Example readonly</label>
+				<input 	id="id-example-readonly"
+						name="example-readonly"
+						readonly 
+						type="text"
+						value="You can't edit this"
+				/>
+			</div>
+			<div>
+				<label for="id-example-readonly">Example readonly with placeholder only (no point but hey it exists..)</label>
+				<input 	id="id-example-readonly"
+						name="example-readonly"
+						placeholder="You can't edit this"
+						readonly 
+						type="text"
+				/>
+				<em>Seriously, never do this</em>
+			</div>
+
+			<div class="info">
+				Used to display info to the user only, he can't edit it.<br />
+				The value can still be edited by a script though.<br />
+				Be careful, it can also be edited by editing html code in the browser through inspector !<br />
+				Doesn't not work on several input types : hidden, image, or a button type (submit, reset, or button).<br />
+				<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Attribute/readonly" target="_blank" title="Mozilla doc : readonly attribute">MDN readonly attribute</a>
+			</div>
 
 
 

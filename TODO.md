@@ -157,13 +157,9 @@
 
 ////// Forms Brainstorm
 
-
-
 	
 //// global attributes
 		
-		readonly HTML5
-			This attribute indicates that the user cannot modify the value of the control. The value of the attribute is irrelevant. If you need read-write access to the input value, do not add the "readonly" attribute. It is ignored if the value of the type attribute is hidden, range, color, checkbox, radio, file, or a button type (such as button or submit).
 		
 		required HTML5
 			This attribute specifies that the user must fill in a value before submitting a form. It cannot be used when the type attribute is hidden, image, or a button type (submit, reset, or button). The :optional and :required CSS pseudo-classes will be applied to the field as appropriate.
@@ -614,6 +610,9 @@
 
 
 //// Submission
+
+	security > CARE FOR HTML EDITS / BAD REQUESTS
+
 	<ul>
 	<li>JS / If form is handled by javascript, use the <em>submit</em> event on the form instead of a <em>click</em> event on the button. This way you'll proc even if the user submitted another way (any field > enter ; tabulation to navigate to the button > space) </li>
 	</ul>
@@ -673,6 +672,10 @@
 	// Possibility to style the curson !
 	https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color
 	caret-color: red;
+	
+	// Sticky css
+	Déjà mentionné dans layout
+
 
  ! Lint all this sh*t x)
  ! Auto prefix
