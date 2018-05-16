@@ -821,6 +821,36 @@
 			</div>
 
 
+			<h4 class="color">&lt;label&gt; tag</h4>
+			<div class="info">
+				Label tags are designed to give information on what kind of data the user should input in the corresponding field.<br />
+				Do not confuse with placeholder !<br />
+				Most fields are too specific, we'll cover labels in each form element part.
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li>
+						Make sur to define a <em>for</em> attribute to your label.<br />
+						In order to link the label the corresponding input, it must match their <em>id</em> attribute
+					</li>
+					<ul>
+						<li>It's a good practice for accessibility, and can also provide some behavior (like becoming clickable to check their matching input (checkbox/radio usually))</li>
+						<li>
+							It can also been linked by been added inside the inputs tags.<br />
+							I recommand doing both ; but using only <em>for</em> can allow more design freedom
+						</li>
+					</ul>
+					<li>Accessibility</li>
+					<ul>
+						<li>Don't place title tags inside labels</li>
+						<li>Don't add labels to buttons (neither &lt;input type="button"&gt; nor &lt;button&gt;) </li>
+					</ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank" title="MDN Doc : label">MDN Doc : label</a></li>
+				</ul>
+			</div>
+
+
 			<h4 class="color">&lt;fieldset&gt; & &lt;legend&gt; tags</h4>
 			For illustration
 			<fieldset>
