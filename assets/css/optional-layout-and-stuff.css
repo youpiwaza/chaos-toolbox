@@ -41,6 +41,10 @@
     padding: .5em;
   }
 
+ul.inline li {
+  /* Removes bullets from list automattically */
+  display: inline;
+}
 
 /*** Google web fonts, locally ***/
 /*** https://google-webfonts-helper.herokuapp.com/fonts/ ***/

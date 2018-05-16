@@ -1445,7 +1445,283 @@ input[type=disabled], button[type=disabled] { ... }
 				</ul>
 			</div>
 
+			
 
+			<h3 class="color">(input type=) Checkbox / radio</h3>
+	
+			<table class="table">
+				<tbody>
+					
+					<tr>
+						<th colspan="2">Checkboxes</th>
+					</tr>
+
+					<tr>
+						<td>Checkbox</td>
+						<td>
+							<input type="checkbox" id="id-example-cb" name="example-cb" value="1" role="checkbox">
+								<label for="id-example-cb">Example Checkbox</label>
+							</input>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Checkbox disabled</td>
+						<td>
+							<input disabled type="checkbox" id="id-example-cb-disabled" name="example-cb-disabled" value="1">
+								<label for="id-example-cb-disabled">Example Checkbox disabled</label>
+							</input>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Multiple checkboxs<br />
+							<em>Fieldset container<br />
+								with array-like data</em>
+						</td>
+						<td>
+							<fieldset>
+								<legend>Checkboxs group</legend>
+								<input type="checkbox" id="id-example-cb-1" name="group-cb[]" value="1"><label for="id-example-cb-1">Checkbox 1</label></input>
+								<input type="checkbox" id="id-example-cb-2" name="group-cb[]" value="2"><label for="id-example-cb-2">Checkbox 2</label></input>
+								<input type="checkbox" id="id-example-cb-3" name="group-cb[]" value="3"><label for="id-example-cb-3">Checkbox 3</label></input>
+							</fieldset>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Multiple checkboxs<br />
+							<em>Vertical list container</em>
+						</td>
+						<td>
+							<ul>
+								<li>
+									<input type="checkbox" id="id-example-cb-11" name="group-cb-ulv[]" value="1"><label for="id-example-cb-11">Checkbox 1</label></input>
+								</li>
+								<li>
+									<input type="checkbox" id="id-example-cb-12" name="group-cb-ulv[]" value="2"><label for="id-example-cb-12">Checkbox 2</label></input>
+								</li>
+								<li>
+									<input type="checkbox" id="id-example-cb-13" name="group-cb-ulv[]" value="3"><label for="id-example-cb-13">Checkbox 3</label></input>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Multiple checkboxs<br />
+							<em>Horizontal list container (needs CSS)</em>
+						</td>
+						<td>
+							<ul class="inline">
+								<li>
+									<input type="checkbox" id="id-example-cb-21" name="group-cb-ulh[]" value="1"><label for="id-example-cb-21">Checkbox 1</label></input>
+								</li>
+								<li>
+									<input type="checkbox" id="id-example-cb-22" name="group-cb-ulh[]" value="2"><label for="id-example-cb-22">Checkbox 2</label></input>
+								</li>
+								<li>
+									<input type="checkbox" id="id-example-cb-23" name="group-cb-ulh[]" value="3"><label for="id-example-cb-23">Checkbox 3</label></input>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					
+
+					<tr>
+						<th colspan="2">Radios</th>
+					</tr>
+
+
+					<tr>
+						<td>Radio</td>
+						<td>
+							<input type="radio" id="id-example-radio" name="example-radio" value="1">
+								<label for="id-example-radio">Example Radio</label>
+							</input>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Radio, label outside of input,<br />but still linked thanks to <em>for</em> attribute</td>
+						<td>
+							<input type="radio" id="id-example-radio-8" name="example-radio-8" value="1" />
+							<label for="id-example-radio-8">Example Radio</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Radio disabled</td>
+						<td>
+							<input disabled type="radio" id="id-example-radio-disabled" name="example-radio-disabled" value="1">
+								<label for="id-example-radio-disabled">Example Radio disabled</label>
+							</input>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Multiple radios<br />
+							<em>Fieldset container</em>
+						</td>
+						<td>
+							<fieldset>
+								<legend>Radios group</legend>
+								<input type="radio" id="id-example-radio-1" name="group-radio" value="1"><label for="id-example-radio-1">Radio 1</label></input>
+								<input type="radio" id="id-example-radio-2" name="group-radio" value="2"><label for="id-example-radio-2">Radio 2</label></input>
+								<input type="radio" id="id-example-radio-3" name="group-radio" value="3"><label for="id-example-radio-3">Radio 3</label></input>
+							</fieldset>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Multiple radios<br />
+							<em>Vertical list container</em>
+						</td>
+						<td>
+							<ul>
+								<li>
+									<input type="radio" id="id-example-radio-11" name="group-radio-ulv" value="1"><label for="id-example-radio-11">Radio 1</label></input>
+								</li>
+								<li>
+									<input type="radio" id="id-example-radio-12" name="group-radio-ulv" value="2"><label for="id-example-radio-12">Radio 2</label></input>
+								</li>
+								<li>
+									<input type="radio" id="id-example-radio-13" name="group-radio-ulv" value="3"><label for="id-example-radio-13">Radio 3</label></input>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Multiple radios<br />
+							<em>Horizontal list container (needs CSS)</em>
+						</td>
+						<td>
+							<ul class="inline">
+								<li>
+									<input type="radio" id="id-example-radio-21" name="group-radio-ulh" value="1"><label for="id-example-radio-21">Radio 1</label></input>
+								</li>
+								<li>
+									<input type="radio" id="id-example-radio-22" name="group-radio-ulh" value="2"><label for="id-example-radio-22">Radio 2</label></input>
+								</li>
+								<li>
+									<input type="radio" id="id-example-radio-23" name="group-radio-ulh" value="3"><label for="id-example-radio-23">Radio 3</label></input>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+
+					<tr>
+						<th colspan="2">Test rare cases, to prevent design failures</th>
+					</tr>
+
+					<tr>
+						<td>Checkbox w. ridiculously long label</td>
+						<td>
+							<input type="checkbox" id="id-example-cb" name="example-cb" value="1" role="checkbox">
+								<label for="id-example-cb">
+									AlsoTestForAPrettyRareButWhatAboutADefinitlyStupidlyLongWordQuestionMarkThisIsHardcoreDesignCrushUsuallyYouKnowItCanActuallyPushYourMainContainerBehindItsLimitsHahaAndEvenGoPastTheScreenAndAddhorizontalScrollAndMakeSomeHeightbasedJSWorkOddly
+								</label>
+							</input>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Checkbox w. multiline label</td>
+						<td>
+							<input type="checkbox" id="id-example-cb" name="example-cb" value="1" role="checkbox">
+								<label for="id-example-cb">
+									Example Checkbox<br />
+									Example Checkbox<br />
+									Example Checkbox
+								</label>
+							</input>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+			<div class="info">
+				<ul>
+					<li>Checkboxs & radio buttons are used to propose clear choices to your users</li>
+					<li>You can group inputs by making them share the same <em>name</em> attribute</li>
+					<ul>
+						<li>For groups of checkboxes, specify brackets to allow the data submission to be an array, like so <em>name="checkboxgroup[]"</em></li>
+						<li>You can also specify nested tabs, if it fills your needs</li>
+						<li>Source : <a href="https://stackoverflow.com/questions/9709209/html-select-only-one-checkbox-in-a-group" target="_blank" title="Stackoverflow : checkbox data format">Stackoverflow : checkbox data format</a></li>
+						<li>For radio groups, only one value is sent</li>
+						<li>
+							<strong>Pay attention to data : unlike other input fields, checkboxs & radios send data only if they are checked.<br />
+							If not, no data is sent, not even their name !</strong>
+						</li>
+					</ul>
+					<li>Checkboxs allow 0 - n choices, while radio buttons allow 0-1 only</li>
+					<ul>
+						<li>You can force a mandatory choice by using the <em>required</em> attribute</li>
+						<li>And/or make use of the <em>checked</em> attribute for the radio input</li>
+					</ul>
+					<ul>
+						<li>For radio buttons, you need to apply required only once, according that all inputs share the same name attribute</li>
+						<li>You can still apply the required attribute to all inputs</li>
+						<li>Source : <a href="https://stackoverflow.com/questions/8287779/html5-how-to-use-the-required-attribute-with-a-radio-input-field" target="_blank" title="Stackoverflow : radio required">Stackoverflow : radio required</a></li>
+					</ul>
+					<li><strong>The value attribute is required</strong></li>
+					<li>You can use the <em>checked</em> attribute (without value) in order to make inputs checked by default</li>
+					<ul>
+						<li>If multiple radio inputs are <em>checked</em> in a same name space, the last one (DOM source order) is actually checked</li>
+					</ul>
+					<li>
+						Checkboxs have 2 states : checked and unchecked.<br />
+						There is also a third state <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Indeterminate_state_checkboxes" target="_blank" title="MDN doc : checkbox indeterminate state">indeterminate</a> which can be used in JS (no HTML attribute).<br />
+					</li>
+				</ul>
+			</div>
+			<br />
+
+			<div class="info reco">
+				<ul>
+					<li>Layout & accessibility : make use of &lt;fieldset&gt; & &lt;legend&gt; tags to regroup inputs</li>
+					<li>Always use a &lt;label&gt; tag, and associate them through <em>for</em> & <em>id</em> attributes</li>
+					<ul>
+						<li>When associated like so, the label becomes clickable in order to select the chosen input.</li>
+						<li>
+							However, it's still recommanded to add the label <strong>inside</strong> the input tag.<br />
+							<strong>I won't recommand separation</strong>, but it's still a possibility for design purposes.
+						</li>
+					</ul>
+					<li>It's also recommanded that each label + input has it's own container in DOM</li>
+					<ul>
+						<li>Don't hesitate to use list (&lt;ul&gt; recommanded), array or grid</li>
+					</ul>
+					<li>
+						Accessibility : Note that you can create your own checkbox like component using the <em>role="checkbox"</em> attribute, paired with <em>aria-checked</em>, etc.<br />
+						<strong>There is no need to add this role to a native checkbox</strong> (as it's.. already.. a.. checkbox.....) but it's good to know that for design/UX purpose you can do that. Be careful as the behavior needs to be home made by JS, and follow strict recommandations.<br />
+						Also provide a third state (similar to indeterminate) : <em>mixed</em>.<br />
+						<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_checkbox_role" target="_blank" title="MDN Doc : role checkbox">MDN doc : <strong>role</strong> checkbox</a>
+					</li>
+					<li>Same stuff for <em>radio</em> & <em>radiogroup</em></li>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_radio_role" target="_blank" title="MDN Doc : role radio">MDN doc : <strong>role</strong> radio</a> (empty for now ?)</li>
+						<li><a href="https://www.w3.org/TR/2016/WD-wai-aria-practices-1.1-20160317/examples/radio/radio.html" target="_blank" title="w3 : role radio">w3 doc : <strong>role</strong> radio</li>
+						</li>
+						<li>cf. menuitem, menuitemchecbox & menuitemradio</li>
+					</ul>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox" target="_blank" title="MDN Documentation : input type checkbox">MDN doc : checkbox</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio" target="_blank" title="MDN Documentation : input type radio">MDN doc : radio</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets#Checkable_items" target="_blank" title="MDN Documentation : Checkable items">MDN doc : Checkable items</a></li>
+				</ul>
+			</div>
 
 <!--
 

@@ -162,27 +162,6 @@
 
 ////Elements
 
-	
-	// checkbox / radio
-		https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets > Ctrl F > "Checkable items"
-
-		Recommandé fieldset / legend / label
-		Recommandé : chaque input + label dans son conteneur (liste, div, etc.)
-		Recommandé : Mettre label dans input, pour rendre ce dernier cliquable
-		Obligatoie : value
-		
-		// checkbox
-			checked // attribut sans valeur, préchocher par défaut
-			Valeurs multiples, name="hey[]"
-		// radio
-			Possibilité de regrouper des radios, attribut name similaire
-			/!\ Possibilité aucune valeur sélectionnée
-
-			accessibility
-				Permitted ARIA roles	
-				type=radio: menuitemradio
-
-	
 	// color
 
 		! Ko safari IE
