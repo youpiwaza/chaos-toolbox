@@ -823,10 +823,176 @@
 			<h3 class="color">Global attributes</h3>
 
 			<div class="info big reco">
-				All fields shares global attributes. Here's the list & illustrations.<br />
-				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes" target="_blank" title="Mozilla doc : form elements global attributes">MDN : form elements global attributes</a>
+				<ul>
+					<li>All fields shares global attributes. Here's the list & illustrations.<br /></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes" target="_blank" title="Mozilla doc : form elements global attributes">MDN : form elements global attributes</a></li>
+					<li>Compatibility</li>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#Browser_compatibility" target="_blank" title="MDN doc input">MDN doc : attributes compatibility</a> / Don't hesitate to CanIUse & test too</li>
+						<li><a href="https://caniuse.com/" target="_blank" title="The holy grail of compatibility">Can I use, if you want to use only one website for compatibility, choose this one</a></li>
+						<li><a href="https://www.wufoo.com/html5/" target="_blank" title="another compatibility check site">Another compatibility site : wufoo</a></li>
+						<li><a href="https://quirksmode.org/html5/inputs/mobile.html" target="_blank" title="anonother compatibility check site">Anonother compatibility check site : quiksmode</a></li>
+					</ul>
+				</ul>
 			</div>
 			
+
+			<h4 class="color">accesskey</h4>
+			<div>
+				<form action="#">
+					
+					<table class="table">
+						<thead>
+							<tr>
+								<th colspan="2">You can test quick acces using "Alt" key + shortcut key</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<label for="id-example-accesskey">Example accesskey / "t" keyboard shortcut added</label>
+								</td>
+								<td>
+									<input 	accesskey="t"
+											id="id-example-accesskey"
+											name="example-accesskey"
+											type="text"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="id-example-accesskey-2">Example accesskey / "y" keyboard shortcut added</label>
+								</td>
+								<td>
+									<input 	accesskey="y"
+											id="id-example-accesskey-2"
+											name="example-accesskey-2"
+											tabindex="1" 
+											type="text"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="id-example-accesskey-22">Example accesskey / "y" keyboard shortcut added</label>
+								</td>
+								<td>
+									<input 	accesskey="y"
+											id="id-example-accesskey-22"
+											name="example-accesskey-22"
+											type="text"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="id-example-accesskey-23">Example accesskey / "Y" keyboard shortcut added</label>
+								</td>
+								<td>
+									<input 	accesskey="Y"
+											id="id-example-accesskey-23"
+											name="example-accesskey-23"
+											tabindex="2" 
+											type="text"
+									/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label for="id-example-accesskey-3">Example accesskey / "2" keyboard shortcut added</label>
+								</td>
+								<td>
+									<input 	accesskey="2"
+											id="id-example-accesskey-3"
+											name="example-accesskey-3"
+											type="text"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="id-example-accesskey-4">Example accesskey / "&" keyboard shortcut added</label>
+								</td>
+								<td>
+									<input 	accesskey="&"
+											id="id-example-accesskey-4"
+											name="example-accesskey-4"
+											type="text"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="id-example-accesskey-5">Example accesskey / "bn" keyboard shortcut added <strong>// KO</strong></label>
+								</td>
+								<td>
+									<input 	accesskey="bn"
+											id="id-example-accesskey-5"
+											name="example-accesskey-5"
+											type="text"
+									/>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<button type="button" accesskey="s">"s" keyboard shortcut added</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div accesskey="u">Doesn't seems to work with non-focusable elements, like a simple div</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<div class="info">
+				<ul>
+					<li>Allow you to add keyboard shorcuts to quickly navigate to HTML elements</li>
+					<li>Most browsers uses <strong>"Alt" + designated shortcut letter</strong>, but Firefox uses <strong>"Alt" + "Shift" + shortcut key</strong></li>
+					<li>MDN recommandation : Don't add shortcuts infos to the layout, create a separate page with a manual/infos</li>
+					<li>Can't seem to find documentation about a list of available/recommanded shortcuts, but here's what quick tests show</li>
+					<ul>
+						<li>Shortcuts aren't case sensitive ("s" = "S")</li>
+						<li>Doesn't seems to work on non-focusable elements, despite been a global attribute</li>
+						<li>Number works ( <em>accesskey="2"</em> ) but it can has erratic behavior</li>
+						<ul>
+							<li>Touchpad doesn't seems to work, probably because a conflict with ASCII characters generation</li>
+							<ul>
+								<li>Set cursor in text editor, Try keep "Alt" pressed down, type 0201 on your touchpad, let Alt. You're welcome.</li>
+							</ul>
+							<li>Still works if using "Alt" + "Shift" + "&", for 1 by example ("Shift" + "&" = 1) ; on pc</li>
+						</ul>
+						<li>Special characters, like "&" seems to works</li>
+						<ul>
+							<li><strong>I won't recommand using them though</strong>, as Firefox is using "Alt" + "Shift" as a shortcut.</li>
+							<li>Surprinsigly enough it will still works, but will add a conflict between different symbols on the same key</li>
+							<li>For example : if I have 2 accesskeys "&" and "1", pressing "Alt" + "Shift" + "&" on firefox will result in always going to the 1 shortcut</li>
+						</ul>
+						<li>Multiple characters "bn" won't work</li>
+						<ul>
+							<li>Edge will jump for the first letter ; for example in this case it jumps to the element when pressing "Alt" + "b"</li>
+						</ul>
+						<li>You can use a space separated list of shortcut characters ; Browsers should use the first working</li>
+						<ul>
+							<li>Not tested, and <strong>not recommanded</strong> by MDN anyway</li>
+						</ul>
+						<li>Using multiple occurences of the same shortcut</li>
+						<ul>
+							<li>From what i've tested, there's erratic behavior between browsers, <strong>won't recommand</strong></li>
+							<li>Chrome jumps to the last (DOM source order, tabindex makes no differences) occurence, only (no matter case, no difference between "y" and "Y"</li>
+							<li>Firefox jumps to the first occurence, then loops between all occurence (DOM source order, tabindex makes no differences)</li>
+							<li>Edge works like chrome, except that using "Alt" + "Shift" + key allow to loops backward ("Alt" + key loops normally).</li>
+						</ul>
+					</ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey" target="_blank" title="MDN doc : accesskey">MDN doc : accesskey</a></li>
+				</ul>
+			</div>
+
 
 			<h4 class="color">autofocus</h4>
 			<div>
@@ -940,10 +1106,10 @@
 					<ul>
 						<li>Pay attention to <em>minlength</em> & <em>maxlength</em> compatibility though (not pretty sure as MDN & CanIUse differs..)</li>
 					</ul>
+					<li>
+						<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#attr-required" target="_blank" title="Mozilla doc : required attribute">MDN required attribute</a>
+					</li>
 				</ul>
-				<li>
-					<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#attr-required" target="_blank" title="Mozilla doc : required attribute">MDN required attribute</a>
-				</li>
 			</div>
 			
 
@@ -1094,7 +1260,130 @@
 			
 			<h2 class="color">Form elements</h2>
 
+			<div class="info big reco">
+				All around documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Form" target="_blank" title="MDN doc form">MDN form</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank" title="MDN doc input">MDN input</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets" target="_blank" title="MDN tutorial : basic form element implementation">Basic implementation</a></li>
+				</ul>
+			</div>
 
+
+			<h3 class="color">button</h3>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th colspan="3">Type</th>
+					</tr>
+					<tr>
+						<th>submit</th>
+						<th>reset</th>
+						<th>button</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<button type="submit">submit</button>
+						</td>
+						<td>
+							<button type="reset">reset</button>
+						</td>
+						<td>
+							<button type="button">button</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button disabled type="submit">submit, disabled</button>
+						</td>
+						<td>
+							<button disabled type="reset">reset, disabled</button>
+						</td>
+						<td>
+							<button disabled type="button">button, disabled</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="info">
+				Available attributes
+				<ul>
+					<li>accesskey</li>
+					<li>autofocus</li>
+					<li>disabled / Recommanded to switch to this state on submit to prevent multiple form send</li>
+					<li>formaction, formmethod, formtarget / already discussed</li>
+					<li>type</li>
+					<ul>
+						<li>submit / Send associated form</li>
+						<ul>
+							<li>accessibility > Permitted ARIA roles > None</li>
+						</ul>
+						<li>reset / Reset associated form / Care, no warning for user</li>
+						<li>button / Classic button, recommanded if used NOT to submit a form. No need for preventDefault</li>
+						<ul>
+							<li>accessibility > Permitted ARIA roles > link, menuitem, menuitemcheckbox, menuitemradio, radio, switch, tab</li>
+						</ul>
+					</ul>
+					<li>value / Can be usefull on types different than submit, example : for stats puposes</li>
+				</ul>
+				Difference between &lt;input type="submit"&gt; and &lt;button type="submit"&gt;
+				<ul>
+					<li>You can't set HTML content with the &lt;input&gt; tag as it's content is set through the <em>value</em> attribute, only text</li>
+					<li>But the &lt;button&gt; allow you to <strong>include html inside the tags</strong></li>
+					<li>Other than that, both behave the exact same way</li>
+					<li>Same things applies (both input & button) for types <em>reset</em> & <em>button</em></li>
+					<ul>
+						<li>Yes, may seems strange but you can use &lt;button type="button"&gt;</li>
+					</ul>
+					<li>In general, I'd recommand using <em>button</em> over <em>input</em></li>
+					<li>Pay attention in CSS, when <strong>styling by type</strong>, don't forget to duplicate entries if you want to cover all cases</li>
+					<ul>
+						<li>
+							<pre>
+input[type=submit], button[type=submit] { ... }
+input[type=reset], button[type=reset] { ... }
+input[type=disabled], button[type=disabled] { ... }
+							</pre>
+						</li>
+					</ul>
+				</ul>
+			</div>
+			<br />
+			<div class="info">
+				Design / CSS related infos
+				<ul>
+					<li>Let space between buttons, add proper & homogeneous margins</li>
+					<li>Icons buttons</li>
+					<ul>
+						<li>accessibility : you should add text & hide it, cf . <a href="https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link" target="_blank" title="Article on accessibility about icon buttons">Smart article on accessibility on icon buttons</a></li>
+					</ul>
+					<li>Firefox styles</li>
+					<ul>
+						<li>A background gradient by default, to disable it > background<strong>-image</strong>: none</li>
+						<li>Adds a dotted border on focus, to disable it > button::-moz-focus-inner { }</li>
+					</ul>
+				</ul>
+			</div>
+			<br />
+			<div class="info">
+				Won't recommand, but just for completion : you can create pseudo-buttons, thansk to the attrbiute <em>role=button</em>, and some aria stuff.<br />
+				Can be used also for the creation of "toggle" buttons (uses JS).<br />
+				<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank" title="Creating pseudo aria button, Y tho">MDN doc : Using the button role</a>
+			</div>
+			<br />
+
+			<div class="info reco">
+				<ul>
+					<li>Recommanded tags to use inside button : em strong img i (icons, like fontawesome, materials, etc.)</li>
+					<li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank" title="Mozilla doc : button tag">MDN button tag</a>
+					</li>
+				</ul>
+			</div>
 
 
 
