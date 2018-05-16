@@ -1,5 +1,7 @@
 /* Chaos Bug prevention */
+
 * {
+	/* Prevent text overflows */
 	/* Ref : https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */ 
 	/* These are technically the same, but use both */
 	overflow-wrap: break-word;
@@ -16,15 +18,29 @@
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-
+	
+	/* Prevent margin/padding anarchy */
 	box-sizing: border-box;
 }
 
+/* Prevent weird bug, when used in td, duplicate td's border bottom, due to original value set to 0.625em (Chrome) */
+fieldset {
+	padding-bottom: 0.6em;
+}
+
+/* Prevent images from overflowing parent containers */
 img {
 	height: auto;
 	max-width: 100%;
 }
 
+/* Convenience fixs */
+/* Defaut table border collapse */
 table {
 	border-collapse: collapse;
+}
+
+/* Inputs cb/radio aligned with inline labels */
+[type="checkbox"], [type="radio"] {
+    vertical-align: middle;
 }

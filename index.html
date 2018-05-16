@@ -1616,7 +1616,7 @@ input[type=disabled], button[type=disabled] { ... }
 
 
 
-
+			<button accesskey="a">hey</button>
 
 
 
@@ -1644,16 +1644,6 @@ input[type=disabled], button[type=disabled] { ... }
 					<div>
 						Don't count margin/paddings when calculating width of elements<br />
 						<a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing" target="_blank" title="Mozilla doc : box sizing">MDN, box-sizing</a>
-						
-					</div>
-					
-					<pre>img {
-	height: auto;
-	max-width: 100%;
-}
-					</pre>
-					<div>
-						Prevent images from overflowing parent containers
 					</div>
 					
 					<pre>* {
@@ -1675,14 +1665,41 @@ input[type=disabled], button[type=disabled] { ... }
 						<a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/" target="_blank" title="Texts & css, how to not fuck up your design (basicly)">Css tricks, long text stuff</a>                       
 					</div>
 
-					<pre>
-						table {
+					
+
+					<pre>fieldset {
+	padding-bottom: 0.6em;
+}
+					</pre>
+					<div>
+						Prevent weird bug, when used in td, duplicate td's border bottom, due to original value set to 0.625em (Chrome)
+					</div>
+
+					<pre>img {
+	height: auto;
+	max-width: 100%;
+}
+					</pre>
+					<div>
+						Prevent images from overflowing parent containers
+					</div>
+					
+					<pre>table {
 	border-collapse: collapse;
 }
 					</pre>
 					<div>
 						More of a convenience than a real bug prevention. Removes built-in margins & border repetitions between table's td.<br />
 						<a href="https://developer.mozilla.org/fr/docs/Web/CSS/border-collapse" target="_blank" title="MDN doc : CSS border-collapse">MDN doc : CSS border-collapse</a>                       
+					</div>
+					
+					<pre>[type="checkbox"], [type="radio"] {
+	vertical-align: middle;
+}
+					</pre>
+					<div>
+						More of a convenience than a real bug prevention. Vertically align (middle) input checkbox & radio with their labels.<br />
+						I'd recommand an align top if the label is multiline.
 					</div>
 
 				</div>
