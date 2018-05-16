@@ -783,7 +783,9 @@
 				<ul>
 					<li>All fields should be displayed with a <strong>&lt;label&gt;</strong> tag associated. Pay attention po properly fill the <em>for</em> attribute (label) & the corresponding <em>id</em> attribute (~input)</li>
 					<li>Consider regrouping fields by thematics. Some websites recommand using <strong>&lt;section&gt;</strong> tags, associated with optionnal <strong>title</strong> tags.</li>
-					<li>Make use of <strong>&lt;fieldset&gt;</strong> & <strong>&lt;legend&gt;</strong>, which provides a contour and a title</li>
+					<ul>
+						<li>Make use of <strong>&lt;fieldset&gt;</strong> & <strong>&lt;legend&gt;</strong>, which provides a contour and a title</li>
+					</ul>
 					<li>
 						In case of a very tall form, consider using the new sticky css stuff : <a href="https://air.mozilla.org/intern-presentation-ford/" target="_blank" title="Sticky css presentation">Air mozilla, sticky position presentation</a>, <a href="http://filamentgroup.github.io/fixed-sticky/demos/demo.html" target="_blank" title="Sticky css : working example">and here's a demo</a>.<br />
 						Could be especially usefull on mobile/tablet to keep buttons always available to users.
@@ -817,6 +819,34 @@
 
 				Doc : <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form" target="_blank" title="Mozilla doc : Structure forms">MDN / Structure forms</a>
 			</div>
+
+
+			<h4 class="color">&lt;fieldset&gt; & &lt;legend&gt; tags</h4>
+			For illustration
+			<fieldset>
+				<legend>Legend title</legend>
+
+				Fieldset automatically generate a border around a particuliar set of inputs (or any tag).<br />
+				You can use a legend tag to add a title.<br />
+				<br />
+
+				<table>
+					<tbody>
+						<tr>
+							<td><label for="id-example-fl-1">Field 1</label></td>
+							<td><input type="text" id="id-example-fl-1" name="example-fl-1"></td>
+						</tr>
+						<tr>
+							<td><label for="id-example-fl-2">Field 2</label></td>
+							<td><input type="text" id="id-example-fl-2" name="example-fl-2"></td>
+						</tr>
+						<tr>
+							<td><label for="id-example-fl-3">Field 3</label></td>
+							<td><input type="text" id="id-example-fl-3" name="example-fl-3"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
 
 
 
@@ -1173,7 +1203,7 @@
 			<div class="info">
 				<ul>
 					<li>
-						Allow you to specify the order in wich the fields will focus when the user uses sequential keyboard navigation (usually tabulation).<br />
+						Allow you to specify the order in which the fields will focus when the user uses sequential keyboard navigation (usually tabulation).<br />
 						Especially usefull with table, grid or custom (css) displays.
 					</li>
 					<li>Takes integer as values.</li>
