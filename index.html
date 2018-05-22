@@ -880,6 +880,65 @@
 
 
 
+			<h3 class="color"><em>list</em> attribute & &lt;datalist&gt; tag</h3>
+			
+			<p>MDN example on an input type text</p>
+			<label for="myBrowser">Choose a browser from this list:</label>
+			<input list="browsers" id="myBrowser" name="myBrowser" type="text" />
+			<datalist id="browsers">
+				<option value="Chrome"></option>
+				<option value="Firefox"></option>
+				<option value="Internet Explorer"></option>
+				<option value="Opera"></option>
+				<option value="Safari"></option>
+				<option value="Microsoft Edge"></option>
+			</datalist>
+			
+			<br />
+
+			<div class="info">
+				The <em>list attribute</em> and the &lt;datalist&gt; tag, associated together through the datalist <em>id</em> attribute,<br />
+				are allowing us to fix a defined list of choice for the user to choose for.<br />
+				It can apply to most tags, and will be specified in those tags definitions.
+				<ul>
+					<li>Linking example : &lt;input list="datalist-id" /&gt;</li>
+					<li>The datalist tag must be populated through &lt;options&gt; tags, using their <em>value</em> attributes</li>
+				</ul>
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li><strong>This is not a &lt;select&gt; !</strong></li>
+					<ul>
+						<li>
+							Be aware that in most cases, users can still enter whatever value they want.<br />
+							They are'nt restricted by the list. Think of it more like multiple suggestions
+						</li>
+						<li>Also, it allow the use of autocompletion</li>
+					</ul>
+					<li>Compatibility > <strong>Safari needs a polyfill</strong></li>
+					<ul>
+						<li><a href="https://github.com/mfranzke/datalist-polyfill" target="_blank" title="Datalist polyfill for safari">Datalist polyfill for safari</a></li>
+					</ul>
+					<li>Compatibility > Set fallbacks</li>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets#Datalist_support_and_fallbacks" target="_blank" title="MDN Doc : form widgets > datalist stuff">MDN Doc : form widgets > datalist stuff</a></li>
+					</ul>
+					<li>
+						It's not recommanded (MDN) to use with <em>dates inputs</em> (all) nor the <em>color</em> input.<br />
+						For now, it can create erratic behaviors depending on browsers</li>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank" title="MDN doc : datalist">MDN doc : datalist</a></li>
+				</ul>
+			</div>
+
+
+			<button accesskey="a">hey</button>
+
+
+
 			<h3 class="color">Global attributes</h3>
 
 			<div class="info big reco">
@@ -1330,7 +1389,7 @@
 			</div>
 
 
-			<h3 class="color">button tag</h3>
+			<h3 class="color">&lt;button&gt;</h3>
 
 			<table class="table">
 				<thead>
@@ -1447,7 +1506,7 @@ input[type=disabled], button[type=disabled] { ... }
 
 			
 
-			<h3 class="color">(input type=) checkbox / radio</h3>
+			<h3 class="color">&lt;input type="checkbox"&gt; / &lt;input type="radio"&gt;</h3>
 	
 			<table class="table">
 				<tbody>
@@ -1725,7 +1784,7 @@ input[type=disabled], button[type=disabled] { ... }
 
 
 
-			<h3 class="color">(input type=) color</h3>
+			<h3 class="color">&lt;input type="color"&gt;</h3>
 			
 			<label for="id-color">Choose a color :</label>
 			<input id="id-color" name="color" type="color" />
@@ -1990,7 +2049,7 @@ input[type=disabled], button[type=disabled] { ... }
 
 
 
-			<button accesskey="a">hey</button>
+			
 
 
 

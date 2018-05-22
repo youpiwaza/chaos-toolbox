@@ -106,6 +106,7 @@
 
 #css recommandations
 - smacss
+- itcss ? https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 - don't overcharge if not needed (ex: parent border 1px solid #fff, child border-COLOR: #123123)
 
 #folder & file recommandations
@@ -164,15 +165,7 @@
 
 		
 	// datalist // ~select, but better
-		Select from a list, ability to type text & auto completion
-		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 		
-		/!\ Must have an <input list="datalist-id" /> tag attached
-		/!\ Needs polyfill for safari
-		https://github.com/mfranzke/datalist-polyfill
-
-		fallback compatibilité :
-		https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets > Ctrl F > "Datalist support and fallbacks"
 
 		Peut être utilisé avec tout, mais n'est pas recommandé pour des dates/couleurs (comportement erratiques en fonctions des navigateurs, cf. mdn)
 
@@ -529,7 +522,8 @@
 
 
 
-
+//// favorites
+	Add an id to every title, to allow fav/ref links to index.html#daTitle
 
 
 
@@ -566,6 +560,9 @@ Accessibility > check design for colorblindness suffisant contrast
 https://css-tricks.com/accessibility-basics-testing-your-page-for-color-blindness/
 https://www.toptal.com/designers/colorfilter
 
+
+Add emmet suggested tags generation
+- Review doc to pass an array of data for generation, for complex stuff / ids list
 
 chaos repos
 > Sass Mixins
