@@ -1447,7 +1447,7 @@ input[type=disabled], button[type=disabled] { ... }
 
 			
 
-			<h3 class="color">(input type=) Checkbox / radio</h3>
+			<h3 class="color">(input type=) checkbox / radio</h3>
 	
 			<table class="table">
 				<tbody>
@@ -1723,6 +1723,74 @@ input[type=disabled], button[type=disabled] { ... }
 				</ul>
 			</div>
 
+
+
+			<h3 class="color">(input type=) color</h3>
+			
+			<label for="id-color">Choose a color :</label>
+			<input id="id-color" name="color" type="color" />
+
+			<hr />
+
+			<label for="id-color-w-list">Choose a color from a list :</label>
+			<input id="id-color-w-list" list="color-list-id" name="color" type="color" value="#3fb0ac" />
+
+			<datalist id="color-list-id">
+				<option value="#3fb0ac"></option>
+				<option value="#fae596"></option>
+				<option value="#dddfd4"></option>
+				<option value="#173e43"></option>
+				<option value="#1d2120"></option>
+				<option value="#5a5c51"></option>
+				<option value="#ba9077"></option>
+				<option value="#bcd5d1"></option>
+			</datalist>
+				
+			<hr />
+
+			<div class="info">
+				Allow for the user to choose a color from a color picker.
+				<ul>
+					<li>The appearance from both the "button" and the color picker vary from browsers</li>
+					<li>You can fill the content either from the color picker, or by typing a 7 characters strong corresponding to a RGB value, ex: #3fb0ac</li>
+					<ul>
+						<li>If the value is incorrect, it will be set to #000000</li>
+						<li>also, the <em>:invalid</em> css pseudo-class is applied to the element</li>
+					</ul>
+					<li>You can set a defaut color thanks to the <em>value</em> attribute</li>
+					<ul>
+						<li>If none is defined, by default it's black, #000000</li>
+					</ul>
+					<li>accessibility > Permitted ARIA roles > None</li>
+					<li>Associated event : <em>change</em></li>
+					<li>It can support the list attribute, allowing the user to choose from a predefined list</li>
+					<ul>
+						<li><strong>I'd recommand not using it for now</strong>. Erratic results</li>
+						<li>Chrome displays the correct number of colors, but all in a greyish color. Value isn't updated natively</li>
+						<li>Firefox dosen't take it into account</li>
+						<li>Works on Edge, yay</li>
+					</ul>
+				</ul>
+			</div>
+
+			<div class="info reco">
+				<ul>
+					<li>
+						According to doc & canIuse, it doesn't work on Safari nor IE (works on edge),<br />
+						but <strong>I'd still recommand to use it with a proper label</strong>: this field really isn't self explanatory.<br />
+						It should be impleted everywhere soon.</li>
+					<ul>
+						<li>Works fine on Chrome, Firefox & Edge, also on android</li>
+						<li>There's a note on mdn that specify that it doesn't works on firefox on windows touch</li>
+						<li><a href="https://caniuse.com/#feat=input-color" target="_blank" title="input type color compatibility">can I use input type color</a></li>
+					</ul>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color" target="_blank" title="MDN Doc : input type color">MDN Doc : input type color</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank" title="MDN Doc : datalist">MDN Doc : datalist</a></li>
+				</ul>
+			</div>
 <!--
 
 			<h3 class="color">Vanilla elements</h3>

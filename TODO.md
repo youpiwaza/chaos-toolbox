@@ -162,15 +162,7 @@
 
 ////Elements
 
-	// color
-
-		! Ko safari IE
-
-		accessibility
-			Permitted ARIA roles	
-			None
-
-
+		
 	// datalist // ~select, but better
 		Select from a list, ability to type text & auto completion
 		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
