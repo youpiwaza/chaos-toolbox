@@ -569,3 +569,12 @@ https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA/Techniques_ARIA
 
  ! Lint all this sh*t x)
  ! Auto prefix
+
+Accessibility > check design for colorblindness suffisant contrast
+https://css-tricks.com/accessibility-basics-testing-your-page-for-color-blindness/
+https://www.toptal.com/designers/colorfilter
+
+
+chaos repos
+> Sass Mixins
+> Page bloc templates
