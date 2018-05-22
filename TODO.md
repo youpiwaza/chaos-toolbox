@@ -166,20 +166,8 @@
 
 	// image !
 		
-		Image button. Behave like a submit button
-		Data send : position on clicked image (from top left)
-
-		formaction
-			HTML5
-			The URI of a program that processes the information submitted by the input element, if it is a submit button or image. If specified, it overrides the action attribute of the element's form owner.
-			
-			Possibility to have one form sending to != pages !
 		
-		formmethod
-			+1 GET/POST
-
-		formtarget
-			+1 where to go
+		Data send : position on clicked image (from top left)
 
 		accessibility
 			Permitted ARIA roles	
@@ -426,6 +414,11 @@
 
 			jQuery plug-in:
 			Validation // http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+
+
+
+
+Dans le cas où la balise <img /> sert à afficher une image informative au format SVG, rajouter un attribut role="img" sur cette balise afin d’assurer une bonne compatibilité avec les aides techniques mobiles 
 
 
 //// Accessibility
