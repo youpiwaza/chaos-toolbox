@@ -413,14 +413,15 @@
 			</div>
 			<div class="info reco">
 				<ul>
-					<li>Note that you can specify the <em>src</em> attribute to # in order to prevent browsers calls when you don't want any image to be loaded (dynamic loading for example) - <a href="https://stackoverflow.com/questions/19613841/img-src-means-in-html#answer-19614001" target="_blank" title="Stackoverflow : img src #">Related stack overflow</a></li>
-					<li id="image-base64-desc">You can now use <a href="https://varvy.com/pagespeed/base64-images.html" target="_blank" title="Nice article about ase64 image encoding">base64 encoded images</a> to have quicker pageload</li>
+					<li id="image-base64-desc"><strong>You can now use <a href="https://varvy.com/pagespeed/base64-images.html" target="_blank" title="Nice article about ase64 image encoding">base64 encoded images</a> to have quicker pageload</strong></li>
 					<ul>
 						<li>Recommanded for semantic-less images : it's a good alternative to font icons</li>
 						<li>Now can be used without loosing image SEO, according to the article</li>
 						<li>Pay attention to the author recommandations (prefer small images, SEO, etc.)</li>
 						<li>They are some online images encoder online, go find some</li>
 					</ul>
+					<li>If you're using the &lt;img&gt; tag to display an informative picture, using the SVG format, <strong>Add a <em>role="img"</em> attribute</strong> on it in order to ensure a proper compatibility with mobile technical helpers, and accessibility readers</li>
+					<li>Note that you can specify the <em>src</em> attribute to # in order to prevent browsers calls when you don't want any image to be loaded (dynamic loading for example) - <a href="https://stackoverflow.com/questions/19613841/img-src-means-in-html#answer-19614001" target="_blank" title="Stackoverflow : img src #">Related stack overflow</a></li>
 				</ul>
 				Documentation
 				<ul>

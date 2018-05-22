@@ -418,7 +418,7 @@
 
 
 
-Dans le cas où la balise <img /> sert à afficher une image informative au format SVG, rajouter un attribut role="img" sur cette balise afin d’assurer une bonne compatibilité avec les aides techniques mobiles 
+
 
 
 //// Accessibility
@@ -468,6 +468,8 @@ https://www.toptal.com/designers/colorfilter
 
 Add emmet suggested tags generation
 - Review doc to pass an array of data for generation, for complex stuff / ids list
+
+clean .big classes / uniformiser
 
 chaos repos
 > Sass Mixins
