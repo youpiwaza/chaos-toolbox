@@ -164,14 +164,6 @@
 ////Elements
 
 
-	// hidden
-		required > name & value
-
-		accessibility
-			Permitted ARIA roles	
-			None
-
-	
 	// image !
 		
 		Image button. Behave like a submit button

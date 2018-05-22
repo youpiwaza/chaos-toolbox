@@ -1174,6 +1174,27 @@
 			</div>
 
 
+			<h4 class="color">hidden</h4>
+			
+			<label for="id-text-hidden">A hidden field.. that you can't see (but it's there)</label>
+			<input hidden id="id-text-hidden" name="text-hidden" type="text" />
+			
+			<br />
+			<div class="info">
+				Hide a field, but it will still be active (can be modified/used by scripts)
+				<ul>
+					<li>Accessibility : can be use in conjunction with <em>aria-describedby</em>, cf. MDN doc</li>
+				</ul>
+			</div>
+			<br />
+			<div class="info reco">
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden" target="_blank" title="MDN Doc : hidden attribute">MDN Doc : hidden attribute</a></li>
+				</ul>
+			</div>
+
+
 			<h4 class="color">placeholder</h4>
 			<div>
 				<label for="id-example-placeholder">Example autofocus</label>
@@ -1874,7 +1895,7 @@ input[type=disabled], button[type=disabled] { ... }
 					</ul>
 					<li>Accessibility > Permitted ARIA roles > None</li>
 					<li>Associated event : <em>change</em></li>
-					<li>It can support the list attribute, allowing the user to choose from a predefined list</li>
+					<li>It can support the <em>list</em> attribute, allowing the user to choose from a predefined list</li>
 					<ul>
 						<li><strong>I'd recommand not using it for now</strong>. Erratic results</li>
 						<li>Chrome displays the correct number of colors, but all in a greyish color. Value isn't updated natively</li>
@@ -2145,6 +2166,42 @@ input[type=disabled], button[type=disabled] { ... }
 					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" target="_blank" title="MDN Doc : input file">MDN Doc : input file</a></li>
 				</ul>
 			</div>
+			
+
+
+			<h3 class="color">&lt;input type="hidden" /&gt;</h3>
+			
+			<input id="id=hidden" name="hidden" type="hidden" value="hey" />
+
+			<div class="info">
+				A field that doesn't display. Usefull to submit information that user won't edit nor need to see
+				<ul>
+					<li>Usually used to send</li>
+					<ul>
+						<li>unique id</li>
+						<li>security token</li>
+						<li>page uri reference</li>
+					</ul>
+				</ul>
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li>Don't forget to add the <em>name</em> attribute (required) and the <em>id</em> attribute (recommanded)</li>
+					<li>Keep in mind hacks (html edit) et <strong>don't forget to sanitize/test those fields in backoffice</strong>, even if they are not accessible to regular users.</li>
+					<li>Do not confound with the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden" target="_blank" title="MDN Doc : hidden attribute">hidden attribute</a></li>
+					<li>Accessibility > Permitted ARIA roles > None</li>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden" target="_blank" title="MDN Doc : input type hidden">MDN Doc : input type hidden</a></li>
+				</ul>
+			</div>
+
+
+
+
+
 
 
 			<button accesskey="a">hey</button>
