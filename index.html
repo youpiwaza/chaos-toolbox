@@ -1429,7 +1429,7 @@
 			</div>
 
 
-			<h3 class="color">&lt;button&gt;</h3>
+			<h3 class="color" id="button">&lt;button&gt;</h3>
 
 			<table class="table">
 				<thead>
@@ -1440,6 +1440,7 @@
 						<th>submit</th>
 						<th>reset</th>
 						<th>button</th>
+						<th>&lt;input type="file" /&gt; (added for css only)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -1453,6 +1454,9 @@
 						<td>
 							<button type="button">button</button>
 						</td>
+						<td>
+							<input id="file-css" name="file-css" type="file" />
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -1463,6 +1467,10 @@
 						</td>
 						<td>
 							<button disabled type="button">button, disabled</button>
+						</td>
+						<td class="basic-css-input-file">
+							<label for="id-file-css-wl">Choose a file ♥</label>
+							<input id="id-file-css-wl" name="file-css-wl" type="file" />
 						</td>
 					</tr>
 				</tbody>
@@ -1501,13 +1509,17 @@
 					<li>In general, I'd recommand using <em>button</em> over <em>input</em></li>
 					<li>Pay attention in CSS, when <strong>styling by type</strong>, don't forget to duplicate entries if you want to cover all cases</li>
 					<ul>
-						<li>
 							<pre>
 input[type=submit], button[type=submit] { ... }
 input[type=reset], button[type=reset] { ... }
 input[type=disabled], button[type=disabled] { ... }
 							</pre>
-						</li>
+						<li>Don't forget to style the button from the &lt;input type="file" /&gt;</li>
+						<ul>
+							<li>Recommanded way : hide the input (display: none) & customize the linked label</li>
+							<li>Be carefull though as it hides some informations (file/s selected)</li>
+							<li><a href="https://buzut.fr/customisez-le-input-file/" target="_blank" title="Customize input file">(french) Customize input file</a></li>
+						</ul>
 					</ul>
 				</ul>
 			</div>
@@ -2038,6 +2050,99 @@ input[type=disabled], button[type=disabled] { ... }
 						<li>Also inputs the year</li>
 						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week" target="_blank" title="MDN Doc : input type week">MDN Doc : input type week</a></li>
 					</ul>
+				</ul>
+			</div>
+			
+
+
+			<h3 class="color" title="input-file">&lt;input type="file"&gt;</h3>
+
+			<form action="" enctype="multipart/form-data">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td><label for="id-file">file</label></td>
+							<td><input id="id-file" name="file" type="file" /></td>
+						</tr>
+						<tr>
+							<td><label for="id-file">file w. accept="image/*"</label></td>
+							<td><input accept="image/*" id="id-file" name="file" type="file" /></td>
+						</tr>
+
+						<tr>
+							<td><label for="id-file">file w. capture & accept="images/*"</label></td>
+							<td><input accept="image/*" capture id="id-file" name="file" type="file"></td>
+						</tr>
+						<tr>
+							<td><label for="id-file">file w. capture & accept="audio/*"</label></td>
+							<td><input accept="audio/*" capture id="id-file" name="file" type="file"></td>
+						</tr>
+						<tr>
+							<td><label for="id-file">file w. capture & accept="video/*"</label></td>
+							<td><input accept="video/*" capture id="id-file" name="file" type="file"></td>
+						</tr>
+
+						<tr>
+							<td><label for="id-file">file w. multiple</label></td>
+							<td><input id="id-file" multiple name="file" type="file"></td>
+						</tr>
+
+						<tr>
+							<td>CSS Customized file input, nude</td>
+							<td class="basic-css-input-file-nude">
+								<label for="id-file-css-wl">Choose a file ♥</label>
+								<input id="id-file-css-wl" name="file-css-wl" type="file" />
+							</td>
+						</tr>
+						<tr>
+							<td>CSS Customized file input</td>
+							<td class="basic-css-input-file">
+								<label for="id-file-css-wl">Choose a file ♥</label>
+								<input id="id-file-css-wl" name="file-css-wl" type="file" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<button type="submit">Fake submit</button>
+			</form>
+			
+			<div class="info">
+				Display a file input. Note that the layout is browser & language dependant.
+				<ul>
+					<li>Attributes</li>
+					<ul>
+						<li>accept</li>
+						<ul>
+							<li><strong>Restrict the user</strong> about which kind of file he can send</li>
+							<li>Possibility to specify the file type sent, <a href="https://www.w3schools.com/tags/att_input_accept.asp" target="_blank" title="w3schools input type file, accept attributes">possible values</a></li>
+						</ul>
+						<li>capture</li>
+						<ul>
+							<li>Works in conjunction with the <em>accept</em> attribute</li>
+							<li>Allow to specify if the user should capture the desired file type (ex: take a picture with the mobile camera, desktop webcam)</li>
+							<li><a href="https://web.developpez.com/actu/66426/HTML-Media-Capture-prenez-des-photos-depuis-un-champ-de-formulaire-avec-l-attribut-capture/" target="_blank" title="developpez.com : input file > capture attribute">(french) developpez.com : input file > capture attribute</a></li>
+						</ul>
+						<li>multiple</li>
+						<ul>
+							<li>Allow the user to send multiple files at once</li>
+							<li>Hold mouse button & drag</li>
+							<li>Make use of <em>Ctrl</em> and/or <em>Shift</em> keys + mouse click or arrow keys</li>
+						</ul>
+					</ul>
+					<li>See <a href="#button" title="Button tag">buttons</a> for styling</li>
+					<li>Accessibility > Permitted ARIA roles > None</li>
+				</ul>
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li>don't forget to add to your <em>&lt;form&gt;</em> tag the following attribute to allow file submission</li>
+					<pre>enctype="multipart/form-data"</pre>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" target="_blank" title="MDN Doc : input file">MDN Doc : input file</a></li>
 				</ul>
 			</div>
 

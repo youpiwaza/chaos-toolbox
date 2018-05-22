@@ -164,27 +164,6 @@
 ////Elements
 
 
-	// file
-
-		accept 
-			Possibilité de spécifier le type de fichier envoyé via attribute accept
-			
-			A file extension starting with the STOP character (U+002E). (e.g. .jpg, .png, .doc).
-			A valid MIME type with no extensions.
-			audio/* representing sound files. HTML5
-			video/* representing video files. HTML5
-			image/* representing image files. HTML5
-		
-		capture
-			When the value of the type attribute is file, the presence of this Boolean attribute indicates that capture of media directly from the device's environment using a media capture mechanism is preferred.
-
-		multiple
-
-		accessibility
-			Permitted ARIA roles	
-			None
-
-
 	// hidden
 		required > name & value
 

@@ -203,4 +203,23 @@ h6.color {
   display: block;
 }
 
+/* Illustrate input type file cutomisation */
+.basic-css-input-file label {
+  border: 1px solid #3fb0ac;
+  color: #3fb0ac;
+  cursor: pointer;
+  display: inherit;
+  margin-bottom: .3em;
+  margin-top: .3em;
+  padding: .4em .6em;
+}
+.basic-css-input-file label:hover {
+  color: white;
+  background-color: #3fb0ac;
+}
+.basic-css-input-file input {
+  display: none;
+}
+
+
 /*** Shame ***/
