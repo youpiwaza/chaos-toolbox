@@ -163,65 +163,6 @@
 
 ////Elements
 
-		
-	// datalist // ~select, but better
-		
-
-		Peut être utilisé avec tout, mais n'est pas recommandé pour des dates/couleurs (comportement erratiques en fonctions des navigateurs, cf. mdn)
-
-
-	// Date and time picker
-		
-		/!\ peut de compatibilité
-		FF & Safari ~, IE ko
-
-		// date
-			accessibility
-				Permitted ARIA roles	
-				None
-		
-		// datetime
-			! OBSOLETE
-			accessibility
-				Permitted ARIA roles	
-				None
-
-		// datetime-local
-			This creates a widget to display and pick a date with time, but without any specific time zone information.
-
-			accessibility
-				Permitted ARIA roles	
-				None
-
-		// month
-			accessibility
-				Permitted ARIA roles	
-				None
-
-		// time
-			accessibility
-				Permitted ARIA roles	
-				None
-
-		// week
-			accessibility
-				Permitted ARIA roles	
-				None
-
-	
-
-	// fieldset & legend
-		// fieldset
-		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset
-		
-		can be disabled > disable all children
-		form
-		name
-
-		// legend
-		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend
-		used as fieldset child. nothing much to say
-	
 
 	// file
 

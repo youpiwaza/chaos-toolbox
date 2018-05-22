@@ -978,9 +978,6 @@
 			</div>
 
 
-			<button accesskey="a">hey</button>
-
-
 
 			<h3 class="color">Global attributes</h3>
 
@@ -1863,7 +1860,7 @@ input[type=disabled], button[type=disabled] { ... }
 					<ul>
 						<li>If none is defined, by default it's black, #000000</li>
 					</ul>
-					<li>accessibility > Permitted ARIA roles > None</li>
+					<li>Accessibility > Permitted ARIA roles > None</li>
 					<li>Associated event : <em>change</em></li>
 					<li>It can support the list attribute, allowing the user to choose from a predefined list</li>
 					<ul>
@@ -1893,6 +1890,163 @@ input[type=disabled], button[type=disabled] { ... }
 					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank" title="MDN Doc : datalist">MDN Doc : datalist</a></li>
 				</ul>
 			</div>
+
+
+
+			<h3 class="color" id="input-date">&lt;input type="date"&gt; & other date/time related inputs</h3>
+			
+			<table class="table">
+				<tbody>
+					<tr>
+						<td><label for="date">date</label></td>
+						<td><input id="id-date" name="date" type="date" value="2018-05-22" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-date-step">date w. step="3"</label></td>
+						<td><input id="id-date-step" name="date-step" type="date" value="2018-05-22" step="3"/></td>
+					</tr>
+					<tr>
+						<td><label for="id-date-min-max">date w. min max</label></td>
+						<td><input id="id-date-min-max" name="date-min-max" min="2018-05-20" max="2018-05-25" type="date" /></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+			<br />
+			<div class="info">
+				Those fields allow the user to select/type a date, either by typing it or through a browser specific window.
+				<ul>
+					<li>The date format is YYYY-MM-DD</li>
+					<ul>
+						<li>Note that it will be formatted as such in the <em>value</em> attribute, but will display according to internationalization settings (language)</li>
+					</ul>
+					<li>Can set a default date through the <em>value</em> attribute</li>
+					<li>Even if it isn't listed in MDN doc, you can set <em>min</em> and <em>max</em> attributes</li>
+					<ul>
+						<li>Note that if the range is short enough to prevent modification for specific parts (ex: month, year), they will appear as readonly.</li>
+					</ul>
+					<li>Compatibility : If not supported by the browser, degrades to an &lt;input type="text" /&gt;</li>
+					<li>Accessibility > Permitted ARIA roles > None</li>
+				</ul>
+			</div>
+			<div class="info reco">
+				<ul>
+					<li>Compatibility</li>
+					<ul>
+						<li>MDN announces few compatibility with Firefox and Safari, and not working with IE</li>
+						<li>Tested on Chrome, FF & Edge, it works fine.</li>
+					</ul>
+					<li>
+						Even if the <em>list</em> attribute is noted as supported in the doc, <strong>it's not recommand to use it for now</strong> as it's not supported yet.<br />
+						See. datalist.
+					</li>
+					<li>The documentation also mentions the possibility to use the <em>step</em> attribute</li>
+					<ul>
+						<li>
+							Using an integer value, it behave like the <a href="https://www.w3schools.com/jsref/prop_date_step.asp" target="_blank" title="W3school JS Doc : input date step property">JS step property</a> :<br />
+							for example if the <em>step</em> attribute is set to 3, you can only select one day every third.<br />
+							The step start point isn't linked to week, month nor year. Maybe on 01/01/1970 ?
+						</li>
+					</ul>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date" target="_blank" title="MDN Doc : input date">MDN Doc : input date</a></li>
+					<li><a href="https://www.alsacreations.com/tuto/lire/1407-formulaire-html5-type-date-time-local.html" target="_blank" title="Alsacreation : input date and datetime-local">(french) Alsacreation : input date and datetime-local</a></li>
+				</ul>
+			</div>
+			
+
+			<h4 class="color" id="input-date-other">Other date inputs</h4>
+
+			<table class="table">
+				<tbody>
+					<tr>
+						<td><label for="id-datetime-local">datetime-local</label></td>
+						<td><input id="id-datetime-local" name="datetime-local" type="datetime-local" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-month">month</label></td>
+						<td><input id="id-month" name="month" type="month" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-time">time</label></td>
+						<td><input id="id-time" name="time" type="time" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-time">time w. step="10"</label></td>
+						<td><input id="id-time" name="time" step="10" type="time" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-time">time w. step="1800" (= 30min step)</label></td>
+						<td><input id="id-time" name="time" step="1800" type="time" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-time">time w. step="7200" (= 2 hours step)</label></td>
+						<td><input id="id-time" name="time" step="7200" type="time" /></td>
+					</tr>
+					<tr>
+						<td><label for="id-week">week</label></td>
+						<td><input id="id-week" name="week" type="week" /></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="info">
+				All those inputs are pretty new, and from what I've tested, barely compatible. <strong>I'd recommand not using them for the moment</strong>.
+				<ul>
+					<li>Don't use &lt;input type="datetime" /&gt;, it's deprecated</li>
+					<li>&lt;input type="datetime-local" /&gt;</li>
+					<ul>
+						<li>This creates a widget to display and pick a date with time, but without any specific time zone information.</li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local" target="_blank" title="MDN Doc : input type datetime-local">MDN Doc : input type datetime-local</a></li>
+					</ul>
+					<li>&lt;input type="month" /&gt;</li>
+					<ul>
+						<li>Creates a widget to display and pick a month</li>
+						<li>Also inputs the year</li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month" target="_blank" title="MDN Doc : input type month">MDN Doc : input type month</a></li>
+					</ul>
+					<li>&lt;input type="time" /&gt;</li>
+					<ul>
+						<li>Creates a widget to display and pick a time (hours minutes seconds)</li>
+						<ul>
+							<li>By default, this field has hour and minutes avaible</li>
+							<li>Using the <em>step</em> attribute with an integer allows the specification of seconds</li>
+							<li>Using the <em>step</em> attribute with a float allows the specification of milliseconds</li>
+							<li>Note : Can't seems to make it work on anything other than seconds on chrome</li>
+							<li>The <em>step</em> attribute <strong>doesn't restrict the user</strong>, he can input type values than aren't in the step recommandations</li>
+							<ul>
+								<li>After testing, it's not entirely true, as for example if you set the step to one hour, the minutes become read-only</li>
+								<li>Same thing if you set a minute step, seconds aren't accessible</li>
+							</ul>
+							<li>Tested on Chrome : <strong>Note that only rounded values for hour, minutes OR seconds seems to work.</strong></li>
+							<ul>
+								<li>For example : 1800 works fine (60s x 30mn)</li>
+								<li>7200 works fine (60s x 60mn x 2 hours)</li>
+								<li>9000 (2 hours + 30mn) doesn't work at all : neither hours nor minutes are restricted</li>
+								<li><a href="https://stackoverflow.com/questions/14487621/how-do-i-force-seconds-to-appear-on-an-html5-time-input-control/14487701#14487701" target="_blank" title="Stackoverflow : datetime-local step attribute">Stackoverflow : datetime-local step attribute</a></li>
+							</ul>
+							<li><a href="https://html.spec.whatwg.org/multipage/input.html#concept-input-step-default" target="_blank" title="html spec : date step & step scale factor">html spec : date step & step scale factor</a></li>
+						</ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time" target="_blank" title="MDN Doc : input type time">MDN Doc : input type time</a></li>
+					</ul>
+					<li>&lt;input type="week" /&gt;</li>
+					<ul>
+						<li>Creates a widget to display and pick a week</li>
+						<li>Also inputs the year</li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week" target="_blank" title="MDN Doc : input type week">MDN Doc : input type week</a></li>
+					</ul>
+				</ul>
+			</div>
+
+
+			<button accesskey="a">hey</button>
+
+
+
+
 <!--
 
 			<h3 class="color">Vanilla elements</h3>
