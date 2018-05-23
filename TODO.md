@@ -164,16 +164,6 @@
 ////Elements
 
 
-	// image !
-		
-		
-		Data send : position on clicked image (from top left)
-
-		accessibility
-			Permitted ARIA roles	
-			type=image: link, menuitem, menuitemcheckbox, menuitemradio, radio, switch
-
-
 	// input
 
 		Gestion des erreurs
@@ -474,3 +464,4 @@ clean .big classes / uniformiser
 chaos repos
 > Sass Mixins
 > Page bloc templates
+> Sublim text plugins auto install
