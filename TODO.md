@@ -166,10 +166,6 @@
 
 	// input
 
-		Gestion des erreurs
-		// Vérifier si le mauvais remplissage de champs typés empêche l'envoi du formulaire (au moins url & mail ?)
-		https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
-
 		// email
 			attribute multiple ?
 
