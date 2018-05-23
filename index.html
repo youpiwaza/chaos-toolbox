@@ -1212,16 +1212,31 @@
 			<h4 class="color">autofocus</h4>
 			<div>
 				<label for="id-example-autofocus">Example autofocus</label>
-				<input 	autofocus="false"
+				
+				<!--
+				<input 	autofocus 
 						id="id-example-autofocus"
 						name="example-autofocus"
 						type="text"
 				/>
+				-->
+
+				<input 	id="id-example-autofocus"
+						name="example-autofocus"
+						type="text"
+				/>
+
 			</div>
 
 			<div class="info">
 				Booelean. Use on one field only, allow to specify which field has the focus after page loads.<br />
 				Be careful as it can make the page scroll jump, and also can confuse some accessibility readers.
+				<ul>
+					<li>
+						Be carefull. Even if it's referenced with boolean, <strong>you can't use autofocus="false" to desactivate it</strong>.
+						In fact, it will still add the autofocus behavior.
+					</li>
+				</ul>
 			</div>
 			<br />
 			<div class="info reco">
