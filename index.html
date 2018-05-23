@@ -1035,7 +1035,7 @@
 
 
 
-			<h3 class="color">Global attributes</h3>
+			<h3 class="color" id="form-global-attributes">Global attributes</h3>
 
 			<div class="info big reco">
 				<ul>
@@ -1266,9 +1266,83 @@
 			</div>
 
 
+			<h4 class="color">maxlength / minlength</h4>
+
+			<form>
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>
+								<label for="id-example-minmax">Example maxlength="10" minlength="5"</label>
+							</td>
+							<td>
+								<input 	id="id-example-minmax"
+										maxlength="10"
+										minlength="5" 
+										name="example-minmax"
+										type="text"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="id-example-textarea-minmax">Example textarea maxlength="10" minlength="5"</label>
+							</td>
+							<td>
+								<textarea 	cols="30"
+											id="id-example-textarea-minmax"
+											maxlength="10"
+											minlength="5"
+											name="example-textarea-minmax"
+											rows="10"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><button type="submit">submit</button></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<br />
+				
+			</form>
+
+			<div class="info">
+				<em>minlength</em> & <em>maxlength</em> attributes add constraints to the field.<br />
+				Respectively, user must fill at least <em>minlength</em> characters, at most <em>maxlength</em>.
+				<ul>
+					<li>
+						Pay attention, minlength doesn't proc if the user didn't input anything<br />
+						<strong>Don't forget to use it in conjunction with the <em>required</em> attribute if you want to make the field mandatory</strong>
+					</li>
+					<li>Note that if minlength condition isn't respected, it will proc an error tooltip..</li>
+					<li>..But maxlength will simply restrict the user straight away by making it impossible to add more characters</li>
+					<ul>
+						<li>this constraint doesn't apply for <em>textarea</em> inputs</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="info reco">
+				<ul>
+					<li>According to MDN, very few browser support them right now, but according to canIuse, <strong>I'd still recommand using them</strong> (with proper server-side validation).</li>
+					<ul>
+						<li>After some tests, Chrome & Firefox seems ok</li>
+						<li>Edge doesn't seem to support minlength (despite what canIuse says), but properly restrict the user with maxlength</li>
+						<li><a href="https://caniuse.com/#feat=maxlength" target="_blank" title="Can I use : maxlength attribute">Can I use : maxlength attribute</a></li>
+						<li><a href="https://caniuse.com/#feat=minlength" target="_blank" title="Can I use : minlength attribute">Can I use : minlength attribute</a></li>
+					</ul>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-minlength" target="_blank" title="MDN Doc : attribute minlength">MDN Doc : attribute minlength</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-maxlength" target="_blank" title="MDN Doc : attribute maxlength">MDN Doc : attribute maxlength</a></li>
+				</ul>
+			</div>
+
+
 			<h4 class="color">placeholder</h4>
 			<div>
-				<label for="id-example-placeholder">Example autofocus</label>
+				<label for="id-example-placeholder">Example placeholder</label>
 				<input 	id="id-example-placeholder"
 						name="example-placeholder"
 						placeholder="You should type this"
@@ -2313,6 +2387,53 @@ input[type=disabled], button[type=disabled] { ... }
 				</ul>
 			</div>
 
+
+
+			<h3 class="color">&lt;input type="text" /&gt;</h3>
+			<pre>
+				emmet : 
+				div>label[for=id-field]{fieldName:}+input[type=text id=id-field name=field placeholder=model]
+			</pre>
+
+
+
+
+
+
+			<h2 class="color">Form submission</h2>
+			<div class="info">
+				Usually, a form is submitted through either a submit event (input, button, image) or in JS.<br />
+				This part will regroup recommandations regarding the user submitting his data.
+			</div>
+
+
+			<h3 class="color">Form validation</h3>
+			<div class="info">
+				There are several ways to validate a form. Usually it's about<br />
+				<ul>
+					<li>Filling the field, if it's required</li>
+					<li>The submission must have a proper format (email, tel, ...)</li>
+					<li>The submission must respect the required length</li>
+				</ul>
+				It used to be mostly JS, but now thanks to HTML5 we can have built-in behavior attached to fields, thanks to input types and attributes.<br />
+				The input type related validations are directly in the corresponding inputs.<br />
+				The attributes are directly in the <a href="#form-global-attributes">global attributes section</a>.
+			</div>
+			<br />
+			<div class="info reco">
+				<ul>
+					<li>CSS : Make proper use of <em>:valid</em> & <em>:invalid</em> css pseudo class, to style you fields accordingly</li>
+					<li>Validate on the go, not just only once at submit</li>
+					<li>Error management : By field with proper indications, plus a conscise recap at the end on validation</li>
+					<li><strong>I'd recommand custom JS validation</strong> (or use a plugin..) to have proper uniform design, thanks to &lt;span&gt;s errors.</li>
+				</ul>
+				Documentation
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation" target="_blank" title="MDN Doc : Form validation">MDN Doc : Form validation</a></li>
+				</ul>
+			</div>
+
+			
 
 
 

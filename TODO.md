@@ -336,6 +336,9 @@
 			textarea {
 				resize: none;
 			}
+
+		Attention, comportement inter balise similaire à <pre> (espaces & passages de lignes pris en compte comme valeur par défaut)
+			Permet de ne pas respecter maxlength !
 		
 	// Voir pour éditeur de texte complexe
 
